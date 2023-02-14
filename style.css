@@ -1,0 +1,613 @@
+@charset "utf-8";
+/* Theme Name: Бизнес сайт от XSite.PRO
+Theme URI: https://xsite.pro/
+Author: XSite.PRO
+Author URI: https://xsite.pro/
+Description: Тема для WordPress. Разработка XSite.PRO.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: Xsite.Pro */
+
+/* Общая стандартная настройка START */
+
+/* Сброс стилей START */
+
+/* Сброс стилей END */
+
+/* critical.css START */
+body, html{
+    font-family: Gotham, sans-serif;
+    font-size: 18px;
+    color: #424243;
+    margin: 0;
+    padding: 0;
+    line-height: 140%;
+    cursor: default;
+    text-align: left;
+    min-width: 100%;
+    background-color: #fff;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+a {
+    outline:none;
+    font-family:inherit;
+    color:#FF3300;
+    text-decoration:none;
+    background-color: transparent;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+    border-style: none;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Для браузеров не поддерживающих HTML5 */
+section, article, aside, footer, header, nav {display: block;}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+h1 {
+    font-size:42px;
+    font-weight: 200;
+    line-height:120%;
+    text-align:left;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 25px 0px;
+}
+
+h1 strong {
+    font-weight: 500;
+}
+
+h2 {}
+
+main {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.title {
+    font-size:36px;
+    color: #424243;
+    font-weight: 700;
+    line-height:120%;
+    text-transform: uppercase;
+    margin: 0px 0px 55px 0px;
+}
+
+.title strong {
+    color: #FF3300;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.title a{
+    color:inherit;
+    text-decoration:none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+.title a:hover{
+    color:#5f9cd1;
+    text-decoration:none;
+}
+
+*{
+    outline:none !important;
+    box-sizing:border-box;
+}
+
+.btn {
+    background-color: #000;
+    border-radius: 30px;
+    color: #fff;
+    font-size:16px;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 13px 43px;
+    line-height: 120%;
+    text-align:center;
+    display:inline-block;
+    text-decoration: none !important;
+    vertical-align: middle;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #FF3300;
+}
+
+.hide {
+    display:none
+}
+
+.container {
+    width:100%;
+    max-width:1278px;
+    margin:0 auto;
+    padding:0 24px;
+    box-sizing:border-box;
+    position: relative;
+}
+
+.overflow {
+    overflow: hidden;
+}
+/* critical.css END */
+
+/* style.css START */
+input,
+textarea{
+    padding:8px 15px;
+}
+
+button,
+input,
+select,
+textarea{
+    outline:none;
+    font-family:inherit;
+}
+
+select{
+    cursor:pointer;
+    background:url(images/icons/select.svg) no-repeat top 50% right 15px;
+    background-size:10px;
+    text-transform: none;
+}
+
+input[type=checkbox]{
+    position:absolute;
+    opacity:0;
+    box-sizing: border-box;
+    padding: 0;
+    z-index: 1;
+}
+
+input[type=checkbox] + label{
+    position:relative;
+    padding-left:26px;
+    cursor:pointer;
+    display:inline-block;
+}
+
+input[type=checkbox] + label:before{
+    position:absolute;
+    left:0;
+    top:3px;
+    content:"";
+    display:block;
+    width:13px;
+    height:13px;
+    border:1px solid #F01919;
+}
+
+input[type=checkbox]:checked + label:after{
+    position:absolute;
+    background:url(images/icons/checked.svg) no-repeat 50% 50%;
+    background-size: contain;
+    left: 1px;
+    top: -1px;
+    content: "";
+    display: block;
+    width: 19px;
+    height: 18px;
+}
+
+input[type="text"],
+input[type="submit"],  
+input[type="email"],  
+input[type="tel"],  
+button,
+select,
+textarea{
+    -webkit-appearance: none;  
+    margin: 0; 
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+textarea{
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px 15px;
+    line-height: 140%;
+    color: #424243;
+    width: 100%;
+}
+
+button,
+input { 
+    overflow: visible;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    border: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+a.inset {
+    text-decoration:none;
+}
+
+a.inset:hover {
+    text-decoration:none;
+}
+
+hr {
+    border:0;
+    border-top: 1px solid #e4e4e4;
+}
+
+form{
+    margin:0;
+}
+
+::selection {
+    background:#a0c4e0 !important;
+}
+
+::-moz-selection {
+    background:#a0c4e0 !important;
+}
+
+.btn.pressed{
+    filter: drop-shadow(0px 0px 20px rgba(204, 255, 0, 0.5));
+    background: #FF3300;
+}
+
+i {
+    display:inline-block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.xs_load{
+    position:relative;
+}
+
+.xs_load:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.67);
+    z-index: 99;
+    opacity: 1;
+}
+
+.xs_load:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    bottom: 0;
+    z-index: 100;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    background: url(images/icons/load.svg) no-repeat 50% 50%;
+    background-size: contain;
+    transform: none;
+}
+
+/* Бургер меню START */
+.buttonMenu{
+    display: none;
+    width: 48px;
+    background-color: #F01919;
+    border-radius: 4px;
+    padding: 13px 17px;
+    box-sizing: border-box;
+    transition:.3s all;
+    cursor:pointer;
+}
+
+.buttonMenu:after,
+.buttonMenu:before,
+.buttonMenu span{
+    content: "";
+    display: block;
+    height: 2px;
+    background: #fff;
+    margin: 4px 0;
+    transition: .3s all;
+}
+
+.show_menu .buttonMenu span {
+    background: none;
+}
+
+.show_menu .buttonMenu:before {
+    transform: rotate(45deg);
+    width: 31px;
+    position: absolute;
+    top: 12px;
+    left: 17px;
+}
+
+.show_menu .buttonMenu:after {
+    transform: rotate(-45deg);
+    width: 31px;
+    position: absolute;
+    top: 12px;
+    left: 17px
+}
+
+*:before,
+*:after{
+    display: block;
+}
+
+header .phone{
+    white-space:nowrap;
+}
+
+header nav{
+    background:#ddd;
+}
+
+header nav ul, header nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+header nav a {
+    font-weight: 700;
+    line-height: 20px;
+    padding: 20px 30px;
+    transition: .3s all;
+    display: block;
+    text-decoration:none !important;
+}
+header nav .menu_container .menu_wrapper .footer{
+    display:none;
+}
+
+header nav .menu_wrapper{}
+
+header nav .menu_wrapper ul li ul.sub-menu{
+    position: absolute;
+    top: 100%;
+    margin-top: 30px;
+    opacity: 0;
+    background: #fff;
+    transition: .3s all;
+    padding: 10px 0;
+    border-radius: 0 0 10px 10px;
+    min-width: 220px;
+    left: -25px;
+}
+
+header nav .menu_wrapper ul > li:hover > ul{
+    opacity: 1;
+    background: #fff;
+    margin-top: 0;
+    z-index: 980;
+    box-shadow: 0 15px 32px rgba(0, 0, 0, 0.14);
+}
+
+header nav .menu_wrapper ul li ul.sub-menu li{
+    list-style-type: none;
+    overflow: hidden;
+    position: relative;
+}
+
+header nav .menu_wrapper ul li ul.sub-menu li a{
+    padding: 4px 25px;
+    font-size: 14px;
+}
+
+header nav .menu_wrapper ul li ul.sub-menu li a:hover {
+    color: #e1001a;
+}
+/* Бургер меню END */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield; 
+  outline-offset: -2px; 
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Xsite.Pro START */
+.xsite{
+    color: inherit !important;
+    text-decoration:none
+}
+.xsite:hover,
+.xsite:active{
+    text-decoration:none
+}
+.xsite strong{
+    color:#333;
+}
+.xsite strong span {
+    color:#ff7700;
+    font-weight:bold;
+}
+.xsite strong:hover{
+    text-decoration:underline;
+}
+/* Xsite.Pro END */
+
+.pagenavigation{
+    text-align:center;
+    margin:20px 0;
+}
+
+.pagenavigation span,
+.pagenavigation a{
+    display: inline-block;
+    background: #ffcc00;
+    color: #000;
+    margin: 0 6px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    white-space: nowrap;
+    min-width: 31px;
+    line-height: 29px;
+    transition:.3s all;
+}
+
+.pagenavigation span,
+.pagenavigation a:hover{
+    background:#ce0015;
+    color:#fff;
+}
+
+#xs_recall{
+    max-width: 500px;
+    padding:0px;
+}
+
+#xs_recall .title {
+    font-size: 35px;
+    margin: 0px 0px 20px 0px;
+}
+
+#xs_recall .description {
+    margin-bottom: 25px;
+}
+
+#xs_recall input[type=text] {
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 15px 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+
+#xs_recall input[type=text]:focus {
+    border: 1px solid #F01919;
+}
+
+#xs_recall .name{
+    margin-bottom:6px;
+}
+
+#xs_recall .box-sub{
+    margin:24px 0px 24px;
+}
+
+#xs_recall .xs_result p{
+    margin:0;
+}
+
+#xs_recall .sanding {
+    width: 100%;
+    margin: 20px 0px 0px 0px;
+    border: none;
+}
+
+.xs_result{
+    color:green;
+}
+
+/* Keyframes */
+@keyframes animation1 {
+    0% {transform: scale(1); opacity: 1.0; background-color: #000;}
+    50% {transform: scale(0.5); opacity: 0.1; background-color: green;}
+    70% {transform: scale(3); opacity: 1.0; background-color: blue;}
+    100% {transform: scale(1); opacity: 1.0; background-color: red;}
+}
+
+@-webkit-keyframes animation1 {
+    0% {transform: scale(1); opacity: 1.0; background-color: #000;}
+    50% {transform: scale(0.5); opacity: 0.1; background-color: green;}
+    70% {transform: scale(3); opacity: 1.0; background-color: blue;}
+    100% {transform: scale(1); opacity: 1.0; background-color: red;}
+}
+
+.btn-anim:hover {
+    animation: animation1 3s ease infinite;
+    -webkit-animation: animation1 3s ease infinite;
+}
+/* style.css END */
+
+/* Общая стандартная настройка END */
+
+/************** Xsite.Pro **************/
