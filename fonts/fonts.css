@@ -1,65 +1,35 @@
 @font-face {
-	font-family: 'ALSSchlangesans';
-	src: local('ALSSchlangesans-Thin'),
-		url('ALSSchlangesans-Thin.woff2') format('woff2'),
-		url('ALSSchlangesans-Thin.woff') format('woff'),
-		url('ALSSchlangesans-Thin.ttf') format('truetype'),
-		url('ALSSchlangesans-Thin.eot?#iefix') format('embedded-opentype');
-	font-weight: 100;
-	font-style: normal;
-    font-display: swap;
-}
-@font-face {
-	font-family: 'ALSSchlangesans';
-	src: local('ALSSchlangesans-Light'),
-		url('ALSSchlangesans-Light.woff2') format('woff2'),
-		url('ALSSchlangesans-Light.woff') format('woff'),
-		url('ALSSchlangesans-Light.ttf') format('truetype'),
-		url('ALSSchlangesans-Light.eot?#iefix') format('embedded-opentype');
-	font-weight: 300;
-	font-style: normal;
-    font-display: swap;
-}
-@font-face {
-	font-family: 'ALSSchlangesans';
-	src: local('ALSSchlangesans'),
-		url('ALSSchlangesans.woff2') format('woff2'),
-		url('ALSSchlangesans.woff') format('woff'),
-		url('ALSSchlangesans.ttf') format('truetype'),
-		url('ALSSchlangesans.eot?#iefix') format('embedded-opentype');
-	font-weight: 400;
-	font-style: normal;
-    font-display: swap;
-}
-@font-face {
-	font-family: 'ALSSchlangesans';
-	src: local('ALSSchlangesans-Bold'),
-		url('ALSSchlangesans-Bold.woff2') format('woff2'),
-		url('ALSSchlangesans-Bold.woff') format('woff'),
-		url('ALSSchlangesans-Bold.ttf') format('truetype'),
-		url('ALSSchlangesans-Bold.eot?#iefix') format('embedded-opentype');
+	font-family: 'Muller';
+	src: local('MullerBold'),
+		url('MullerBold.woff2') format('woff2'),
+		url('MullerBold.woff') format('woff'),
+		url('MullerBold.ttf') format('truetype'),
+		url('MullerBold.eot?#iefix') format('embedded-opentype');
 	font-weight: 700;
 	font-style: normal;
     font-display: swap;
 }
+
 @font-face {
-	font-family: 'ALSSchlangesans';
-	src: local('ALSSchlangesans-Black'),
-		url('ALSSchlangesans-Black.woff2') format('woff2'),
-		url('ALSSchlangesans-Black.woff') format('woff'),
-		url('ALSSchlangesans-Black.ttf') format('truetype'),
-		url('ALSSchlangesans-Black.eot?#iefix') format('embedded-opentype');
-	font-weight: 900;
+	font-family: 'Muller';
+	src: local('MullerMedium'),
+		url('MullerMedium.woff2') format('woff2'),
+		url('MullerMedium.woff') format('woff'),
+		url('MullerMedium.ttf') format('truetype'),
+		url('MullerMedium.eot?#iefix') format('embedded-opentype');
+	font-weight: 500;
 	font-style: normal;
     font-display: swap;
 }
 
-
-
-
-
-
-
-
-
-
+@font-face {
+	font-family: 'Muller';
+	src: local('MullerRegular'),
+		url('MullerRegular.woff2') format('woff2'),
+		url('MullerRegular.woff') format('woff'),
+		url('MullerRegular.ttf') format('truetype'),
+		url('MullerRegular.eot?#iefix') format('embedded-opentype');
+	font-weight: 400;
+	font-style: normal;
+    font-display: swap;
+}

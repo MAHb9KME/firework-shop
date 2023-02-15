@@ -18,9 +18,9 @@ Text Domain: Xsite.Pro */
 
 /* critical.css START */
 body, html{
-    font-family: Gotham, sans-serif;
-    font-size: 18px;
-    color: #424243;
+    font-family: Muller, sans-serif;
+    font-size: 14px;
+    color: #9F9F9F;
     margin: 0;
     padding: 0;
     line-height: 140%;
@@ -40,10 +40,13 @@ body {
 }
 
 a {
-    outline:none;
-    font-family:inherit;
-    color:#FF3300;
-    text-decoration:none;
+    font-weight: 400;
+    color: #731B55;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    outline: none;
+    font-family: inherit;
+    text-decoration: none;
     background-color: transparent;
 }
 
@@ -67,6 +70,11 @@ strong {
   font-weight: bolder;
 }
 
+main {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
 h1 {
     font-size:42px;
     font-weight: 200;
@@ -80,24 +88,24 @@ h1 strong {
     font-weight: 500;
 }
 
-h2 {}
-
-main {
-    overflow: hidden;
-    flex-grow: 1;
-}
-
 .title {
-    font-size:36px;
-    color: #424243;
-    font-weight: 700;
-    line-height:120%;
-    text-transform: uppercase;
-    margin: 0px 0px 55px 0px;
+    color: #0C0B0B;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    margin: 0px 0px 40px 0px;
 }
 
-.title strong {
-    color: #FF3300;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #0C0B0B;
 }
 
 h1 a,
@@ -111,42 +119,32 @@ h6 a,
     text-decoration:none;
 }
 
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover,
-h5 a:hover,
-h6 a:hover,
-.title a:hover{
-    color:#5f9cd1;
-    text-decoration:none;
-}
-
 *{
     outline:none !important;
     box-sizing:border-box;
 }
 
 .btn {
-    background-color: #000;
-    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -0.02em;
     color: #fff;
-    font-size:16px;
-    font-weight: 700;
+    background-color: #731B55;
+    border-radius: 4px;
     cursor: pointer;
     padding: 13px 43px;
-    line-height: 120%;
     text-align:center;
     display:inline-block;
-    text-decoration: none !important;
     vertical-align: middle;
+    text-decoration: none !important;
     text-transform: uppercase;
     transition: all 0.2s;
 }
 
 .btn:hover,
 .btn:active{
-    background-color: #FF3300;
+    background-color: #734B59;
 }
 
 .hide {
@@ -154,11 +152,11 @@ h6 a:hover,
 }
 
 .container {
-    width:100%;
-    max-width:1278px;
-    margin:0 auto;
-    padding:0 24px;
-    box-sizing:border-box;
+    width: 100%;
+    max-width: 1548px;
+    margin: 0 auto;
+    padding: 0 24px;
+    box-sizing: border-box;
     position: relative;
 }
 
@@ -198,7 +196,7 @@ input[type=checkbox]{
 
 input[type=checkbox] + label{
     position:relative;
-    padding-left:26px;
+    padding-left:28px;
     cursor:pointer;
     display:inline-block;
 }
@@ -209,9 +207,10 @@ input[type=checkbox] + label:before{
     top:3px;
     content:"";
     display:block;
-    width:13px;
-    height:13px;
-    border:1px solid #F01919;
+    width:16px;
+    height:16px;
+    border: 1px solid #731B55;
+    border-radius: 4px;
 }
 
 input[type=checkbox]:checked + label:after{
@@ -243,12 +242,16 @@ input[type="tel"],
 input[type="password"],
 input[type="email"],
 textarea{
-    font-family: inherit;
+    font-weight: 400;
     font-size: 14px;
-    padding: 10px 15px;
-    line-height: 140%;
-    color: #424243;
+    padding: 13px 16px;
+    line-height: 14px;
+    letter-spacing: -0.02em;
+    color: #0C0B0B;
+    font-family: inherit;
     width: 100%;
+    border: 1px solid #EFEFEF;
+    border-radius: 4px;
 }
 
 button,
@@ -265,9 +268,9 @@ button::-moz-focus-inner,
 }
 
 button:-moz-focusring,
-    [type="button"]:-moz-focusring,
-    [type="reset"]:-moz-focusring,
-    [type="submit"]:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
     outline: 1px dotted ButtonText;
 }
 
@@ -306,11 +309,6 @@ form{
 
 ::-moz-selection {
     background:#a0c4e0 !important;
-}
-
-.btn.pressed{
-    filter: drop-shadow(0px 0px 20px rgba(204, 255, 0, 0.5));
-    background: #FF3300;
 }
 
 i {
