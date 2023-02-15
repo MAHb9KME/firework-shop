@@ -57,7 +57,7 @@ function tpaneScroll()
 }
 
 
-$(function(){}){
+$(function(){
 	
 	// fancybox
 
@@ -115,7 +115,7 @@ $(function(){}){
 		$('body').toggleClass('show_menu')
 	})
 	
-	$('header nav .menu_container .close').click(function()
+	$('.menu-container__close').click(function()
 	{
 		$('body').removeClass('show_menu')
 	})
@@ -317,7 +317,54 @@ $(function(){}){
 };
 
 
+	// Поиск автозаполнение очистка
+	$(document).on('click', '.search__plug-text, .search__main', function(){
+		$('.search__plug').addClass('hide')
+		$('.search__main').focus()
+    })
 
+    $(document).click(function(event)
+	{
+		if( $('.search__main').val() == "" )
+		{
+			if
+			(
+				$(event.target).closest(".search__main").length ||
+			 	$(event.target).closest(".search").length 
+		 	) 
+			return;
+
+			$('.search__plug').removeClass('hide')
+			event.stopPropagation();
+		}
+	})
+
+    // Поиск автозаполение внесение данных
+    $(document).on('click', '.search__plug-link', function(){
+		$('.search__plug').addClass('hide')
+		text = $(this).text()
+		$('.search__main').val(text)
+		$('.search__main').focus()
+    })
+
+    // Скроллинг меню в хедере
+	$(document).on('click', '.nav-menu__scroll--right', function(){
+
+		$('.menu-wrapper__inner > ul').stop().animate({
+			scrollLeft: $('.menu-wrapper__inner > ul').scrollLeft() + 100
+		}, 100, "linear")
+
+		$('.nav-menu__scroll--left').addClass('nav-menu__scroll--active')
+
+	})
+
+	$(document).on('click', '.nav-menu__scroll--left', function(){
+
+		$('.menu-wrapper__inner > ul').stop().animate({
+			scrollLeft: $('.menu-wrapper__inner > ul').scrollLeft() - 100
+		}, 100, "linear")
+
+	})
 
 
 
