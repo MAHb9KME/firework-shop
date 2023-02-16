@@ -188,14 +188,14 @@
                     <div class="menu-container">
                         <span class="menu-container__close"></span>
                         <div class="menu-wrapper">
-                            <div class="menu-wrapper__inner">
+                            <div class="menu-wrapper__inner common-move">
 
-                                <div class="nav-menu__scroll nav-menu__scroll--left">
+                                <div class="nav-menu__scroll nav-menu__scroll--left common-arrow-left">
                                     <div class="nav-menu__scroll-bg"></div>
                                     <div class="nav-menu__scroll-cursor"></div>
                                 </div>
 
-                                <ul>
+                                <ul class="common-list">
                                     <li><a href="#">Батареи салютов</a></li>
                                     <li><a href="#">Бенгальские огни</a></li>
                                     <li><a href="#">Летающие фейерверки</a></li>
@@ -210,7 +210,7 @@
                                     <li><a href="#">Остальные тов ары</a></li>
                                 </ul>
 
-                                <div class="nav-menu__scroll nav-menu__scroll--right">
+                                <div class="nav-menu__scroll nav-menu__scroll--right common-arrow-right">
                                     <div class="nav-menu__scroll-bg"></div>
                                     <div class="nav-menu__scroll-cursor"></div>
                                 </div>
@@ -238,7 +238,818 @@
 
 
     <main class="main">
-         
+        <section class="main-screen">
+            <div class="face">
+                <div class="container">
+                    <div class="face__inner">
+                        <div class="slider">
+                            <div class="slider__item">
+                                 <div class="slider__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/slider/main-first.webp">
+                                        <img class="slider__img" src="images/slider/main-first.jpg" width="1195" height="615" loading="lazy" alt="picture" >
+                                    </picture>
+                                 </div>
+                                 <div class="slider__text">
+                                     <h2 class="slider__title">
+                                        Фейерверк в подарок
+                                     </h2>
+                                     <div class="slider__info">
+                                         <p>Акция пиротехника в подарок (бенгальские огни и/или хлопушки) действует бессрочно, для всех покупателей за оставленный отзыв из нескольких предложений.</p>
+                                     </div>
+                                     <div class="slider__arrows">
+                                         <div class="slider__arrow slider__arrow--left" onclick="jQuery('.slider').slick('slickPrev')">
+                                             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
+                                            </svg>
+                                         </div>
+                                         <div class="slider__arrow slider__arrow--right" onclick="jQuery('.slider').slick('slickNext')">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
+                                            </svg>
+                                         </div>
+                                     </div>
+                                 </div>
+                            </div>
+                            <div class="slider__item">
+                                 <div class="slider__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/slider/main-first.webp">
+                                        <img class="slider__img" src="images/slider/main-first.jpg" width="1195" height="615" loading="lazy" alt="picture" >
+                                    </picture>
+                                 </div>
+                                 <div class="slider__text">
+                                     <h2 class="slider__title">
+                                        Фейерверк в подарок 2
+                                     </h2>
+                                     <div class="slider__info">
+                                         <p>Акция пиротехника в подарок (бенгальские огни и/или хлопушки) действует бессрочно, для всех покупателей за оставленный отзыв из нескольких предложений.</p>
+                                     </div>
+                                     <div class="slider__arrows">
+                                         <div class="slider__arrow slider__arrow--left" onclick="jQuery('.slider').slick('slickPrev')">
+                                             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
+                                            </svg>
+                                         </div>
+                                         <div class="slider__arrow slider__arrow--right" onclick="jQuery('.slider').slick('slickNext')">
+                                            <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
+                                            </svg>
+                                         </div>
+                                     </div>
+                                 </div>
+                            </div>
+                        </div>
+                        <div class="week">
+                            <h3 class="week__title">
+                                Товары недели
+                            </h3>
+                            <div class="timer">
+                                <div class="timer__tlt">
+                                    До смены
+                                </div>
+                                <div class="timer__clock">
+                                    <span>3</span> дня <span>17</span> часов
+                                </div>
+                            </div>
+
+                            <div class="week__slider">
+                                <div class="product product-week">
+                                    <div class="eventsline common-move">
+                                        <div class="eventsline__arrow eventsline__arrow--left common-arrow-left"></div>
+                                        <div class="eventsline__inner common-list">
+                                            <a class="eventsline__item" href="#">
+                                                На новый год
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 9 мая
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 23 февраля
+                                            </a>
+                                        </div>
+                                        <div class="eventsline__arrow eventsline__arrow--right common-arrow-right"></div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product product-week">
+                                    <div class="eventsline common-move">
+                                        <div class="eventsline__arrow eventsline__arrow--left common-arrow-left"></div>
+                                        <div class="eventsline__inner common-list">
+                                            <a class="eventsline__item" href="#">
+                                                На новый год
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 9 мая
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 23 февраля
+                                            </a>
+                                        </div>
+                                        <div class="eventsline__arrow eventsline__arrow--right common-arrow-right"></div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product product-week">
+                                    <div class="eventsline common-move">
+                                        <div class="eventsline__arrow eventsline__arrow--left common-arrow-left"></div>
+                                        <div class="eventsline__inner common-list">
+                                            <a class="eventsline__item" href="#">
+                                                На новый год
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 9 мая
+                                            </a>
+                                            <a class="eventsline__item" href="#">
+                                                На 23 февраля
+                                            </a>
+                                        </div>
+                                        <div class="eventsline__arrow eventsline__arrow--right common-arrow-right"></div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navigate">
+                                <!-- <div class="navigate__item navigate__item--disallow">
+                                    <div class="navigate__arrow"></div>
+                                    <div class="navigate__text">предыдущий</div>
+                                </div>
+                                <div class="navigate__item">
+                                    <div class="navigate__text">следующий</div>
+                                    <div class="navigate__arrow"></div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edge">
+                <div class="container">
+                    <div class="edge__inner">
+                        <div class="edge__list">
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_01.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                            Склад пиротехники
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_02.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                            Товар <br>в наличии
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_03.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Доставка по России
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_04.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Скидка оптовикам
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_05.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Работаем с 2004 года
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_06.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Действительно огромный выбор
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_07.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Нам доверяют тысячи клиентов
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_08.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Все в одном магазине
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_09.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Товары для праздника
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_10.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Можно покупать поштучно
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_11.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Можно покупать поштучно
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="edge__writem">
+                                <div class="edge__item">
+                                      <div class="edge__image">
+                                          <img class="edge__img" src="images/pics/prod_11.svg" alt="edge">
+                                      </div>
+                                      <div class="edge__text">
+                                          Можно покупать поштучно
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edge__arrow edge__arrow--left" onclick="jQuery('.edge__list').slick('slickPrev')">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.6075 4.37504L4.255 1.02254L5.13875 0.138794L10 5.00004L5.13875 9.86129L4.255 8.97754L7.6075 5.62504L0 5.62504L0 4.37504L7.6075 4.37504Z" fill="#731B55"/>
+                            </svg>
+                        </div>
+                        <div class="edge__arrow edge__arrow--right" onclick="jQuery('.edge__list').slick('slickNext')">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.6075 4.37504L4.255 1.02254L5.13875 0.138794L10 5.00004L5.13875 9.86129L4.255 8.97754L7.6075 5.62504L0 5.62504L0 4.37504L7.6075 4.37504Z" fill="#731B55"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pros START -->
+        <section class="pros">
+            <div class="container">
+                <div class="pros__inner">
+                    <div class="pros__item">
+                        <div class="pros__icon">
+                            <img class="pros__img" src="images/icons/advantage_01.svg" alt="pros" loading="lazy">
+                        </div>
+                        <h5 class="pros__title">
+                            Интернет-магазин <br>
+                            фейерверков Пиротехникс
+                        </h5>
+                        <p class="pros__subtitle">
+                            Интернет магазин салютов и фейерверков в Нижнем Новгороде. Доставка пиротехники по Нижнему Новгороду,
+                            доставка по России
+                        </p>
+                    </div>
+                <div class="pros__item">
+                   <div class="pros__icon">
+                      <img class="pros__img" src="images/icons/advantage_02.svg" alt="pros" loading="lazy">
+                   </div>
+                   <h5 class="pros__title">
+                      Салюты и фейерверки <br>
+                      по недорогим ценам
+                   </h5>
+                   <p class="pros__subtitle">
+                      В интернет магазине можно купить пиротехнику по недорогим ценам. Стоимость фейерверков зависит от общей суммы закупки на
+                      сайте
+                   </p>
+                </div>
+                <div class="pros__item">
+                   <div class="pros__icon">
+                      <img class="pros__img" src="images/icons/advantage_03.svg" alt="pros" loading="lazy">
+                   </div>
+                   <h5 class="pros__title">
+                      Все виды <br>
+                      пиротехнических изделий
+                   </h5>
+                   <p class="pros__subtitle">
+                      Салюты, петарты, бенгальские огни, римские свечи, пиротехнические ракеты и фонтаны, цветной дым, летающие фейерверки,
+                      хлопушки
+                   </p>
+                </div>
+                <div class="pros__item">
+                   <div class="pros__icon">
+                      <img class="pros__img" src="images/icons/advantage_04.svg" alt="pros" loading="lazy">
+                   </div>
+                   <h5 class="pros__title">
+                      Онлайн магазин <br>
+                      пиротехники
+                   </h5>
+                   <p class="pros__subtitle">
+                      Продажа фейерверков онлайн на сайте. Заказывайте пиротехнику в интернет на официальном сайте круглосуточно 24/7
+                   </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Pros END -->
+
+        <!-- Filter START -->
+        <section class="filter">
+            <div class="container">
+                <div class="filter__inner">
+                    <h2 class="filter__title title">
+                        Мастер подбора фейерверков
+                    </h2>
+                    <div class="filter__body">
+                        <form class="filter__form" action="#">
+                            <div class="filter-type">
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Батареи салютов</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Бенгальские огни</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Летающие фейерверки</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Петарды</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Пневмохлопушки</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Ракеты</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Римские свечи</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Фестивальные шары</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Фонтаны</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Цветной дым</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Гирлянды</span>
+                                </label>
+                                <label class="filter__item">
+                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <span class="filter__item-txt">Еще 10 000 товаров</span>
+                                </label>
+                            </div>
+
+                            <div class="filter-wide">
+                                <div class="filter__skin filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Производитель
+                                    </h5>
+                                    <div class="filter__scroll">
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_01">
+                                            <label class="filter__scroll-label" for="fab_01">
+                                                Maxsem
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_02">
+                                            <label class="filter__scroll-label" for="fab_02">
+                                                Диво
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_03">
+                                            <label class="filter__scroll-label" for="fab_03">
+                                                Бум
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_04">
+                                            <label class="filter__scroll-label" for="fab_04">
+                                                Джокер
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_05">
+                                            <label class="filter__scroll-label" for="fab_05">
+                                                Галактика млечный путь
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_06">
+                                            <label class="filter__scroll-label" for="fab_06">
+                                                Maxsem
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_07">
+                                            <label class="filter__scroll-label" for="fab_07">
+                                                Диво
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_08">
+                                            <label class="filter__scroll-label" for="fab_08">
+                                                Бум
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_09">
+                                            <label class="filter__scroll-label" for="fab_09">
+                                                Джокер
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="fab_10">
+                                            <label class="filter__scroll-label" for="fab_10">
+                                                Галактика млечный путь
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__skin filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Количество залпов
+                                    </h5>
+                                    <div class="filter__scroll">
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_01">
+                                            <label class="filter__scroll-label" for="salvo_01">
+                                                7
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_02">
+                                            <label class="filter__scroll-label" for="salvo_02">
+                                                9
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_03">
+                                            <label class="filter__scroll-label" for="salvo_03">
+                                                10
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_04">
+                                            <label class="filter__scroll-label" for="salvo_04">
+                                                12
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_05">
+                                            <label class="filter__scroll-label" for="salvo_05">
+                                                13
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_06">
+                                            <label class="filter__scroll-label" for="salvo_06">
+                                                7
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_07">
+                                            <label class="filter__scroll-label" for="salvo_07">
+                                                9
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_08">
+                                            <label class="filter__scroll-label" for="salvo_08">
+                                                10
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_09">
+                                            <label class="filter__scroll-label" for="salvo_09">
+                                                12
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="salvo_10">
+                                            <label class="filter__scroll-label" for="salvo_10">
+                                                13
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__dist filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Цена
+                                    </h5>
+                                    <div class="filter__hole">
+                                        <input class="filter__input" type="text" name="price_from" value="0">
+                                        <input class="filter__input" type="text" name="price_till" value="1246">
+                                    </div>
+                                    <div class="filter__control">
+                                        <div class="filter__control-line"></div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__skin filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Статус
+                                    </h5>
+                                    <div class="filter__scroll">
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="status_01">
+                                            <label class="filter__scroll-label" for="status_01">
+                                                Лидер продаж
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="status_02">
+                                            <label class="filter__scroll-label" for="status_02">
+                                                Спецпредложение
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="status_03">
+                                            <label class="filter__scroll-label" for="status_03">
+                                                Новинка
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__skin filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Калибр, дюймы
+                                    </h5>
+                                    <div class="filter__scroll">
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="caliber_01">
+                                            <label class="filter__scroll-label" for="caliber_01">
+                                                0.2
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="caliber_02">
+                                            <label class="filter__scroll-label" for="caliber_02">
+                                                0.4
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="caliber_03">
+                                            <label class="filter__scroll-label" for="caliber_03">
+                                                0.6
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="caliber_04">
+                                            <label class="filter__scroll-label" for="caliber_04">
+                                                0.8
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="calibers_05">
+                                            <label class="filter__scroll-label" for="caliber_05">
+                                                1
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__dist filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Цена
+                                    </h5>
+                                    <div class="filter__hole">
+                                        <input class="filter__input" type="text" name="price_from" value="0">
+                                        <input class="filter__input" type="text" name="price_till" value="1246">
+                                    </div>
+                                    <div class="filter__control">
+                                        <div class="filter__control-line"></div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__dist filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        Цена
+                                    </h5>
+                                    <div class="filter__hole">
+                                        <input class="filter__input" type="text" name="price_from" value="0">
+                                        <input class="filter__input" type="text" name="price_till" value="1246">
+                                    </div>
+                                    <div class="filter__control">
+                                        <div class="filter__control-line"></div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__skin filter__line">
+                                    <h5 class="filter__line-tlt">
+                                        На какой праздник
+                                    </h5>
+                                    <div class="filter__scroll">
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="celebration_01">
+                                            <label class="filter__scroll-label" for="celebration_01">
+                                                На 23 февраля
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="celebration_02">
+                                            <label class="filter__scroll-label" for="celebration_02">
+                                                На 8 марта
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="celebration_03">
+                                            <label class="filter__scroll-label" for="celebration_03">
+                                                На 9 мая
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="celebration_04">
+                                            <label class="filter__scroll-label" for="celebration_04">
+                                                На выпускной
+                                            </label>
+                                        </div>
+                                        <div class="filter__scroll-item">
+                                            <input class="filter__scroll-input" type="checkbox" name="celebration_05">
+                                            <label class="filter__scroll-label" for="celebration_05">
+                                                На гендер пати
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="filter__actions">
+                                <button class="filter__btn btn">Подобрать</button>
+                                <label class="filter__reset-label">
+                                    <input class="filter__reset-input" type="reset">
+                                    <span class="filter__reset-span">Очистить все фильтры</span>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="filter__aside">
+                            <picture>
+                                <source type="image/webp" srcset="images/pics/webp/man-selection.webp">
+                                <img class="filter__img" src="images/pics/man-selection.jpg" width="433" height="700" loading="lazy" alt="filter" >
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Filter END -->
+
     </main>
 
     <footer class="footer">
@@ -413,7 +1224,7 @@
                                     <path d="M7.99929 8.09467C10.318 8.09467 12.2113 6.28267 12.2113 4.052C12.2113 1.812 10.318 0 7.99929 0C5.67995 0 3.78662 1.812 3.78662 4.052C3.78662 6.28267 5.67995 8.09467 7.99929 8.09467ZM7.99929 2.05267C9.13862 2.05267 10.068 2.94667 10.068 4.052C10.068 5.148 9.13862 6.042 7.99929 6.042C6.85995 6.042 5.93062 5.148 5.93062 4.052C5.92995 2.946 6.85929 2.05267 7.99929 2.05267Z" fill="#BDBDBD"/>
                                     </g>
                                     <defs>
-                                    <clipPath id="clip0_315_12721">
+                                    <clipPath>
                                     <rect width="16" height="16" fill="white"/>
                                     </clipPath>
                                     </defs>

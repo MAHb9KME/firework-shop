@@ -347,24 +347,63 @@ $(function(){
 		$('.search__main').focus()
     })
 
+
+
+
     // Скроллинг меню в хедере
-	$(document).on('click', '.nav-menu__scroll--right', function(){
+	$(document).on('click', '.common-arrow-right', function(){
 
-		$('.menu-wrapper__inner > ul').stop().animate({
-			scrollLeft: $('.menu-wrapper__inner > ul').scrollLeft() + 100
+		parent = $(this).parents('.common-move')
+		list = parent.find('.common-list')
+
+		list.stop().animate({
+			scrollLeft: list.scrollLeft() + 100
 		}, 100, "linear")
 
-		$('.nav-menu__scroll--left').addClass('nav-menu__scroll--active')
+		$('.common-arrow-left').addClass('common-arrow-left--active')
 
 	})
 
-	$(document).on('click', '.nav-menu__scroll--left', function(){
+	$(document).on('click', '.common-arrow-left', function(){
 
-		$('.menu-wrapper__inner > ul').stop().animate({
-			scrollLeft: $('.menu-wrapper__inner > ul').scrollLeft() - 100
+		list.stop().animate({
+			scrollLeft: list.scrollLeft() - 100
 		}, 100, "linear")
 
 	})
+
+
+	// Слайдер на главном экране
+	$('.slider').slick({
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		fade: true,
+  		arrows: false
+	});
+
+	// Слайдер товаров недели
+	$('.week .week__slider').slick({
+  		slidesToShow: 1,
+  		slidesToScroll: 1,
+  		infinite: false,
+  		arrows: true,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		prevArrow: '<div class="navigate__item"><div class="navigate__arrow"></div><div class="navigate__text">предыдущий</div></div>',
+		nextArrow: '<div class="navigate__item"><div class="navigate__text">следующий</div><div class="navigate__arrow"></div></div>',
+		appendArrows: $('.navigate')
+	});
+
+
+	// Слайдер на главном экране
+	$('.edge__list').slick({
+  		slidesToShow: 10,
+  		slidesToScroll: 1,
+  		infinite: false,
+  		arrows: false
+	});
 
 
 
