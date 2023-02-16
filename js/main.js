@@ -347,28 +347,63 @@ $(function(){
 		$('.search__main').focus()
     })
 
+    $('.common-move').each(function()
+    {
+    	scroll_line($(this), 0)	
+    })
+	
 
+    function scroll_line(c, s_l)
+    {
+    	var list = c.find('.common-list ul')
 
+    	if(parseInt(c.width()) > parseInt(list.width()))
+    	{
+    		c.removeClass('show_right')
+    		c.removeClass('show_left')
+
+    		return false;
+    	}
+    	else
+    	{
+    		if(s_l > 0)
+	    		c.addClass('show_left')
+	    	else
+				c.removeClass('show_left')
+
+			console.log(parseInt(list.width()) + " - " + s_l + " >= " + c.width())
+	    	if(parseInt(list.width()) - s_l  >= parseInt(c.width())) 
+				c.addClass('show_right')
+			else
+				c.removeClass('show_right')
+    	}
+    }
 
     // Скроллинг меню в хедере
 	$(document).on('click', '.common-arrow-right', function(){
 
 		parent = $(this).parents('.common-move')
 		list = parent.find('.common-list')
+		s_l = list.scrollLeft() + 100
 
 		list.stop().animate({
-			scrollLeft: list.scrollLeft() + 100
+			scrollLeft: s_l
 		}, 100, "linear")
 
-		$('.common-arrow-left').addClass('common-arrow-left--active')
+		scroll_line(parent, s_l)
+		//$('.common-arrow-left').addClass('common-arrow-left--active')
 
 	})
 
 	$(document).on('click', '.common-arrow-left', function(){
+		parent = $(this).parents('.common-move')
+		s_l = list.scrollLeft() - 100
 
 		list.stop().animate({
-			scrollLeft: list.scrollLeft() - 100
+			scrollLeft: s_l
 		}, 100, "linear")
+
+		scroll_line(parent, s_l)
 
 	})
 
@@ -405,6 +440,46 @@ $(function(){
   		arrows: false
 	});
 
+	// Запрет ввода букв в фильтр
+  	$(document).on('keypress', '.filter__input', function(e)
+    {
+        if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+            return false
+    })
+
+    // Выпадающий список
+    $(document).on('click', '.droplist__focus', function(){
+		parent = $(this).parents('.droplist')
+		menu = parent.find('.droplist__box')
+
+		if(parent.hasClass('droplist--active'))
+		{
+			parent.removeClass('droplist--active')
+		}
+		else
+		{
+			parent.addClass('droplist--active')
+		}
+	})
+
+	$(document).on('click', '.droplist__item', function(){
+		text = $(this).text()
+		$(this).parents('.droplist').find('.droplist-name').val(text)
+
+		$('.droplist').removeClass('droplist--active')
+	})
+
+	$(document).on('click', '.reset-label', function(){
+		$('.droplist').removeClass('droplist--active')
+	})
+
+	$(document).click(function (e) {
+	    var div = $(".droplist"); // тут указываем class элемента
+		if (!div.is(e.target) && div.has(e.target).length === 0) 
+		{
+			div.removeClass('droplist--active')
+		}
+	});
 
 
 })
