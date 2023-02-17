@@ -347,66 +347,69 @@ $(function(){
 		$('.search__main').focus()
     })
 
-    $('.common-move').each(function()
+
+    // Common scroll
+
+    // functions for action
+    $('.scroll').each(function()
     {
-    	scroll_line($(this), 0)	
+    	scroll_line($(this))
+    })
+
+    $('.scroll__container').scroll(function()
+    {
+    	scroll_line($(this).parents('.scroll'))
     })
 	
-
-    function scroll_line(c, s_l)
+    // moving
+    function scroll_line(c)
     {
-    	var list = c.find('.common-list ul')
+    	var s = c.find('.scroll__container')
+    		a_l = '<div class="scroll__left"></div>',
+    		a_r = '<div class="scroll__right"></div>'
 
-    	if(parseInt(c.width()) > parseInt(list.width()))
+    	if(parseInt(s.width()) >= parseInt(s[0].scrollWidth))
     	{
-    		c.removeClass('show_right')
-    		c.removeClass('show_left')
+    		c.find('.scroll__left, .arrow_scroll__right').remove()
 
     		return false;
     	}
-    	else
-    	{
-    		if(s_l > 0)
-	    		c.addClass('show_left')
-	    	else
-				c.removeClass('show_left')
+    	
+    	var s_l = s.scrollLeft()
 
-			console.log(parseInt(list.width()) + " - " + s_l + " >= " + c.width())
-	    	if(parseInt(list.width()) - s_l  >= parseInt(c.width())) 
-				c.addClass('show_right')
-			else
-				c.removeClass('show_right')
+		if(s_l > 0)
+		{
+			if(c.find('.scroll__left').length == 0)
+    			c.prepend(a_l)
+		}
+    	else
+			c.find('.scroll__left').remove()
+
+ 		if(parseInt(s[0].scrollWidth) - s_l  > parseInt(s.width())) 
+    	{
+			if(c.find('.scroll__right').length == 0)
+    			c.append(a_r)
     	}
+		else
+			c.find('.scroll__right').remove()
     }
 
-    // Скроллинг меню в хедере
-	$(document).on('click', '.common-arrow-right', function(){
+    // click on arrows
+	$(document).on('click', '.scroll__right, .scroll__left', function(){
 
-		parent = $(this).parents('.common-move')
-		list = parent.find('.common-list')
-		s_l = list.scrollLeft() + 100
+		var c = $(this).parents('.scroll'),
+			s = c.find('.scroll__container'),
+			st = c.data('step') == undefined
+				? 100
+				: parseInt(c.data('step')),
+			s_l = $(this).hasClass('scroll__right')
+				? s.scrollLeft() + st
+				: s.scrollLeft() - st
 
-		list.stop().animate({
+		s.stop().animate({
 			scrollLeft: s_l
-		}, 100, "linear")
-
-		scroll_line(parent, s_l)
-		//$('.common-arrow-left').addClass('common-arrow-left--active')
-
+		}, 100)
 	})
-
-	$(document).on('click', '.common-arrow-left', function(){
-		parent = $(this).parents('.common-move')
-		s_l = list.scrollLeft() - 100
-
-		list.stop().animate({
-			scrollLeft: s_l
-		}, 100, "linear")
-
-		scroll_line(parent, s_l)
-
-	})
-
 
 	// Слайдер на главном экране
 	$('.slider').slick({
@@ -479,6 +482,23 @@ $(function(){
 		{
 			div.removeClass('droplist--active')
 		}
+	});
+
+	// Слайдер в адаптиве для производителей
+	$('.makers__body').slick({
+  		responsive: [
+		{
+		    breakpoint: 8192,
+		    settings: "unslick"
+		},
+		{
+		    breakpoint: 576,
+		    settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true
+			}
+		}]
 	});
 
 
