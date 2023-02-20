@@ -91,11 +91,11 @@
                         </button>
 
                         <!-- Универсальная форма START -->
-                        <form class="search" action="#">
-                            <input class="search__main" type="text" name="Поиск в верхнем меню" value="">
+                        <form class="search search--header" action="#">
+                            <input class="search__main" type="text" name="Поиск в верхнем меню" value="" placeholder="Начните искать">
                             <div class="search__plug">
                                 <div class="search__plug-text">
-                                    Начните искать, например
+                                    <span>Начните искать</span>, например
                                 </div>
                                 <div class="search__plug-link">Батареи салютов </div>
                             </div>
@@ -114,7 +114,7 @@
 
                     </div>
 
-                    <div class="boxpanel">
+                    <div class="boxpanel boxpanel--header">
                         <a class="boxpanel__link" href="#">
                             <span class="boxpanel__icon">
                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -182,9 +182,9 @@
         <div class="header-menu">
             <nav class="nav-menu">
                 <div class="container">
-                    <div class="buttonMenu">
+                    <button class="buttonMenu">
                         <span></span>
-                    </div>
+                    </button>
                     <div class="menu-container">
                         <span class="menu-container__close"></span>
                         <div class="menu-wrapper">
@@ -262,12 +262,12 @@
                                          <p>Акция пиротехника в подарок (бенгальские огни и/или хлопушки) действует бессрочно, для всех покупателей за оставленный отзыв из нескольких предложений.</p>
                                      </div>
                                      <div class="slider__arrows">
-                                         <div class="slider__arrow slider__arrow--left" onclick="jQuery('.slider').slick('slickPrev')">
+                                         <div class="slider__arrow slider-arrow--left">
                                              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
                                             </svg>
                                          </div>
-                                         <div class="slider__arrow slider__arrow--right" onclick="jQuery('.slider').slick('slickNext')">
+                                         <div class="slider__arrow slider-arrow--right">
                                             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
                                             </svg>
@@ -290,12 +290,12 @@
                                          <p>Акция пиротехника в подарок (бенгальские огни и/или хлопушки) действует бессрочно, для всех покупателей за оставленный отзыв из нескольких предложений.</p>
                                      </div>
                                      <div class="slider__arrows">
-                                         <div class="slider__arrow slider__arrow--left" onclick="jQuery('.slider').slick('slickPrev')">
+                                         <div class="slider__arrow slider-arrow--left">
                                              <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
                                             </svg>
                                          </div>
-                                         <div class="slider__arrow slider__arrow--right" onclick="jQuery('.slider').slick('slickNext')">
+                                         <div class="slider__arrow slider-arrow--right">
                                             <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.71738 6.09258L0.592377 10.2176L1.77071 11.3959L7.07404 6.09258L1.77071 0.789246L0.592377 1.96758L4.71738 6.09258Z" fill="#731B55"/>
                                             </svg>
@@ -308,7 +308,7 @@
                             <h3 class="week__title">
                                 Товары недели
                             </h3>
-                            <div class="timer">
+                            <div class="timer week-timer">
                                 <div class="timer__tlt">
                                     До смены
                                 </div>
@@ -318,6 +318,169 @@
                             </div>
 
                             <div class="week__slider">
+                                <div class="product product-week">
+                                    <div class="eventsline scroll" data-step="20">
+                                        <div class="scroll__container">
+                                            <div class="eventsline__inner scroll__list">
+                                                <a class="eventsline__item" href="#">
+                                                    На новый год
+                                                </a>
+                                                <a class="eventsline__item" href="#">
+                                                    На 9 мая
+                                                </a>
+                                                <a class="eventsline__item" href="#">
+                                                    На 23 февраля
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product product-week">
+                                    <div class="eventsline"> 
+                                        <div class="eventsline scroll" data-step="20">
+                                            <div class="scroll__container">
+                                                <div class="eventsline__inner scroll__list">
+                                                    <a class="eventsline__item" href="#">
+                                                        На новый год
+                                                    </a>
+                                                    <a class="eventsline__item" href="#">
+                                                        На 9 мая
+                                                    </a>
+                                                    <a class="eventsline__item" href="#">
+                                                        На 23 февраля
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product product-week">
+                                    <div class="eventsline">
+                                        <div class="eventsline scroll" data-step="20">
+                                            <div class="scroll__container">
+                                                <div class="eventsline__inner scroll__list">
+                                                    <a class="eventsline__item" href="#">
+                                                        На новый год
+                                                    </a>
+                                                    <a class="eventsline__item" href="#">
+                                                        На 9 мая
+                                                    </a>
+                                                    <a class="eventsline__item" href="#">
+                                                        На 23 февраля
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="product__image" href="#">
+                                        <picture>
+                                            <source type="image/webp" srcset="images/pics/webp/product_01.webp">
+                                            <img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product" >
+                                        </picture>
+                                    </a>
+
+                                    <div class="xpanel">
+                                        <a class="xvideo" href="#" data-fancybox >
+                                            <span class="xvideo__icon"></span>
+                                            <span class="xvideo__text">видео</span> 
+                                        </a>
+                                        <div class="xtouch">
+                                            <button class="xtouch__item xtouch__item--compare"></button>
+                                            <button class="xtouch__item xtouch__item--favorite"></button>
+                                        </div>
+                                    </div>
+
+                                    <h5 class="product__title">
+                                        <a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11 залпов, Balet, GW218-89</a>
+                                    </h5>
+
+                                    <div class="product__prices">
+                                        <div class="prices">
+                                            <div class="prices__item prices__item--new">
+                                                542 руб
+                                            </div>
+                                            <div class="prices__item prices__item--old">
+                                                674 руб
+                                            </div>
+                                        </div>
+                                        <a class="product__prices-show" href="#">
+                                            показать оптовые цены
+                                        </a>
+                                    </div>
+                                </div>
                                 <div class="product product-week">
                                     <div class="eventsline scroll" data-step="20">
                                         <div class="scroll__container">
@@ -623,12 +786,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="edge__arrow edge__arrow--left" onclick="jQuery('.edge__list').slick('slickPrev')">
+                        <div class="edge__arrow edge-arrow--left">
                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.6075 4.37504L4.255 1.02254L5.13875 0.138794L10 5.00004L5.13875 9.86129L4.255 8.97754L7.6075 5.62504L0 5.62504L0 4.37504L7.6075 4.37504Z" fill="#731B55"/>
                             </svg>
                         </div>
-                        <div class="edge__arrow edge__arrow--right" onclick="jQuery('.edge__list').slick('slickNext')">
+                        <div class="edge__arrow edge-arrow--right">
                             <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.6075 4.37504L4.255 1.02254L5.13875 0.138794L10 5.00004L5.13875 9.86129L4.255 8.97754L7.6075 5.62504L0 5.62504L0 4.37504L7.6075 4.37504Z" fill="#731B55"/>
                             </svg>
@@ -639,7 +802,7 @@
         </section>
 
         <!-- Pros START -->
-        <section class="pros distance-tune">
+        <div class="pros distance-tune">
             <div class="container">
                 <div class="pros__inner">
                     <div class="pros__item">
@@ -695,7 +858,7 @@
                 </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- Pros END -->
 
         <!-- Filter START -->
@@ -2469,7 +2632,7 @@
                         </a>
                     </div>
                     <div class="reviews__body">
-                        <div class="reviews__writem">
+                        <article class="reviews__writem">
                             <div class="reviews__item">
                                 <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
                                 <div class="reviews__image">
@@ -2498,8 +2661,8 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="reviews__writem">
+                        </article>
+                        <article class="reviews__writem">
                             <div class="reviews__item">
                                 <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
                                 <div class="reviews__image">
@@ -2528,8 +2691,8 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="reviews__writem">
+                        </article>
+                        <article class="reviews__writem">
                             <div class="reviews__item">
                                 <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
                                 <div class="reviews__image">
@@ -2558,8 +2721,8 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="reviews__writem">
+                        </article>
+                        <article class="reviews__writem">
                             <div class="reviews__item">
                                 <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
                                 <div class="reviews__image">
@@ -2588,10 +2751,70 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
+                        </article>
+                        <article class="reviews__writem">
+                            <div class="reviews__item">
+                                <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
+                                <div class="reviews__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/client_03.webp">
+                                        <img class="reviews__img" src="images/pics/client_03.jpg" width="120" height="121" loading="lazy" alt="picture" >
+                                    </picture>
+                                </div>
+                                <h6 class="reviews__item-tlt">
+                                    Алексей Килимник
+                                </h6>
+                                <div class="reviews__item-text">
+                                    Все, что заказал - получил. Хороший поставщик. Быстрая доставка, все пришло в целости. Слегка был помят один ящик, но не критично. Это уже к транспортникам.
+                                </div>
+                                <a class="reviews__link pass" href="#">
+                                    <span class="pass__span">Читать полностью</span>
+                                    <svg width="14" height="15" viewBox="0 0 14 15">
+                                        <g>
+                                            <path d="M8.20217 7.06682L5.31467 9.95433L6.1395 10.7792L9.85183 7.06682L6.1395 3.35449L5.31467 4.17933L8.20217 7.06682Z" fill="#731B55"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath>
+                                            <rect width="14" height="14"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                        <article class="reviews__writem">
+                            <div class="reviews__item">
+                                <a class="reviews__vk" href="#" target="_blank" rel="nofollow"></a>
+                                <div class="reviews__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/client_04.webp">
+                                        <img class="reviews__img" src="images/pics/client_04.jpg" width="120" height="121" loading="lazy" alt="picture" >
+                                    </picture>
+                                </div>
+                                <h6 class="reviews__item-tlt">
+                                    Сергей Скоков
+                                </h6>
+                                <div class="reviews__item-text">
+                                    Устроили фееричный салют благодаря вам на майские праздники. Спасибо.
+                                </div>
+                                <a class="reviews__link pass" href="#">
+                                    <span class="pass__span">Читать полностью</span>
+                                    <svg width="14" height="15" viewBox="0 0 14 15">
+                                        <g>
+                                            <path d="M8.20217 7.06682L5.31467 9.95433L6.1395 10.7792L9.85183 7.06682L6.1395 3.35449L5.31467 4.17933L8.20217 7.06682Z" fill="#731B55"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath>
+                                            <rect width="14" height="14"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
                     </div>
                     <div class="reviews__nav nav-panel">
-                        <button class="nav-panel__item">
+                        <button class="nav-panel__item reviews-arrow--left">
                             <span class="nav-panel__button nav-panel__prev">
                                 Назад
                             </span>
@@ -2599,7 +2822,7 @@
                         <a class="nav-panel__item" href="#">
                             <span class="nav-panel__link">Смотреть все отзывы</span>
                         </a>
-                        <button class="nav-panel__item">
+                        <button class="nav-panel__item reviews-arrow--right">
                             <span class="nav-panel__button nav-panel__next">
                                 Далее
                             </span>
@@ -2636,7 +2859,7 @@
                     </div>
                     <div class="news__tab-body tab-body">
                         <div class="tab-body__content news-box" id="sale">
-                            <div class="news-box__item">
+                            <article class="news-box__item">
                                 <div class="news-box__date">
                                     02 января 2022
                                 </div>
@@ -2658,8 +2881,8 @@
                                         </defs>
                                     </svg>
                                 </a>
-                            </div>
-                            <div class="news-box__item">
+                            </article>
+                            <article class="news-box__item">
                                 <div class="news-box__date">
                                     02 января 2022
                                 </div>
@@ -2681,8 +2904,8 @@
                                         </defs>
                                     </svg>
                                 </a>
-                            </div>
-                            <div class="news-box__item">
+                            </article>
+                            <article class="news-box__item">
                                 <div class="news-box__date">
                                     02 января 2022
                                 </div>
@@ -2704,14 +2927,14 @@
                                         </defs>
                                     </svg>
                                 </a>
-                            </div>
-                            <div class="news-box__item">
+                            </article>
+                            <article class="news-box__item">
                                 <div class="news-box__date">
                                     02 января 2022
                                 </div>
                                 <h6 class="news-box__tlt">
                                     <a class="news-box__tlt-link" href="#">
-                                        Черная пятница до Нового года
+                                        Черная пятница до Нового года 
                                     </a>
                                 </h6>
                                 <a class="news-box__link pass" href="#">
@@ -2727,7 +2950,7 @@
                                         </defs>
                                     </svg>
                                 </a>
-                            </div>
+                            </article>
                         </div>
                     </div>
                 </div>
@@ -3315,6 +3538,116 @@
             </div>
         </section>
         <!-- Offers END -->
+
+        <!-- Certificates START -->
+        <section class="certificates distance-tune">
+            <div class="container">
+                <div class="certificates__inner">
+                    <h2 class="certificates__title title">
+                        Сертификаты
+                    </h2>
+                    <div class="certificates__body certificate">
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div> 
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="certificate__writem">
+                            <a class="certificate__item" href="#" data-fancybox>
+                                <span class="certificate__image">
+                                    <picture>
+                                        <source type="image/webp" srcset="images/pics/webp/sertificat_max_01.webp">
+                                        <img class="certificate__img" src="images/pics/sertificat_max_01.jpg" width="182" height="528" loading="lazy" alt="certificate" >
+                                    </picture>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="certificates__nav nav-panel">
+                        <button class="nav-panel__item certificates--prev">
+                            <span class="nav-panel__button nav-panel__prev">
+                                Назад
+                            </span>
+                        </button>
+                        <a class="nav-panel__item" href="#">
+                            <span class="nav-panel__link">Все сертификаты</span>
+                        </a>
+                        <button class="nav-panel__item certificates--next">
+                            <span class="nav-panel__button nav-panel__next">
+                                Далее
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Certificates END -->
 
         <!-- Watched START -->
         <section class="watched distance-tune">

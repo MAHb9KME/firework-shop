@@ -4,10 +4,10 @@ function getRandom(min, max) {
 	var rand = Math.floor(Math.random() * (max - min + 1)) + min;
 	return Math.floor(rand/min)*min;  
 }
-	
-	
+
+
 // Функция склонения слов после чисел
-	
+
 function declOfNum(number, titles) {  
 	cases = [2, 0, 1, 1, 1, 2];  
 	return titles[ (number%100>4 && number%100<20)? 2 : cases[(number%10<5)?number%10:5] ];  
@@ -17,11 +17,11 @@ function declOfNum(number, titles) {
 function tpaneScroll()
 {
 	var $scrollTop = parseInt(jQuery(window).scrollTop()),
-		$scrollPane = jQuery('body'),
-		h = jQuery('.header-contact').outerHeight(),
-		tot_h = jQuery('.header-fix').outerHeight(),
-		w = parseInt(jQuery(window).width())
-		
+	$scrollPane = jQuery('body'),
+	h = jQuery('.header-contact').outerHeight(),
+	tot_h = jQuery('.header-fix').outerHeight(),
+	w = parseInt(jQuery(window).width())
+
 	if($scrollTop > h)
 	{
 		if(!$scrollPane.hasClass('fix'))
@@ -72,7 +72,7 @@ $(function(){
 		'touch'				: false
 	})
 
-    jQuery('.gallery-icon a').fancybox(
+	jQuery('.gallery-icon a').fancybox(
 	{
 		'overlayShow': true, 
 		'hideOnContentClick': true, 
@@ -146,27 +146,27 @@ $(function(){
 	// Активируем слайдер
 
 	$('.xs_slider').slick({
-  		slidesToShow: 3,
-  		slidesToScroll: 1,
+		slidesToShow: 3,
+		slidesToScroll: 1,
 		arrows: false,
 		infinite: false,
 		touchMove: false,
 		swipeToSlide: false,
 		touchThreshold: false,
 		swipe: false,
-  		responsive: [
+		responsive: [
 		{
-		    breakpoint: 900,
-		    settings: {
+			breakpoint: 900,
+			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 1
 			}
 		},
 		{
-		    breakpoint: 600,
-		    settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
 			}
 		}]
 	});
@@ -177,11 +177,11 @@ $(function(){
 	$('a[href="#xs_recall"]').click(function()
 	{
 		var t = $(this).data('theme'),
-			b = $(this).data('button'),
-            d = $(this).data("description"),
-			y = $(this).data('yandexid'),
-			g = $(this).data('googleid')
-			
+		b = $(this).data('button'),
+		d = $(this).data("description"),
+		y = $(this).data('yandexid'),
+		g = $(this).data('googleid')
+
 		$('#xs_recall input[type=submit]').val(b)
 		$('#xs_recall input[name=xs_theme]').val(t)
 		$("#xs_recall .description").text(d)
@@ -208,8 +208,8 @@ $(function(){
 		e.preventDefault()
 		
 		var f = $(this),
-			yandexid = f.data('yandexid'),
-			googleid = $(this).data('googleid')
+		yandexid = f.data('yandexid'),
+		googleid = $(this).data('googleid')
 		
 		f.addClass('xs_load')
 		
@@ -246,16 +246,16 @@ $(function(){
 	{
 		$('header nav ul li.menu-item-has-children > a').click(function(){
 			
-		
-		 	$(this).toggleClass('rotate');
 
-	        var menu = $(this).next(); 
-	        if( $(menu).is(':visible')){
-	            $(menu).slideUp(400);
-	        }
-	        else{
-	            $(menu).slideDown(400);
-	        }
+			$(this).toggleClass('rotate');
+
+			var menu = $(this).next(); 
+			if( $(menu).is(':visible')){
+				$(menu).slideUp(400);
+			}
+			else{
+				$(menu).slideDown(400);
+			}
 			
 			return false;
 			
@@ -264,7 +264,7 @@ $(function(){
 
 
 	// Прикрепление фото к форме
-    $(document).on('change', '.work__upload-input', function(){
+	$(document).on('change', '.work__upload-input', function(){
 		if(jQuery(this).val() != '') 
 		{
 			jQuery(this).parents('.work__upload').find('.work__upload-text').html('Фото прикреплено')
@@ -273,65 +273,69 @@ $(function(){
 		{
 			jQuery(this).next('.attache').removeClass('hover').text('Прикрепите фото персонажа')
 		}
-    })
+	})
 
 
 
     // Проверяем, можно ли использовать Webp формат
 	function canUseWebp() {
 	    // Создаем элемент canvas
-	    let elem = document.createElement('canvas');
+		let elem = document.createElement('canvas');
 	    // Приводим элемент к булеву типу
-	    if (!!(elem.getContext && elem.getContext('2d'))) {
+		if (!!(elem.getContext && elem.getContext('2d'))) {
 	        // Создаем изображение в формате webp, возвращаем индекс искомого элемента и сразу же проверяем его
-	        return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
-	    }
+			return elem.toDataURL('image/webp').indexOf('data:image/webp') == 0;
+		}
 	    // Иначе Webp не используем
-	    return false;
+		return false;
 	}
 
 	window.onload = function () {
     // Получаем все элементы с дата-атрибутом data-bg
-    let images = document.querySelectorAll('[data-bg]');
+		let images = document.querySelectorAll('[data-bg]');
     // Проходимся по каждому
-    for (let i = 0; i < images.length; i++) {
+		for (let i = 0; i < images.length; i++) {
         // Получаем значение каждого дата-атрибута
-        let image = images[i].getAttribute('data-bg');
+			let image = images[i].getAttribute('data-bg');
         // Каждому найденному элементу задаем свойство background-image с изображение формата jpg
-        images[i].style.backgroundImage = 'url(' + image + ')';
-    }
+			images[i].style.backgroundImage = 'url(' + image + ')';
+		}
 
     // Проверяем, является ли браузер посетителя сайта Firefox и получаем его версию
-    let isitFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
-    let firefoxVer = isitFirefox ? parseInt(isitFirefox[1]) : 0;
+		let isitFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
+		let firefoxVer = isitFirefox ? parseInt(isitFirefox[1]) : 0;
 
     // Если есть поддержка Webp или браузер Firefox версии больше или равно 65
-    if (canUseWebp() || firefoxVer >= 65) {
+		if (canUseWebp() || firefoxVer >= 65) {
         // Делаем все то же самое что и для jpg, но уже для изображений формата Webp
-        let imagesWebp = document.querySelectorAll('[data-bg-webp]');
-        for (let i = 0; i < imagesWebp.length; i++) {
-            let imageWebp = imagesWebp[i].getAttribute('data-bg-webp');
-            imagesWebp[i].style.backgroundImage = 'url(' + imageWebp + ')';
-        }
-    }
-};
+			let imagesWebp = document.querySelectorAll('[data-bg-webp]');
+			for (let i = 0; i < imagesWebp.length; i++) {
+				let imageWebp = imagesWebp[i].getAttribute('data-bg-webp');
+				imagesWebp[i].style.backgroundImage = 'url(' + imageWebp + ')';
+			}
+		}
+	};
+
+
+
+
 
 
 	// Поиск автозаполнение очистка
 	$(document).on('click', '.search__plug-text, .search__main', function(){
 		$('.search__plug').addClass('hide')
 		$('.search__main').focus()
-    })
+	})
 
-    $(document).click(function(event)
+	$(document).click(function(event)
 	{
 		if( $('.search__main').val() == "" )
 		{
 			if
-			(
-				$(event.target).closest(".search__main").length ||
-			 	$(event.target).closest(".search").length 
-		 	) 
+				(
+					$(event.target).closest(".search__main").length ||
+					$(event.target).closest(".search").length 
+					) 
 			return;
 
 			$('.search__plug').removeClass('hide')
@@ -340,118 +344,193 @@ $(function(){
 	})
 
     // Поиск автозаполение внесение данных
-    $(document).on('click', '.search__plug-link', function(){
+	$(document).on('click', '.search__plug-link', function(){
 		$('.search__plug').addClass('hide')
 		text = $(this).text()
 		$('.search__main').val(text)
 		$('.search__main').focus()
-    })
+	})
 
 
     // Common scroll
 
     // functions for action
-    $('.scroll').each(function()
-    {
-    	scroll_line($(this))
-    })
+	$('.scroll').each(function()
+	{
+		scroll_line($(this))
+	})
 
-    $('.scroll__container').scroll(function()
-    {
-    	scroll_line($(this).parents('.scroll'))
-    })
+	$('.scroll__container').scroll(function()
+	{
+		scroll_line($(this).parents('.scroll'))
+	})
 	
     // moving
-    function scroll_line(c)
-    {
-    	var s = c.find('.scroll__container')
-    		a_l = '<div class="scroll__left"></div>',
-    		a_r = '<div class="scroll__right"></div>'
+	function scroll_line(c)
+	{
+		var s = c.find('.scroll__container')
+		a_l = '<div class="scroll__left"></div>',
+		a_r = '<div class="scroll__right"></div>'
 
-    	if(parseInt(s.width()) >= parseInt(s[0].scrollWidth))
-    	{
-    		c.find('.scroll__left, .arrow_scroll__right').remove()
+		if(parseInt(s.width()) >= parseInt(s[0].scrollWidth))
+		{
+			c.find('.scroll__left, .arrow_scroll__right').remove()
 
-    		return false;
-    	}
-    	
-    	var s_l = s.scrollLeft()
+			return false;
+		}
+
+		var s_l = s.scrollLeft()
 
 		if(s_l > 0)
 		{
 			if(c.find('.scroll__left').length == 0)
-    			c.prepend(a_l)
+				c.prepend(a_l)
 		}
-    	else
+		else
 			c.find('.scroll__left').remove()
 
- 		if(parseInt(s[0].scrollWidth) - s_l  > parseInt(s.width())) 
-    	{
+		if(parseInt(s[0].scrollWidth) - s_l  > parseInt(s.width())) 
+		{
 			if(c.find('.scroll__right').length == 0)
-    			c.append(a_r)
-    	}
+				c.append(a_r)
+		}
 		else
 			c.find('.scroll__right').remove()
-    }
+	}
 
     // click on arrows
 	$(document).on('click', '.scroll__right, .scroll__left', function(){
 
 		var c = $(this).parents('.scroll'),
-			s = c.find('.scroll__container'),
-			st = c.data('step') == undefined
-				? 100
-				: parseInt(c.data('step')),
-			s_l = $(this).hasClass('scroll__right')
-				? s.scrollLeft() + st
-				: s.scrollLeft() - st
+		s = c.find('.scroll__container'),
+		st = c.data('step') == undefined
+		? 100
+		: parseInt(c.data('step')),
+		s_l = $(this).hasClass('scroll__right')
+		? s.scrollLeft() + st
+		: s.scrollLeft() - st
 
 		s.stop().animate({
 			scrollLeft: s_l
 		}, 100)
 	})
 
+
+
 	// Слайдер на главном экране
 	$('.slider').slick({
-  		slidesToShow: 1,
-  		slidesToScroll: 1,
-  		fade: true,
-  		arrows: false
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1, 
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true
+			}
+		}]
 	});
+
+	$(document).on('click', '.slider-arrow--left', function(){
+		$('.slider').slick('slickPrev')
+	})
+
+	$(document).on('click', '.slider-arrow--right', function(){
+		$('.slider').slick('slickNext')
+	})
+
 
 	// Слайдер товаров недели
 	$('.week .week__slider').slick({
-  		slidesToShow: 1,
-  		slidesToScroll: 1,
-  		infinite: false,
-  		arrows: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: false,
+		arrows: true,
 		touchMove: false,
 		swipeToSlide: false,
 		touchThreshold: false,
 		swipe: false,
 		prevArrow: '<div class="navigate__item"><div class="navigate__arrow"></div><div class="navigate__text">предыдущий</div></div>',
 		nextArrow: '<div class="navigate__item"><div class="navigate__text">следующий</div><div class="navigate__arrow"></div></div>',
-		appendArrows: $('.navigate')
+		appendArrows: $('.navigate'),
+		responsive: [
+		{
+			breakpoint: 993,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+			}
+		},
+		{
+			breakpoint: 755,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+			}
+		}]
 	});
 
 
 	// Слайдер на главном экране
 	$('.edge__list').slick({
-  		slidesToShow: 10,
-  		slidesToScroll: 1,
-  		infinite: false,
-  		arrows: false
+		slidesToShow: 10,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false
 	});
 
+	$(document).on('click', '.edge-arrow--left', function(){
+		$('.edge__list').slick('slickPrev')
+	})
+
+	$(document).on('click', '.edge-arrow--right', function(){
+		$('.edge__list').slick('slickNext')
+	})
+
+
 	// Запрет ввода букв в фильтр
-  	$(document).on('keypress', '.filter__input', function(e)
-    {
-        if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
-            return false
-    })
+	$(document).on('keypress', '.filter__input', function(e)
+	{
+		if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+			return false
+	})
 
     // Выпадающий список
-    $(document).on('click', '.droplist__focus', function(){
+	$(document).on('click', '.droplist__focus', function(){
 		parent = $(this).parents('.droplist')
 		menu = parent.find('.droplist__box')
 
@@ -478,22 +557,22 @@ $(function(){
 
 	$(document).click(function (e) {
 	    var div = $(".droplist"); // тут указываем class элемента
-		if (!div.is(e.target) && div.has(e.target).length === 0) 
-		{
-			div.removeClass('droplist--active')
-		}
+	    if (!div.is(e.target) && div.has(e.target).length === 0) 
+	    {
+	    	div.removeClass('droplist--active')
+	    }
 	});
 
 	// Слайдер в адаптиве для производителей
 	$('.makers__body').slick({
-  		responsive: [
+		responsive: [
 		{
-		    breakpoint: 8192,
-		    settings: "unslick"
+			breakpoint: 8192,
+			settings: "unslick"
 		},
 		{
-		    breakpoint: 576,
-		    settings: {
+			breakpoint: 576,
+			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				arrows: true
@@ -501,6 +580,47 @@ $(function(){
 		}]
 	});
 
+	// Слайдер отзывы
+	$('.reviews__body').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false
+	});
+
+	$(document).on('click', '.reviews-arrow--left', function(){
+		$('.reviews__body').slick('slickPrev')
+	})
+
+	$(document).on('click', '.reviews-arrow--right', function(){
+		$('.reviews__body').slick('slickNext')
+	})
+
+
+	// Слайдер сертификаты
+	$('.certificates__body').slick({
+		slidesToShow: 6,
+		slidesToScroll: 2,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false
+	});
+
+	$(document).on('click', '.certificates--prev', function(){
+		$('.certificates__body').slick('slickPrev')
+	})
+
+	$(document).on('click', '.certificates--next', function(){
+		$('.certificates__body').slick('slickNext')
+	})
+
 
 })
-	
+
