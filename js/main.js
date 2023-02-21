@@ -495,7 +495,11 @@ $(function(){
 				touchMove: true,
 				swipeToSlide: true,
 				touchThreshold: true,
+				draggble: true,
 				swipe: true,
+				prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+				nextArrow: '<button type="button" class="slick-next">Next</button>',
+				appendArrows: $('.week .week__slider'),
 			}
 		}]
 	});
@@ -575,6 +579,7 @@ $(function(){
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
+				draggble: true,
 				arrows: true
 			}
 		}]
@@ -621,6 +626,79 @@ $(function(){
 		$('.certificates__body').slick('slickNext')
 	})
 
+
+	// Подмена placeholder в поиске хедер
+	if( $(document).width() <= 576)
+	{
+		$('.search__main').attr("placeholder", "Поиск");
+	}
+
+	// Футер раскрытие меню
+ 	$(document).on('click', '.footer__nav-pointer', function(){
+
+        var parent = $(this).parents('.footer__nav-item');
+        var menu = parent.find('.footer__ul')
+
+
+        $('.footer__nav-pointer').removeClass('active')
+
+        if( $(menu).is(':visible')){
+            $(menu).slideUp(400)
+            $(parent).removeClass('active')
+        }
+        else
+        {
+            $('.faq-content .line .answer').slideUp(400)
+            $(menu).slideDown(400)
+            $(parent).addClass('active')
+        }
+
+    })
+
+	 // Слайдер для больших блоков преимуществ 
+	 $('.pros__inner').slick({
+		responsive: [
+		{
+			breakpoint: 8192,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				draggble: true,
+				arrows: true
+			}
+		}]
+	});
+
+	// Раскрытие фильтра в адаптиве
+	$(document).on('click', '.filter-mobilebtn', function(){
+		parent = $(this).parents('.filter__form')
+		menu = parent.find('.filter-type')
+
+		if( $(menu).is(':visible')){
+            $(menu).slideUp(200)
+            $(parent).removeClass('filter__form--active')
+        }
+        else
+        {
+            $('.faq-content .line .answer').slideUp(200)
+            $(menu).slideDown(200)
+            $(parent).addClass('filter__form--active')
+        }
+	})
+
+	$(document).on('click', '.filter__item', function(){
+		parent = $(this).parents('.filter__form')
+		menu = parent.find('.filter-type')
+		text = $(this).find('input').val()
+		parent.find('.filter-mobilebtn span').text(text)
+
+		$(menu).slideUp(200)
+        $(parent).addClass('filter__form--active')
+	})
 
 })
 

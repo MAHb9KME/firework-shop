@@ -99,7 +99,7 @@
                                 </div>
                                 <div class="search__plug-link">Батареи салютов </div>
                             </div>
-                            <button class="search__submit">
+                            <button class="search__submit" type="submit">
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8.80624 7.74575C9.39674 6.93936 9.74996 5.94886 9.74996 4.87508C9.74996 2.1871 7.56294 9.15527e-05 4.87497 9.15527e-05C2.18699 9.15527e-05 0 2.1871 0 4.87508C0 7.56306 2.18701 9.75007 4.87499 9.75007C5.94877 9.75007 6.93936 9.39681 7.74575 8.80631L10.9395 12L12 10.9395C12 10.9395 8.80624 7.74575 8.80624 7.74575ZM4.87499 8.25006C3.01391 8.25006 1.50001 6.73616 1.50001 4.87508C1.50001 3.014 3.01391 1.5001 4.87499 1.5001C6.73607 1.5001 8.24997 3.014 8.24997 4.87508C8.24997 6.73616 6.73605 8.25006 4.87499 8.25006Z" fill="#731B55"/>
                                 </svg>
@@ -111,6 +111,10 @@
                             </span>
                         </form>
                         <!-- Универсальная форма END -->
+
+                        <button class="extra-burger">
+                            <span></span>
+                        </button>
 
                     </div>
 
@@ -870,53 +874,57 @@
                     </h2>
                     <div class="filter__body">
                         <form class="filter__form" action="#">
+                            <div class="filter-mobilebtn">
+                                <span>Батареи салютов</span>
+                            </div>
+
                             <div class="filter-type">
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type" checked>
+                                    <input class="filter__item-radio" type="radio" name="type" value="Батареи салютов" checked>
                                     <span class="filter__item-txt">Батареи салютов</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Бенгальские огни">
                                     <span class="filter__item-txt">Бенгальские огни</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Летающие фейерверки">
                                     <span class="filter__item-txt">Летающие фейерверки</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Петарды">
                                     <span class="filter__item-txt">Петарды</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Пневмохлопушки">
                                     <span class="filter__item-txt">Пневмохлопушки</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Ракеты">
                                     <span class="filter__item-txt">Ракеты</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Римские свечи">
                                     <span class="filter__item-txt">Римские свечи</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Фестивальные шары">
                                     <span class="filter__item-txt">Фестивальные шары</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Фонтаны">
                                     <span class="filter__item-txt">Фонтаны</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Цветной дым">
                                     <span class="filter__item-txt">Цветной дым</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Гирлянды">
                                     <span class="filter__item-txt">Гирлянды</span>
                                 </label>
                                 <label class="filter__item">
-                                    <input class="filter__item-radio" type="radio" name="type">
+                                    <input class="filter__item-radio" type="radio" name="type" value="Еще 10 000 товаров">
                                     <span class="filter__item-txt">Еще 10 000 товаров</span>
                                 </label>
                             </div>
@@ -1232,7 +1240,7 @@
                             </div>
 
                             <div class="filter__actions">
-                                <button class="filter__btn btn">Подобрать</button>
+                                <button class="filter__btn btn" type="submit">Подобрать</button>
                                 <label class="reset-label" for="filter-reset">
                                     <input class="reset-label__input" type="reset" value="Очистить все фильтры" id="filter-reset">
                                 </label>
@@ -3960,7 +3968,7 @@
                         </div>
                         <div class="aware__form">
                             <input class="aware__form-input" type="text" name="footer-mail" placeholder="Адрес элетронной почты">
-                            <button class="aware__form-btn btn">Подписаться</button>
+                            <button class="aware__form-btn btn" type="submit">Подписаться</button>
                         </div>
                         <div class="aware__politic">
                             Нажимая на кнопку, вы принимаете условия <a class="aware__politic-link" href="#" target="_blank">обработки персональных данных</a>
