@@ -594,7 +594,45 @@ $(function(){
 		swipeToSlide: false,
 		touchThreshold: false,
 		swipe: false,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+				draggble: true
+			}
+		},
+		{
+			breakpoint: 700,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+				draggble: true
+			}
+		},
+		{
+			breakpoint: 578,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+				draggble: true,
+				arrows: true
+			}
+		}]
 	});
 
 	$(document).on('click', '.reviews-arrow--left', function(){
@@ -615,7 +653,41 @@ $(function(){
 		swipeToSlide: false,
 		touchThreshold: false,
 		swipe: false,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 1150,
+			settings: {
+				slidesToShow: 5,
+				slidesToScroll: 5
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 4
+			}
+		},
+		{
+			breakpoint: 700,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+				arrows: true
+			}
+		}]
 	});
 
 	$(document).on('click', '.certificates--prev', function(){
@@ -699,6 +771,63 @@ $(function(){
 		$(menu).slideUp(200)
         $(parent).addClass('filter__form--active')
 	})
+
+	// Слайдер для блока Предложений
+	 $('.offers__body').slick({
+		responsive: [
+		{
+			breakpoint: 8192,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				draggble: true,
+				arrows: true
+			}
+		}]
+	});
+
+
+	// Слайдер для блока Вы смотрели
+	 $('.watched__body').slick({
+		responsive: [
+		{
+			breakpoint: 8192,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				draggble: true,
+				arrows: true,
+				arrows: true
+			}
+		}]
+	});
+
+	// Слайдер для блока Вы смотрели
+	$('.tab-body__content').slick({
+		responsive: [
+		{
+			breakpoint: 8192,
+			settings: "unslick"
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				draggble: true,
+				arrows: true,
+				arrows: true
+			}
+		}]
+	});
 
 })
 
