@@ -507,14 +507,22 @@ $(function(){
 
 	// Слайдер на главном экране
 	$('.edge__list').slick({
-		slidesToShow: 10,
-		slidesToScroll: 1,
+		slidesToShow: 11,
+		slidesToScroll: 2,
 		infinite: false,
 		touchMove: false,
 		swipeToSlide: false,
 		touchThreshold: false,
 		swipe: false,
-		arrows: false
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 1400,
+			settings: {
+				slidesToShow: 9,
+				slidesToScroll: 2
+			}
+		}]
 	});
 
 	$(document).on('click', '.edge-arrow--left', function(){
@@ -740,7 +748,8 @@ $(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				draggble: true,
-				arrows: true
+				arrows: true,
+				adaptiveHeight: true
 			}
 		}]
 	});
@@ -828,6 +837,54 @@ $(function(){
 			}
 		}]
 	});
+
+	// Выпадающий список в адаптиве
+	if( $(document).width() <= 750)
+	{
+		$(document).on('click', '.tab-panel__btn', function(){
+			parent = $(this).parents('.tab-panel')
+			menu = parent.find('.tab-panel__wrapper')
+
+			if( $(menu).is(':visible')){
+	            $(menu).slideUp(200)
+	            $(parent).removeClass('tab-panel--active')
+	        }
+	        else
+	        {
+	            $(menu).slideDown(200)
+	            $(parent).addClass('tab-panel--active')
+	        }
+		})
+
+		$(document).on('click', '.tab-panel__item', function(){
+			parent = $(this).parents('.tab-panel')
+			menu = parent.find('.tab-panel__wrapper')
+			text = $(this).text()
+			parent.find('.tab-panel__btn span').text(text)
+
+			$(menu).slideUp(200)
+	        $(parent).removeClass('tab-panel--active')
+		})
+	}
+
+	// Поиск в адаптиве
+	if( $(document).width() >= 993 && $(document).width() <= 1250)
+	{
+		$(document).on('click', '.search__trigger', function(){
+			parent = $(this).parents('.header-main__inner')
+
+            $(parent).addClass('header-main__inner--active')
+		})
+
+		$(document).click(function (e) {
+		    var div = $(".search--header");
+		    if (!div.is(e.target) && div.has(e.target).length === 0) 
+		    {
+		    	$('.header-main__inner').removeClass('header-main__inner--active')
+		    }
+		});
+	}
+
 
 })
 
