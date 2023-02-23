@@ -801,11 +801,40 @@ $(function(){
 
 
 	// Слайдер для блока Вы смотрели
-	 $('.watched__body').slick({
+	$('.watched__body').slick({
+		slidesToShow: 5,
+		slidesToScroll: 2,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
 		responsive: [
 		{
-			breakpoint: 8192,
-			settings: "unslick"
+			breakpoint: 1400,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 2,
+				draggble: true,
+				adaptiveHeight: true
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				draggble: true
+			}
+		},
+		{
+			breakpoint: 750,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				draggble: true
+			}
 		},
 		{
 			breakpoint: 576,
@@ -813,7 +842,6 @@ $(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				draggble: true,
-				arrows: true,
 				arrows: true
 			}
 		}]
