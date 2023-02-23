@@ -847,6 +847,14 @@ $(function(){
 		}]
 	});
 
+	$(document).on('click', '.watched--prev', function(){
+		$('.watched__body').slick('slickPrev')
+	})
+
+	$(document).on('click', '.watched--next', function(){
+		$('.watched__body').slick('slickNext')
+	})
+
 	// Слайдер для блока Вы смотрели
 	$('.tab-body__content').slick({
 		responsive: [
@@ -912,6 +920,18 @@ $(function(){
 		    }
 		});
 	}
+
+	// Триггер виджета
+	$(document).on('click', '.widget__trigger', function(){
+		if($('.widget').hasClass('widget--active'))
+		{
+			$('.widget').removeClass('widget--active')
+		}
+		else
+		{
+			$('.widget').addClass('widget--active')
+		}
+	})
 
 
 })

@@ -1173,10 +1173,11 @@ hr {
     vertical-align: middle;
     color: #9F9F9F;
     border-bottom: 1px solid #9F9F9F;
-    transition: .2s border;
+    transition: .2s all;
 }
 .aware__politic-link:hover {
-    border-bottom: 1px solid transparent;
+    color: #3A3A3A;
+    border-bottom: 1px solid #3A3A3A;
 }
 .footer__inner {
     padding: 48px 0;
@@ -1269,7 +1270,7 @@ hr {
     transition: .2s color;
 }
 .footer__link:hover {
-    color: #731B55;
+    color: #3A3A3A;
 }
 .footer__reach {
     padding: 32px 0;
@@ -1306,6 +1307,21 @@ hr {
     border-radius: 50%;
     border: 1px solid #EFEFEF;
 }
+.footer__soc-item path {
+    transition: .2s all;
+}
+.footer__soc-item:nth-child(1):hover path {
+    fill: #0077FF;
+}
+.footer__soc-item:nth-child(2):hover path {
+    fill: #3B5998;
+}
+.footer__soc-item:nth-child(3):hover path {
+    fill: #EE8208;
+}
+.footer__soc-item:nth-child(4):hover path {
+    fill: #FF0000;
+}
 .footer__soc-item + .footer__soc-item {
     margin-left: 16px;
 }
@@ -1315,6 +1331,11 @@ hr {
     align-items: center;
 }
 .footer__pay-img {
+    opacity: 0.7;
+    transition: .2s opacity;
+}
+.footer__pay-img:hover {
+    opacity: 1;
 }
 .footer__pay-img + .footer__pay-img {
     margin-left: 40px;
@@ -1606,6 +1627,13 @@ hr {
     background-repeat: no-repeat;
     background-size: 13px;
     cursor: pointer;
+    transition: .2s border;
+}
+.xtouch__item:hover {
+    border: 1px solid #C7B2C0;
+}
+.xtouch__item.xtouch__item--active {
+    border: 1px solid #661F4E;
 }
 .xtouch__item + .xtouch__item {
     margin-left: 8px;
@@ -2555,7 +2583,10 @@ hr {
     cursor: pointer;
     transition: .2s all;
 }
-.tab-panel__item:hover,
+.tab-panel__item:hover {
+    color: #9F9F9F;
+    background-color: #F7F7F7;
+}
 .tab-panel__item.tab-panel__item--active {
     color: #fff;
     background: #731B55;
@@ -2737,4 +2768,121 @@ hr {
 .watched-offers {
     margin: 0 12px;
 }
-/* Watched END */
+
+/* Widget START */
+.widget {
+    position: fixed;
+    top: 56%;
+    left: -64px;
+    z-index: 55;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
+    transition: .2s all;
+}
+.widget--active {
+    left: 0;
+}
+.widget__inner {
+}
+.widget__item {
+    position: relative;
+}
+.widget__point {
+    display: block;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s all;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+.widget__item:not(:last-child) .widget__point {
+    border-bottom: 1px solid #EFEFEF;
+}
+.widget__item:not(:last-child):hover .widget__point {
+    border-bottom: 1px solid #731B55;
+}
+.widget__item:first-child .widget__point {
+    border-radius: 0px 4px 0px 0px;
+}
+.widget__item:last-child .widget__point {
+    border-radius: 0px 0px 4px 0px;
+    overflow: hidden;
+}
+.widget__item:hover .widget__point {
+    background-color: #731B55;
+}
+.widget__point svg {
+    width: 20px;
+    height: 20px;
+    transition: .2s all;
+}
+.widget__item:hover .widget__point svg path {
+    fill: #fff;
+}
+.widget__wrbox {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 64px;
+    z-index: -1;
+    transition: .2s all;
+    transform: translateX(-150%);
+    padding-left: 24px;
+}
+.widget__box {
+    display: block;
+    width: 256px;
+    padding: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.widget__item:hover .widget__wrbox {
+    transform: translateX(0%);
+}
+.widget__tlt {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #0C0B0B;
+    margin-bottom: 4px;
+}
+.widget__subtlt {
+    display: block;
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #9F9F9F;
+}
+.widget__trigger {
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.widget__trigger span {
+    display: block;
+    width: 18px;
+    height: 32px;
+    background-image: url(images/icons/trigger.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+/*.widget--active .widget__trigger {
+    display: none;
+}*/
+/* Widget END */
