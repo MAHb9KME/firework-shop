@@ -59,7 +59,7 @@
 	/* Catalog-list END */
 
 	/* Footer */
-	.footer .aware__form-input {
+	.footer .aware__label {
 		width: 100%;
 	}
 }
@@ -139,7 +139,7 @@
 	.face {
 		margin: 0px 0px 32px 0px;
 	}
-	.distance-tune {
+	.main__distance {
 		padding: 32px 0;
 	}
 	.title {
@@ -529,7 +529,7 @@
 	.extand-more {
 		padding: 12px;
 	}
-	.distance-tune {
+	.main__distance {
 		padding: 26px 0;
 	}
 	.reviews__title {
@@ -1041,7 +1041,7 @@
 	.aware__form {
 		display: block;
 	}
-	.footer .aware__form-input {
+	.footer .aware__label {
 		width: 100%;
 		margin: 0 0 16px;
 	}
@@ -1365,7 +1365,7 @@
 	.face .slick-slider {
 		margin: 0 0 48px;
 	}
-	.distance-tune {
+	.main__distance {
 		padding: 24px 0;
 	}
 	.title {
@@ -1402,8 +1402,8 @@
 		padding: 0;
 		border: none;
 	}
-	.news-box-arrow--left,
-	.news-box-arrow--right {
+	.news-box__arrow--left,
+	.news-box__arrow--right {
 		display: none;
 	}
 	.news-box__image {

@@ -933,6 +933,98 @@ $(function(){
 		}
 	})
 
+	// Слайдер Не стоит пропускать
+	$('.tab-body__content').slick({
+		slidesToShow: 4,
+		slidesToScroll: 2,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 2,
+				draggble: true,
+				adaptiveHeight: true
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				draggble: true,
+				arrows: true
+			}
+		}]
+	});
+
+	$(document).on('click', '.news-box__arrow--left', function(){
+		$('.tab-body__content').slick('slickPrev')
+	})
+
+	$(document).on('click', '.news-box__arrow--right', function(){
+		$('.tab-body__content').slick('slickNext')
+	})
+
+	// Счетчик кол-ва в товарах
+    function set_quantity(e)
+    {
+        var c = e.data('nav'),
+        	parent = e.parents('.amt-box')
+            input = parent.find('.amt-box__input'),
+            start_price = parent.find('.amt-box__price').data('start'),
+            total_field = parent.find('.amt-box__price span'),
+            total_input = parent.find('.amt-box__total'),
+            focus = parent.find('.amt-box__focus'),
+            limit = parseInt(parent.find('.amt-box__to').text()),
+            v = parseInt(input.val())
+            
+        if(c == 'plus' &&  input.val() < limit )
+        {
+            v++
+        }
+        else if(c == 'minus')
+        {
+            v--
+            if(v <= 0)
+                v = 1;
+        }
+        
+        if(v == NaN)
+            v = 1
+        
+        input.val(v)
+        focus.text(v)
+
+        var result = input.val() * start_price;
+
+        total_input.val(result)
+        total_field.text(result)
+    }
+
+
+	// вызов функции
+	$(document).on('click', '.amt-box__btn', function(){
+		set_quantity($(this))
+
+		return false;
+	})
+
+	// Запрет ввода букв
+   	$(document).on('keypress', '.amt-box__input', function(e)
+    {
+        if (e.which != 8 && e.which != 0 && e.which != 46 && (e.which < 48 || e.which > 57))
+            return false
+    })
+
+
+
 
 })
 
