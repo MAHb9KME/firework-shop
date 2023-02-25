@@ -954,12 +954,22 @@ $(function(){
 			}
 		},
 		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				draggble: true,
+				adaptiveHeight: true
+			}
+		},
+		{
 			breakpoint: 576,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				draggble: true,
-				arrows: true
+				arrows: true,
+				adaptiveHeight: true
 			}
 		}]
 	});

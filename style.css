@@ -2809,7 +2809,7 @@ hr {
     margin-left: 12px;
 }
 .news__tab-body {
-    margin: 0px 0px 24px 0px;
+    margin: 0px -12px 24px;
 }
 .tab-body {
 }
@@ -2817,14 +2817,14 @@ hr {
 }
 .news-box {
     display: flex;
-    grid-gap: 24px;
 }
 .news-box__item {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     border: 1px solid #EFEFEF;
     border-radius: 4px;
     margin: 0 12px;
+    height: auto !important;
 }
 .news-box__image {
     display: block;

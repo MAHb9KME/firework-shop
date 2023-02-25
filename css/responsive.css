@@ -1,8 +1,4 @@
 @media screen and (max-width:1500px){
-
-	/* Main screen */
-
-	/* Product */
 	.cat-list__body {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -12,18 +8,18 @@
 	.search__plug {
 		display: none;
 	}
-	.filter__aside {
-		display: none;
-	}
+}
+
+@media screen and (max-width:1400px){
 	.filter__form {
 		width: 100%;
+	}
+	.filter__aside {
+		display: none;
 	}
 	.news-box__text {
 		padding: 24px;
 	}
-}
-
-@media screen and (max-width:1400px){
 	/* Header top */
 	.header__panel-btn {
 		padding: 17px 31px;
@@ -61,6 +57,26 @@
 	/* Footer */
 	.footer .aware__label {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width:1300px){
+	.pros__inner {
+		margin: 0 -8px;
+	}
+	.pros__item {
+		width: calc(25% - 16px);
+		margin: 0 8px;
+		padding: 26px;
+	}
+	.pros__icon {
+		margin: 0px 0px 40px 0px;
+	}
+	.pros__title {
+		font-size: 14px;
+	}
+	.pros__subtitle {
+		font-size: 13px;
 	}
 }
 
@@ -108,28 +124,6 @@
 	}
 
 }
-
-@media screen and (max-width:1300px){
-	.pros__inner {
-		margin: 0 -8px;
-	}
-	.pros__item {
-		width: calc(25% - 16px);
-		margin: 0 8px;
-		padding: 26px;
-	}
-	.pros__icon {
-		margin: 0px 0px 40px 0px;
-	}
-	.pros__title {
-		font-size: 14px;
-	}
-	.pros__subtitle {
-		font-size: 13px;
-	}
-}
-
-@media screen and (max-width:1200px){}
 
 @media screen and (max-width:1150px){
 	.container {
@@ -278,9 +272,7 @@
 	.news__tab-panel {
 		margin: 0px 0px 32px 0px;
 	}
-	.news-box {
-		grid-gap: 16px;
-	}
+	.news-box {}
 	.news-box__image {
 		padding-top: 80.08%;
 	}
@@ -358,7 +350,7 @@
 		height: 20px;
 	}
 	.news__tab-body {
-		margin: 0px 0px 16px 0px;
+		margin: 0px -12px 16px;
 	}
 	.watched__body {
 		margin: 0 -8px 16px;
@@ -513,8 +505,6 @@
 		margin: 0px 0px 16px 0px;
 	}
 	.news-box {
-		grid-template-columns: repeat(3, 1fr);
-		grid-gap: 16px;
 	}
 	.news-box__item:nth-child(4) {
 		display: none;
@@ -783,6 +773,7 @@
 	}*/
 }
 
+/* Потенциально 767px */
 @media screen and (max-width:750px){
 	.header__panel-btn {
 		padding: 15px 21px;
@@ -927,6 +918,7 @@
 
 }
 
+/* Потенциально 767px */
 @media screen and (max-width:700px){
 	.cat-list {
 		display: none;
@@ -1143,14 +1135,15 @@
 		display: none !important;
 	}
 	.widget__point {
-	    background-color: #FFFFFF !important;
-	    border-bottom: 1px solid #EFEFEF !important;
+		background-color: #FFFFFF !important;
+		border-bottom: 1px solid #EFEFEF !important;
 	}
 	.widget__point path {
-	    fill: #731B55 !important;
+		fill: #731B55 !important;
 	}
 }
 
+/* Потенциально 767px */
 @media screen and (max-width:576px){
 	.header-customers {
 		display: none;
@@ -1415,8 +1408,12 @@
 	.watched__nav {
 		display: none;
 	}
+	.news__tab-body {
+		margin: 0px 0px 16px;
+	}
 }
 
+/* Потенциально 479px */
 @media screen and (max-width:380px){
 	.boxpanel__name {
 		font-size: 10px;
@@ -1465,7 +1462,7 @@
 	}
 }
 
-@media screen and (max-width:358px){
+@media screen and (max-width:360px){
 	.header-city__current {
 		font-size: 12px;
 	}
