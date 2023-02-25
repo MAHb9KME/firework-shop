@@ -915,11 +915,22 @@
 	.tab-panel--active .tab-panel__btn span::after {
 		transform: translateY(-50%) rotate(-180deg);
 	}
+	.edge__inner {
+		overflow: initial; 
+	}
+	.edge__list {
+		display: flex;
+	}
+	.edge__list {
+		margin: 0 -8px;
+	}
+	.edge__arrow {
+		display: none;
+	}
 
 }
 
-/* Потенциально 767px */
-@media screen and (max-width:700px){
+@media screen and (max-width:767px){
 	.cat-list {
 		display: none;
 	}
@@ -1141,6 +1152,37 @@
 	.widget__point path {
 		fill: #731B55 !important;
 	}
+	
+	/* slick-arrow START */
+	.slick-arrow {
+		width: 22px;
+		height: 100%;
+		box-shadow: none;
+		margin: 0;
+		border-radius: 0;
+		background-image: url(../images/icons/slider-arrow-bg.svg);
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: 16px;
+		overflow: hidden;
+		text-indent: 1000px;
+		cursor: pointer;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 2;
+	}
+	.slick-prev {
+		left: -22px;
+		transform: rotate(-180deg);
+	}
+	.slick-next {
+		left: auto;
+		right: -22px;
+	}
+	/* slick-arrow END */
 }
 
 /* Потенциально 767px */
@@ -1258,38 +1300,6 @@
 		font-size: 14px;
 		margin: 0px 0px 8px 0px;
 	}
-
-	/* slick-arrow START */
-	.slick-arrow {
-		width: 22px;
-		height: 100%;
-		box-shadow: none;
-		margin: 0;
-		border-radius: 0;
-		background-image: url(../images/icons/slider-arrow-bg.svg);
-		background-repeat: no-repeat;
-		background-position: 50% 50%;
-		background-size: 16px;
-		overflow: hidden;
-		text-indent: 1000px;
-		cursor: pointer;
-		padding: 0;
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		right: 0;
-		z-index: 2;
-	}
-	.slick-prev {
-		left: -22px;
-		transform: rotate(-180deg);
-	}
-	.slick-next {
-		left: auto;
-		right: -22px;
-	}
-	/* slick-arrow END */
-
 	.face .slick-slider {
 		margin: 0 0 16px;
 	}
@@ -1349,6 +1359,7 @@
 		border-top: 1px solid #EFEFEF;
 		border-bottom: 1px solid #EFEFEF;
 		padding: 0;
+		margin: 0;
 		display: flex !important;
 		flex-direction: column;
 	}
@@ -1413,8 +1424,8 @@
 	}
 }
 
-/* Потенциально 479px */
-@media screen and (max-width:380px){
+/* Потенциально 380px -> 479px */
+@media screen and (max-width:479px){
 	.boxpanel__name {
 		font-size: 10px;
 		line-height: 10px;

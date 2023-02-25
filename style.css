@@ -1945,12 +1945,15 @@ hr {
     align-items: center;
     height: 40px;
 }
-.navigate__item {
+.week .navigate__item {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
+    position: static;
+    text-indent: 0;
+    background-image: none;
 }
 .navigate__item[aria-disabled="true"] {
     opacity: 0.8;

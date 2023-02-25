@@ -522,6 +522,36 @@ $(function(){
 				slidesToShow: 9,
 				slidesToScroll: 2
 			}
+		},
+		{
+			breakpoint: 1150,
+			settings: {
+				slidesToShow: 8,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 6,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 767,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				arrows: true
+			}
+		},
+		{
+			breakpoint: 479,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				arrows: true
+			}
 		}]
 	});
 
@@ -829,7 +859,7 @@ $(function(){
 			}
 		},
 		{
-			breakpoint: 750,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
@@ -875,7 +905,7 @@ $(function(){
 	});
 
 	// Выпадающий список в адаптиве
-	if( $(document).width() <= 750)
+	if( $(document).width() <= 767)
 	{
 		$(document).on('click', '.tab-panel__btn', function(){
 			parent = $(this).parents('.tab-panel')
