@@ -582,6 +582,7 @@ $(function(){
 		}
 		else
 		{
+			$('.droplist').removeClass('droplist--active')
 			parent.addClass('droplist--active')
 		}
 	})
@@ -704,14 +705,22 @@ $(function(){
 			breakpoint: 992,
 			settings: {
 				slidesToShow: 4,
-				slidesToScroll: 4
+				slidesToScroll: 4,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 			}
 		},
 		{
 			breakpoint: 700,
 			settings: {
 				slidesToShow: 3,
-				slidesToScroll: 3
+				slidesToScroll: 3,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 			}
 		},
 		{
@@ -773,7 +782,7 @@ $(function(){
 			settings: "unslick"
 		},
 		{
-			breakpoint: 576,
+			breakpoint: 767,
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
@@ -785,31 +794,34 @@ $(function(){
 	});
 
 	// Раскрытие фильтра в адаптиве
-	$(document).on('click', '.filter-mobilebtn', function(){
-		parent = $(this).parents('.filter__form')
-		menu = parent.find('.filter-type')
+	if( $(document).width() <= 750)
+	{
+		$(document).on('click', '.filter-mobilebtn', function(){
+			parent = $(this).parents('.filter__form')
+			menu = parent.find('.filter-type')
 
-		if( $(menu).is(':visible')){
-            $(menu).slideUp(200)
-            $(parent).removeClass('filter__form--active')
-        }
-        else
-        {
-            $('.faq-content .line .answer').slideUp(200)
-            $(menu).slideDown(200)
-            $(parent).addClass('filter__form--active')
-        }
-	})
+			if( $(menu).is(':visible')){
+	            $(menu).slideUp(200)
+	            $(parent).removeClass('filter__form--active')
+	        }
+	        else
+	        {
+	            $('.faq-content .line .answer').slideUp(200)
+	            $(menu).slideDown(200)
+	            $(parent).addClass('filter__form--active')
+	        }
+		})
 
-	$(document).on('click', '.filter__item', function(){
-		parent = $(this).parents('.filter__form')
-		menu = parent.find('.filter-type')
-		text = $(this).find('input').val()
-		parent.find('.filter-mobilebtn span').text(text)
+		$(document).on('click', '.filter__item', function(){
+			parent = $(this).parents('.filter__form')
+			menu = parent.find('.filter-type')
+			text = $(this).find('input').val()
+			parent.find('.filter-mobilebtn span').text(text)
 
-		$(menu).slideUp(200)
-        $(parent).addClass('filter__form--active')
-	})
+			$(menu).slideUp(200)
+	        $(parent).addClass('filter__form--active')
+		})
+	}
 
 	// Слайдер для блока Предложений
 	 $('.offers__body').slick({
@@ -847,6 +859,10 @@ $(function(){
 				slidesToShow: 4,
 				slidesToScroll: 2,
 				draggble: true,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 				adaptiveHeight: true
 			}
 		},
@@ -855,6 +871,10 @@ $(function(){
 			settings: {
 				slidesToShow: 3,
 				slidesToScroll: 3,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 				draggble: true
 			}
 		},
@@ -863,6 +883,10 @@ $(function(){
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 				draggble: true
 			}
 		},
@@ -872,6 +896,10 @@ $(function(){
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				draggble: true,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
 				arrows: true
 			}
 		}]
@@ -964,7 +992,7 @@ $(function(){
 	})
 
 	// Слайдер Не стоит пропускать
-	$('.tab-body__content').slick({
+	$('.news-box').slick({
 		slidesToShow: 4,
 		slidesToScroll: 2,
 		infinite: false,
@@ -1005,11 +1033,11 @@ $(function(){
 	});
 
 	$(document).on('click', '.news-box__arrow--left', function(){
-		$('.tab-body__content').slick('slickPrev')
+		$('.news-box').slick('slickPrev')
 	})
 
 	$(document).on('click', '.news-box__arrow--right', function(){
-		$('.tab-body__content').slick('slickNext')
+		$('.news-box').slick('slickNext')
 	})
 
 	// Счетчик кол-ва в товарах
@@ -1063,6 +1091,20 @@ $(function(){
             return false
     })
 
+    // Разворот карточки front and back side
+    $(document).on('click', '.product__prices-show', function(){
+    	let parent = $(this).parents('.product__inn')
+
+    	if(parent.hasClass('product__inn--active'))
+		{
+			parent.removeClass('product__inn--active')
+		}
+		else
+		{
+			$('.product__inn').removeClass('product__inn--active')
+			parent.addClass('product__inn--active')
+		}
+    })
 
 
 
