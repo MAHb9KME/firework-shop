@@ -1106,6 +1106,52 @@ $(function(){
 		}
     })
 
+    // Разворот карточки front and back side
+    $(document).on('click', '.back-product__return', function(){
+    	let parent = $(this).parents('.product__inn')
+
+    	if(parent.hasClass('product__inn--active'))
+		{
+			parent.removeClass('product__inn--active')
+		}
+		else
+		{
+			$('.product__inn').removeClass('product__inn--active')
+			parent.addClass('product__inn--active')
+		}
+    })
+
+
+    // Разворот производителей front and back side
+    $(document).on('click', '.makers__btn', function(){
+    	let parent = $(this).parents('.makers__item')
+
+    	if(parent.hasClass('makers__item--active'))
+		{
+			parent.removeClass('makers__item--active')
+		}
+		else
+		{
+			$('.makers__item').removeClass('makers__item--active')
+			parent.addClass('makers__item--active')
+		}
+    })
+
+    // Разворот производителей front and back side
+    $(document).on('click', '.back-makers__return', function(){
+    	let parent = $(this).parents('.makers__item')
+
+    	if(parent.hasClass('makers__item--active'))
+		{
+			parent.removeClass('makers__item--active')
+		}
+		else
+		{
+			$('.makers__item').removeClass('makers__item--active')
+			parent.addClass('makers__item--active')
+		}
+    })
+
 
 
 })

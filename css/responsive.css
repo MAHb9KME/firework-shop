@@ -133,9 +133,12 @@
 	.face {
 		margin: 0px 0px 32px 0px;
 	}
-	.main__distance {
-		padding: 32px 0;
+	html {
+		font-size: 8px;
 	}
+	/*.main__distance {
+		padding: 32px 0;
+	}*/
 	.title {
 		font-size: 28px;
 		margin: 0px 0px 32px 0px;
@@ -514,8 +517,11 @@
 	.extand-more {
 		padding: 12px;
 	}
+	html {
+		font-size: 6.5px;
+	}
 	.main__distance {
-		padding: 26px 0;
+		/*padding: 26px 0;*/
 	}
 	.reviews__title {
 		margin: 0px 0px 16px 0px;
@@ -1383,8 +1389,11 @@
 	.face .slick-slider {
 		margin: 0 0 48px;
 	}
+	html {
+		font-size: 6px;
+	}
 	.main__distance {
-		padding: 24px 0;
+		/*padding: 24px 0;*/
 	}
 	.title {
 		font-size: 20px;
