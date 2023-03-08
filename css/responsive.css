@@ -58,6 +58,14 @@
 	.footer .aware__label {
 		width: 100%;
 	}
+
+	.wholesale__image {
+		width: 61.82%;
+	}
+
+	.wholesale__form {
+		width: 36.004%;
+	}
 }
 
 @media screen and (max-width:1300px){
@@ -355,6 +363,13 @@
 	}
 	.watched-offers {
 		margin: 0 8px;
+	}
+
+	.wholesale__image {
+		width: 50%;
+	}
+	.wholesale__form {
+		width: 50%;
 	}
 }
 
@@ -772,6 +787,10 @@
 	.menu-wrapper ul li ul.sub-menu li a{
 		padding: 15px 25px;
 	}*/
+}
+
+@media screen and (max-width:850px) {
+	
 }
 
 /* Потенциально 767px */
@@ -1204,6 +1223,73 @@
 	}
 
 	/* slick-arrow END */
+
+
+
+
+	.wholesale__body {
+		display: block;
+	}
+	.wholesale__image {
+		width: 100%;
+		padding-top: 76.92%;
+		margin-bottom: 32px;
+	}
+	.wholesale__inner {
+		text-align: center;
+	}
+	.wholesale__subtitle {
+		margin: 0px 0px 32px 0px;
+	}
+	.wholesale__form {
+		width: 100%;
+		border: none;
+		padding: 0;
+		text-align: center;
+	}
+	.droplist-form .droplist__focus {
+		margin: 0px 0px 16px 0px;
+	}
+	.form-common__input {
+		margin: 0px 0px 16px 0px;
+	}
+	.form-common__btn {
+		margin: 0px 0px 16px 0px;
+	}
+	.form-common__body {
+		text-align: left;
+	}
+
+	input[type="text"], 
+	input[type="number"], 
+	input[type="tel"], 
+	input[type="password"], 
+	input[type="email"], 
+	textarea {
+			padding: 11.5px 24px;
+	}
+	.pros__tlt,
+	.pros__subtlt {
+		text-align: center;
+	}
+
+	.breadcrumbs {
+		display: none;
+	}
+
+	body.page-brand-catalog .makers__item {
+		text-align: center;
+	}
+
+	body.page-brand-catalog .makers__item:first-child {
+		border-top: none;
+		padding-top: 10px;
+	}
+
+	body.page-brand-catalog .makers__btn {
+    justify-content: center;
+	}
+
 }
 
 /* Потенциально 767px */
