@@ -1588,6 +1588,21 @@
 	}
 }
 
+@media screen and (max-width:410px){
+	.form-popup {
+		padding: 24px !important;
+	}
+	.form-popup__title {
+		font-size: 20px;
+	}
+	.form-popup__buttons {
+		flex-wrap: wrap;
+	}
+	.form-popup__btn {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width:360px){
 	.header-city__current {
 		font-size: 12px;

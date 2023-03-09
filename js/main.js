@@ -1139,6 +1139,38 @@ $(function () {
 	})
 
 
+	// Выпадающий список в форме
+	$(document).on('click', '.drop-list__head', function () {
+
+		var parent = $(this).parents('.drop-list__item');
+		var menu = $(this).next();
+
+		$('.drop-list__item').removeClass('drop-list__item--active')
+
+		if( $(menu).is(':visible')) {
+			$(menu).slideUp(400)
+			$(parent).removeClass('drop-list__item--active')
+		}
+		else {
+			$('.drop-list__body').slideUp(400)
+			$(menu).slideDown(400)
+			$(parent).addClass('drop-list__item--active')
+		}
+	})
+
+	// Табы в форме Входа и Регистрации
+	$(document).on('click', '.tabs-form__btn', function () {
+
+        $('.tabs-form__btn').removeClass('tabs-form__btn--active');
+        $(this).addClass('tabs-form__btn--active');
+
+        let get_data = $(this).data('click'),
+        	parent = $(this).parents('.tabs-form')
+
+     	parent.find('.form-popup__tab').removeClass('form-popup__tab--active');
+
+        parent.find('.form-popup__tab[data-click="'+get_data+'"]').addClass('form-popup__tab--active')
+    });
 
 })
 
