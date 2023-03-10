@@ -1172,5 +1172,35 @@ $(function () {
         parent.find('.form-popup__tab[data-click="'+get_data+'"]').addClass('form-popup__tab--active')
     });
 
+    // Раскрытие основного выпадающего меню
+    $(document).on('click', '.header__panel-btn', function () {
+
+        let parent = $('body')
+
+		if (parent.hasClass('main-menu-drop')) {
+			parent.removeClass('main-menu-drop')
+		}
+		else {
+			parent.addClass('main-menu-drop')
+		}
+    });
+
+	// Клик все поля фильтра
+	$(document).click(function (e) {
+	    var div = $(".header__panel-btn");
+	    var div_2 = $(".header-menu");
+	    var div_3 = $(".search--header");
+
+		if
+		(
+			!div.is(e.target) && div.has(e.target).length === 0 && 
+			!div_2.is(e.target) && div_2.has(e.target).length === 0 &&
+			!div_3.is(e.target) && div_3.has(e.target).length === 0
+		) 
+		{
+			$('body').removeClass('main-menu-drop')
+		}
+	});
+
 })
 

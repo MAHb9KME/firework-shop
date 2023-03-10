@@ -384,15 +384,20 @@
 		display: none;
 	} 
 
+	.header__logo {
+		width: 44px;
+		min-width: 44px;
+		overflow: hidden;
+	}
 	.header__logo-img {
 		min-width: 226px;
 		height: 44px;
 		margin-left: -8px;
 	}
-	.header__logo {
-		width: 44px;
-		min-width: 44px;
-		overflow: hidden;
+	.header__logo-short {
+	    width: 44px;
+	    min-width: 44px;
+	    height: 44px;
 	}
 	.header__panel {
 		margin: 0 20px 0 36px;
@@ -970,6 +975,12 @@
 		height: 40px;
 		margin-left: auto;
 	}
+	.header__logo-short {
+	    width: 40px;
+	    min-width: 40px;
+	    height: 40px;
+	    left: 20px;
+	}
 	.extra-burger {
 		width: 66px;
 		min-width: 66px;
@@ -1537,6 +1548,8 @@
 	.news__tab-body {
 		margin: 0px 0px 16px;
 	}
+
+
 }
 
 /* Потенциально 380px -> 479px */
