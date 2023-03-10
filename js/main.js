@@ -1202,5 +1202,40 @@ $(function () {
 		}
 	});
 
+	// Слайдер производителей в верхнем меню
+	/*$('.focus-menu__labels').slick({
+		slidesToShow: 8,
+		slidesToScroll: 2,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 2,
+					draggble: true,
+					adaptiveHeight: true
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					draggble: true,
+					adaptiveHeight: true
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					draggble: true,
+					arrows: true,
+					adaptiveHeight: true
+				}
+			}]
+	});*/
+
 })
 

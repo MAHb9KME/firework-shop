@@ -1700,7 +1700,7 @@ body.page-brand-catalog .header {
 	vertical-align: top;
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 16px;
+	line-height: 130%;
 	letter-spacing: -0.02em;
 	color: #0C0B0B;
 	padding: 8px 0;
@@ -1810,7 +1810,22 @@ body.page-brand-catalog .header {
 	position: relative;
 	padding-right: 22px;
 }
-
+.wide-menu__watch::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    background-image: url(images/icons/slider-arrow-bg-black.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    position: absolute;
+    top: 1px;
+    left: auto;
+    right: 0;
+    z-index: 1;
+}
 
 
 
