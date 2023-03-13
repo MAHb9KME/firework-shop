@@ -1098,7 +1098,7 @@ $(function () {
 		}
 	})
 
-	// Разворот производителей front and back side
+	// 
 	$(document).on('click', '.dropdown__current', function () {
 		let parent = $(this).parents('.dropdown')
 
@@ -1201,6 +1201,57 @@ $(function () {
 			$('body').removeClass('main-menu-drop')
 		}
 	});
+
+	// Слайдер изображений в карточке товара
+	$('.p-slider__max').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+      	asNavFor: '.p-slider__min',
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				draggble: true,
+				touchMove: true,
+				swipeToSlide: true,
+				touchThreshold: true,
+				swipe: true,
+				arrows: true
+			}
+		}]
+	});
+
+	$('.p-slider__min').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+      	asNavFor: '.p-slider__max',
+	    focusOnSelect: true
+	});
+
+	// Разворот в карточке товара front and back side
+	$(document).on('click', '.wholesale-btn', function () {
+		let parent = $(this).parents('.flip-body')
+
+		if (parent.hasClass('flip-body--active')) {
+			parent.removeClass('flip-body--active')
+		}
+		else {
+			$('.flip-body').removeClass('flip-body--active')
+			parent.addClass('flip-body--active')
+		}
+	})
 
 	// Слайдер производителей в верхнем меню
 	/*$('.focus-menu__labels').slick({
