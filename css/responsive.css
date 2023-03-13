@@ -1349,6 +1349,26 @@
     justify-content: center;
 	}
 
+	main {
+	    min-height: 378px;
+	}
+	.breadcrumbs--back {
+	    padding: 0 0 32px;
+	}
+	.section-empty__inner {
+		text-align: center;
+	}
+	.title {
+	    margin: 0px 0px 16px 0px;
+	    text-align: center;
+	}
+	.section-empty__btns {
+	    justify-content: center;
+	}
+	.section-empty {
+	    padding: 40px 0;
+	}
+
 }
 
 /* Потенциально 767px */
