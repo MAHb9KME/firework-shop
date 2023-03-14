@@ -1288,5 +1288,31 @@ $(function () {
 			}]
 	});*/
 
+
+	// Каталог фильтр по популярности и цене
+    $(document).on('click', '.selc-dropdown__name', function()
+	{
+		if( $('.selc-dropdown').hasClass('selc-dropdown--active') )
+			$('.selc-dropdown').removeClass('selc-dropdown--active')
+		else
+			$('.selc-dropdown').addClass('selc-dropdown--active')
+	})
+
+	$(document).on('click', '.selc-dropdown__li', function()
+	{
+		$('.selc-dropdown').removeClass('selc-dropdown--active')
+
+		product = $(this).text()
+		$(this).parents('.selc-dropdown').find('.selc-dropdown__name').text(product)
+	})
+
+	$(document).click(function(event)
+	{
+		if ($(event.target).closest(".selc-dropdown__name").length || $(event.target).closest(".selc-dropdown__li").length ) return;
+		event.stopPropagation();
+
+		$('.selc-dropdown').removeClass('selc-dropdown--active')
+	})
+
 })
 

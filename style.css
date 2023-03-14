@@ -2810,8 +2810,8 @@ body.page-main .main {
 }
 
 .back-product__list {
-	/*max-height: 272px;
-    overflow: auto;*/
+	max-height: 272px;
+    overflow: auto;
 }
 
 .back-product__line {
@@ -4856,6 +4856,9 @@ body.page-brand-catalog .makers {
 .breadcrumbs--back .breadcrumbs__link::after {
 	display: none;
 }
+.breadcrumbs--mobile {
+	display: none;
+}
 /* Страница производители END */
 
 /* Wholesale START */
@@ -5415,7 +5418,7 @@ body.page-brand-catalog .makers {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	gap: 24px;
+	gap: 14px;
 }
 .panel-nav__list {
 	display: flex;
@@ -5457,7 +5460,7 @@ body.page-brand-catalog .makers {
 	background-image: url(images/icons/actions-reviews.svg);
 }
 .list-actions__item:nth-child(3)::before {
-	background-image: url(images/icons/actions-reviews.svg);
+	background-image: url(images/icons/actions-favorite.svg);
 }
 .list-actions__item:nth-child(4)::before {
 	background-image: url(images/icons/actions-compare.svg);
@@ -5528,7 +5531,7 @@ body.page-brand-catalog .makers {
 	display: block;
 	width: 100%;
 	position: relative;
-	padding-top: 54.57%;
+	padding-top: 525px;
 	cursor: pointer;
 }
 .p-slider__img {
@@ -5767,7 +5770,7 @@ body.page-brand-catalog .makers {
 	margin: 0px 0px 40px 0px;
 }
 .description__title {
-	margin: 0px 0px 16px 0px;
+	margin: 0px 0px 16px 0px !important;
 }
 .description__info {
 	font-weight: 400;
@@ -5788,6 +5791,8 @@ body.page-brand-catalog .makers {
 	display: block;
 	position: relative;
 	padding-top: 45.69%;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .description__bg-video {
 	position: absolute;
@@ -6075,6 +6080,7 @@ body.page-brand-catalog .makers {
 .sec-reviews__stars {
 	margin: 0px 0px 24px 0px;
 }
+.common-rate__stars {}
 .sec-reviews__text {
 }
 .sec-reviews__block {
@@ -6097,6 +6103,9 @@ body.page-brand-catalog .makers {
 	line-height: 140%;
 	letter-spacing: -0.02em;
 	color: #0C0B0B;
+}
+.selc-dropdown {
+	display: none;
 }
 .pag-nav {
 }
@@ -6141,6 +6150,7 @@ body.page-brand-catalog .makers {
 	color: #0C0B0B;
 	font-weight: 500;
 	border: 1px solid #EFEFEF;
+	border-radius: 4px;
 	background-color: #fff;
 }
 .pag-nav__arrow {
@@ -6168,10 +6178,11 @@ body.page-brand-catalog .makers {
 	color: #0C0B0B;
 	margin: 0px 0px 32px 0px;
 }
+.common-rate__tlt strong {
+	font-weight: 500;
+	margin-right: 13px;
+}
 .common-rate__tlt span {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 13px;
 	color: #9F9F9F;
 }
 .common-rate__info {
@@ -6231,4 +6242,40 @@ body.page-brand-catalog .makers {
 .common-rate__link:hover {
 	border-bottom: 1px solid transparent;
 }
+
+.p-sidebar__list {
+	max-height: 325px;
+    overflow: auto;
+}
+.p-sidebar__xline {
+	margin: 0px 0px 8px 0px;
+}
+.p-sidebar__xline .back-line__head {
+	padding: 12px;
+}
+.p-sidebar__xline .back-line__price-start {
+	font-size: 14px;
+	line-height: 14px;
+}
+
 /* Карточка товара END */
+
+/* Звезды рейтинга START */
+.stars {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.stars__item {
+	height: 16px;
+}
+.stars__item + .stars__item {
+    margin: 0 0 0 3px;
+}
+.stars__item svg path {
+    fill: #BDBDBD;
+}
+.stars__item--active svg path {
+    fill: #731B55;
+}
+/* Звезды рейтинга END */

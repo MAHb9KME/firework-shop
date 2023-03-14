@@ -423,6 +423,21 @@
 			</div>
 		</nav>
 
+
+		<nav class="breadcrumbs breadcrumbs--mobile breadcrumbs--back">
+			<div class="container">
+				<div class="breadcrumbs__inner">
+					<ul class="breadcrumbs__ul">
+						<li class="breadcrumbs__li">
+							<a class="breadcrumbs__link" href="#">
+								Вернуться в каталог
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
 		<section class="p-product">
 			<div class="container">
 				<div class="p-product__inner">
@@ -580,7 +595,7 @@
 
 										<button class="p-sidebar__button btn" type="submit">Добавить в корзину</button>
 
-										<a class="p-sidebar__button btn-white">Добавить в корзину</a>
+										<a class="p-sidebar__button btn-white">Быстрая покупка</a>
 									</form>
 
 									<div class="p-sidebar__links">
@@ -614,8 +629,10 @@
 									</div>
 									<button class="p-sidebar__return wholesale-btn wholesale-btn--return">скрыть оптовые цены</button>
 
-									<div class="back-product__list">
-										<div class="back-product__line back-line">
+
+
+									<div class="p-sidebar__list">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -647,7 +664,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -679,7 +696,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -711,7 +728,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -743,7 +760,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -775,7 +792,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -807,7 +824,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="back-product__line back-line">
+										<div class="p-sidebar__xline back-line">
 											<div class="back-line__head">
 												<div class="back-line__price-start">
 													От 15 000 руб
@@ -840,6 +857,8 @@
 											</div>
 										</div>
 									</div>
+
+
 								</div>
 							</div>
 						</div>
@@ -957,17 +976,57 @@
 									 <div class="sec-reviews__sort">
 									 	Сортировать по
 									 </div>
+
 									 <ul class="sec-reviews__ul">
 									 	<li class="sec-reviews__li">популярности</li>
 									 	<li class="sec-reviews__li">дате</li>
 									 	<li class="sec-reviews__li">оценке</li>
 									 </ul>
+
+									<div class="selc-dropdown">
+										<div class="selc-dropdown__name">по популярности</div>
+										<ul class="selc-dropdown__ul">
+											<li class="selc-dropdown__li">по популярности</li>
+											<li class="selc-dropdown__li">по цене</li>
+											<li class="selc-dropdown__li">по возрастанию</li>
+										</ul>
+									</div>
+
 								</div>
+
 								<div class="sec-reviews__body">
 									<div class="sec-reviews__item">
 										<div class="sec-reviews__date">12 августа 2022</div>
 										<div class="sec-reviews__name">Оксана Ванина</div>
-										<div class="sec-reviews__stars"></div>
+
+										<div class="sec-reviews__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
+											
 										<div class="sec-reviews__text">
 											<div class="sec-reviews__block">
 												<div class="sec-reviews__tlt">Достоинства</div>
@@ -983,7 +1042,33 @@
 									<div class="sec-reviews__item">
 										<div class="sec-reviews__date">12 августа 2022</div>
 										<div class="sec-reviews__name">Оксана Ванина</div>
-										<div class="sec-reviews__stars"></div>
+										<div class="sec-reviews__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="sec-reviews__text">
 											<div class="sec-reviews__block">
 												<div class="sec-reviews__tlt">Достоинства</div>
@@ -999,7 +1084,33 @@
 									<div class="sec-reviews__item">
 										<div class="sec-reviews__date">12 августа 2022</div>
 										<div class="sec-reviews__name">Оксана Ванина</div>
-										<div class="sec-reviews__stars"></div>
+										<div class="sec-reviews__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="sec-reviews__text">
 											<div class="sec-reviews__block">
 												<div class="sec-reviews__tlt">Достоинства</div>
@@ -1028,33 +1139,163 @@
 							</section>
 							<div class="p-product__sidebar common-rate">
 								<div class="common-rate__tlt">
-								 	Общая оценка <span>4.5 из 5</span>
+								 	<strong>Общая оценка</strong> <span>4.5 из 5</span>
 								</div>
 								<div class="common-rate__info">Для того чтобы оставить отзыв, Вам нужно <a href="#">войти</a>, или <a href="#">зарегистрироваться</a>, если вы впервые на сайте</div>
 								<button class="common-rate__button btn">Написать отзыв</button>
 								<div class="common-rate__body">
 									<div class="common-rate__line">
-										<div class="common-rate__stars">1</div>
+										<div class="common-rate__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="common-rate__rev">
 											<a class="common-rate__link" href="#">2 отзыва</a>
 										</div>
 									</div>
 									<div class="common-rate__line">
-										<div class="common-rate__stars">1</div>
+										<div class="common-rate__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="common-rate__rev">-</div>
 									</div>
 									<div class="common-rate__line">
-										<div class="common-rate__stars">1</div>
+										<div class="common-rate__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="common-rate__rev">
 											<a class="common-rate__link" href="#">1 отзыв</a>
 										</div>
 									</div>
 									<div class="common-rate__line">
-										<div class="common-rate__stars">1</div>
+										<div class="common-rate__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="common-rate__rev">-</div>
 									</div>
 									<div class="common-rate__line">
-										<div class="common-rate__stars">1</div>
+										<div class="common-rate__stars stars">
+											<div class="stars__item stars__item--active">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+											<div class="stars__item">
+												<svg width="16" height="16" viewBox="0 0 16 16">
+													<path d="M8.00016 11.3333L4.08149 13.7267L5.14682 9.25999L1.66016 6.27332L6.23682 5.90666L8.00016 1.66666L9.76349 5.90666L14.3408 6.27332L10.8535 9.25999L11.9188 13.7267L8.00016 11.3333Z"/>
+												</svg>
+											</div>
+										</div>
 										<div class="common-rate__rev">-</div>
 									</div>
 								</div>
@@ -1063,1958 +1304,1954 @@
 
 						<!-- More Products START -->
 						<section class="watched">
-							<div class="container">
-								<div class="watched__inner">
-									<h2 class="watched__title title">
-										Похожие товары
-									</h2>
-									<div class="cat-list__body watched__body">
+							<div class="watched__inner">
+								<h2 class="watched__title title">
+									Похожие товары
+								</h2>
+								<div class="cat-list__body watched__body">
 
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
 														</div>
 													</div>
+												</div>
 
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
 													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
 
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
 														</div>
 													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
 
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
 
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
 															</div>
 														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
 														</button>
 													</div>
-												</div>
 
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
 												</div>
 											</div>
 										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
 									</div>
 
-									<div class="watched__nav nav-panel">
-										<button class="nav-panel__item watched--prev">
-											<span class="nav-panel__button nav-panel__prev">
-												Назад
-											</span>
-										</button>
-										<button class="nav-panel__item watched--next">
-											<span class="nav-panel__button nav-panel__next">
-												Далее
-											</span>
-										</button>
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
 									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="watched__nav nav-panel">
+									<button class="nav-panel__item watched--prev">
+										<span class="nav-panel__button nav-panel__prev">
+											Назад
+										</span>
+									</button>
+									<button class="nav-panel__item watched--next">
+										<span class="nav-panel__button nav-panel__next">
+											Далее
+										</span>
+									</button>
 								</div>
 							</div>
 						</section>
 
 						<!-- More Products START -->
 						<section class="watched">
-							<div class="container">
-								<div class="watched__inner">
-									<h2 class="watched__title title">
-										Вы смотрели
-									</h2>
-									<div class="cat-list__body watched__body">
+							<div class="watched__inner">
+								<h2 class="watched__title title">
+									Вы смотрели
+								</h2>
+								<div class="cat-list__body watched__body">
 
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
 														</div>
 													</div>
+												</div>
 
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
 													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
 
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
 														</div>
 													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
 
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
 
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
 															</div>
 														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
 														</button>
 													</div>
-												</div>
 
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
 												</div>
 											</div>
 										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
-										<div class="product watched-offers">
-											<div class="product__inn">
-												<div class="product__front">
-													<div class="eventsline scroll" data-step="20">
-														<div class="scroll__container">
-															<div class="eventsline__inner scroll__list">
-																<a class="eventsline__item" href="#">
-																	На новый год
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 9 мая
-																</a>
-																<a class="eventsline__item" href="#">
-																	На 23 февраля
-																</a>
-															</div>
-														</div>
-													</div>
-
-													<a class="product__image" href="#">
-														<picture>
-															<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-															<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
-																loading="lazy" alt="product">
-														</picture>
-													</a>
-
-													<div class="xpanel">
-														<a class="xvideo" href="#" data-fancybox>
-															<span class="xvideo__icon"></span>
-															<span class="xvideo__text">видео</span>
-														</a>
-														<div class="xtouch">
-															<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-															<button class="xtouch__item xtouch__item--favorite"></button>
-														</div>
-													</div>
-
-													<h5 class="product__title">
-														<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-															залпов, Balet,
-															GW218-89</a>
-													</h5>
-
-													<div class="product__prices">
-														<div class="prices">
-															<div class="prices__item prices__item--new">
-																542 руб
-															</div>
-															<div class="prices__item prices__item--old">
-																674 руб
-															</div>
-														</div>
-														<button class="product__prices-show">
-															показать оптовые цены
-														</button>
-													</div>
-												</div>
-
-												<div class="product__back">
-													<ul>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-														<li>
-															<p>text</p>
-														</li>
-													</ul>
-												</div>
-
-												<div class="product__drop drop-product">
-													<form class="drop-product__btns" action="#">
-														<div class="amt-box product__amt-box">
-															<button class="amt-box__btn amt-box__minus" data-nav="minus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
-																</svg>
-															</button>
-
-															<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-															<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-															<div class="amt-box__numb">
-																<div class="amt-box__focus">1</div>
-																<div class="amt-box__from">из</div>
-																<div class="amt-box__to">16</div>
-																<div class="amt-box__on">на</div>
-																<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-																</div>
-															</div>
-
-															<button class="amt-box__btn amt-box__plus" data-nav="plus">
-																<svg width="12" height="12" viewBox="0 0 12 12">
-																	<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
-																		fill="#0C0B0B" />
-																</svg>
-															</button>
-														</div>
-
-														<button class="drop-product__button btn-empty">Добавить в корзину</button>
-													</form>
-													<div class="drop-product__desc">
-														<p>Производитель <strong>Maxsem</strong></p>
-														<p>Калибр, дюймы <strong>0.8</strong></p>
-														<p>Продолжительность <strong>15</strong></p>
-														<p>Высота <strong>20</strong></p>
-														<p>Количество залпов <strong>11</strong></p>
-														<p>Тип товара <strong>Батарея салютов</strong></p>
-													</div>
-												</div>
-											</div>
-										</div>
-
 									</div>
 
-									<div class="watched__nav nav-panel">
-										<button class="nav-panel__item watched--prev">
-											<span class="nav-panel__button nav-panel__prev">
-												Назад
-											</span>
-										</button>
-										<button class="nav-panel__item watched--next">
-											<span class="nav-panel__button nav-panel__next">
-												Далее
-											</span>
-										</button>
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
 									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product watched-offers">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												</div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180"
+															loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox>
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back">
+												<ul>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+													<li>
+														<p>text</p>
+													</li>
+												</ul>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B" />
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z"
+																	fill="#0C0B0B" />
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="watched__nav nav-panel">
+									<button class="nav-panel__item watched--prev">
+										<span class="nav-panel__button nav-panel__prev">
+											Назад
+										</span>
+									</button>
+									<button class="nav-panel__item watched--next">
+										<span class="nav-panel__button nav-panel__next">
+											Далее
+										</span>
+									</button>
 								</div>
 							</div>
 						</section>
@@ -3182,19 +3419,19 @@
                         <div class="footer__soc">
                              <a class="footer__soc-item" href="#" target="_blank">
                                 <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.71451 10C3.24792 10 0.129919 6.24625 0 0H2.73829C2.82823 4.58458 4.84692 6.52653 6.44592 6.92693V0H9.02441V3.95395C10.6034 3.78378 12.2622 1.98198 12.8218 0H15.4003C14.9705 2.44244 13.1717 4.24424 11.8925 4.98498C13.1717 5.58559 15.2205 7.15716 16 10H13.1617C12.5521 8.0981 11.0332 6.62663 9.02441 6.42643V10H8.71451Z" fill="#BDBDBD"/>
+                                    <path d="M8.71451 10C3.24792 10 0.129919 6.24625 0 0H2.73829C2.82823 4.58458 4.84692 6.52653 6.44592 6.92693V0H9.02441V3.95395C10.6034 3.78378 12.2622 1.98198 12.8218 0H15.4003C14.9705 2.44244 13.1717 4.24424 11.8925 4.98498C13.1717 5.58559 15.2205 7.15716 16 10H13.1617C12.5521 8.0981 11.0332 6.62663 9.02441 6.42643V10H8.71451Z"/>
                                 </svg>
                              </a>
                              <a class="footer__soc-item" href="#" target="_blank">
                                 <svg width= "8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z" fill="#BDBDBD"/>
+                                    <path d="M5.19311 16V8.70218H7.55084L7.90457 5.85725H5.19311V4.04118C5.19311 3.21776 5.41238 2.65661 6.55063 2.65661L8 2.65599V0.111384C7.74935 0.0775563 6.88896 0 5.88756 0C3.79647 0 2.36488 1.32557 2.36488 3.75942V5.85725H0V8.70218H2.36488V16H5.19311Z"/>
                                 </svg>
                              </a>
                              <a class="footer__soc-item" href="#" target="_blank">
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_315_12721)">
-                                    <path d="M3.14732 8.58804C2.73865 9.39138 3.20265 9.77538 4.26132 10.4314C5.16132 10.9874 6.40465 11.1907 7.20332 11.272C6.87598 11.5867 8.37598 10.144 4.05598 14.2994C3.13998 15.1774 4.61465 16.586 5.52998 15.7267L8.00798 13.3367C8.95665 14.2494 9.86598 15.124 10.486 15.73C11.402 16.5927 12.876 15.196 11.97 14.3027C11.902 14.238 8.61198 11.082 8.81265 11.2754C9.62132 11.194 10.846 10.9787 11.7353 10.4347L11.7346 10.434C12.7933 9.77471 13.2573 9.39138 12.8546 8.58804C12.6113 8.13204 11.9553 7.75071 11.082 8.41004C11.082 8.41004 9.90265 9.31338 8.00065 9.31338C6.09798 9.31338 4.91932 8.41004 4.91932 8.41004C4.04665 7.74738 3.38798 8.13204 3.14732 8.58804Z" fill="#BDBDBD"/>
-                                    <path d="M7.99929 8.09467C10.318 8.09467 12.2113 6.28267 12.2113 4.052C12.2113 1.812 10.318 0 7.99929 0C5.67995 0 3.78662 1.812 3.78662 4.052C3.78662 6.28267 5.67995 8.09467 7.99929 8.09467ZM7.99929 2.05267C9.13862 2.05267 10.068 2.94667 10.068 4.052C10.068 5.148 9.13862 6.042 7.99929 6.042C6.85995 6.042 5.93062 5.148 5.93062 4.052C5.92995 2.946 6.85929 2.05267 7.99929 2.05267Z" fill="#BDBDBD"/>
+                                    <path d="M3.14732 8.58804C2.73865 9.39138 3.20265 9.77538 4.26132 10.4314C5.16132 10.9874 6.40465 11.1907 7.20332 11.272C6.87598 11.5867 8.37598 10.144 4.05598 14.2994C3.13998 15.1774 4.61465 16.586 5.52998 15.7267L8.00798 13.3367C8.95665 14.2494 9.86598 15.124 10.486 15.73C11.402 16.5927 12.876 15.196 11.97 14.3027C11.902 14.238 8.61198 11.082 8.81265 11.2754C9.62132 11.194 10.846 10.9787 11.7353 10.4347L11.7346 10.434C12.7933 9.77471 13.2573 9.39138 12.8546 8.58804C12.6113 8.13204 11.9553 7.75071 11.082 8.41004C11.082 8.41004 9.90265 9.31338 8.00065 9.31338C6.09798 9.31338 4.91932 8.41004 4.91932 8.41004C4.04665 7.74738 3.38798 8.13204 3.14732 8.58804Z"/>
+                                    <path d="M7.99929 8.09467C10.318 8.09467 12.2113 6.28267 12.2113 4.052C12.2113 1.812 10.318 0 7.99929 0C5.67995 0 3.78662 1.812 3.78662 4.052C3.78662 6.28267 5.67995 8.09467 7.99929 8.09467ZM7.99929 2.05267C9.13862 2.05267 10.068 2.94667 10.068 4.052C10.068 5.148 9.13862 6.042 7.99929 6.042C6.85995 6.042 5.93062 5.148 5.93062 4.052C5.92995 2.946 6.85929 2.05267 7.99929 2.05267Z"/>
                                     </g>
                                     <defs>
                                     <clipPath>
@@ -3205,7 +3442,7 @@
                              </a>
                              <a class="footer__soc-item" href="#" target="_blank">
                                 <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.646 2.19108L15.666 2.31406C15.4727 1.66841 14.9507 1.17022 14.2874 0.988883L14.2734 0.985746C13.026 0.667001 8.00677 0.667001 8.00677 0.667001C8.00677 0.667001 3.00016 0.660726 1.74017 0.985746C1.06418 1.17022 0.541523 1.66841 0.351525 2.30088L0.348192 2.31406C-0.117802 4.60488 -0.121136 7.35751 0.368858 9.81021L0.348192 9.68597C0.541523 10.3316 1.06352 10.8298 1.72684 11.0111L1.74084 11.0143C2.98683 11.3337 8.00743 11.3337 8.00743 11.3337C8.00743 11.3337 13.0134 11.3337 14.274 11.0143C14.9507 10.8298 15.4733 10.3316 15.6633 9.69915L15.6667 9.68597C15.8787 8.62056 16 7.39452 16 6.14213C16 6.09633 16 6.0499 15.9993 6.00347C16 5.9608 16 5.90998 16 5.85915C16 4.60613 15.8787 3.3801 15.646 2.19108ZM6.40545 8.29115V3.71516L10.5827 6.0066L6.40545 8.29115Z" fill="#BDBDBD"/>
+                                    <path d="M15.646 2.19108L15.666 2.31406C15.4727 1.66841 14.9507 1.17022 14.2874 0.988883L14.2734 0.985746C13.026 0.667001 8.00677 0.667001 8.00677 0.667001C8.00677 0.667001 3.00016 0.660726 1.74017 0.985746C1.06418 1.17022 0.541523 1.66841 0.351525 2.30088L0.348192 2.31406C-0.117802 4.60488 -0.121136 7.35751 0.368858 9.81021L0.348192 9.68597C0.541523 10.3316 1.06352 10.8298 1.72684 11.0111L1.74084 11.0143C2.98683 11.3337 8.00743 11.3337 8.00743 11.3337C8.00743 11.3337 13.0134 11.3337 14.274 11.0143C14.9507 10.8298 15.4733 10.3316 15.6633 9.69915L15.6667 9.68597C15.8787 8.62056 16 7.39452 16 6.14213C16 6.09633 16 6.0499 15.9993 6.00347C16 5.9608 16 5.90998 16 5.85915C16 4.60613 15.8787 3.3801 15.646 2.19108ZM6.40545 8.29115V3.71516L10.5827 6.0066L6.40545 8.29115Z"/>
                                 </svg>
                              </a>
                         </div>
