@@ -1314,5 +1314,48 @@ $(function () {
 		$('.selc-dropdown').removeClass('selc-dropdown--active')
 	})
 
+	// Сортировка по, страница каталога
+	if ($(document).width() <= 992)
+	{
+	    $(document).on('click', '.dropdown-panel__name', function()
+		{
+			if( $('.dropdown-panel').hasClass('dropdown-panel--active') )
+				$('.dropdown-panel').removeClass('dropdown-panel--active')
+			else
+				$('.dropdown-panel').addClass('dropdown-panel--active')
+		})
+
+		$(document).on('click', '.dropdown-panel__li', function()
+		{
+			$('.dropdown-panel').removeClass('dropdown-panel--active')
+
+			product = $(this).text()
+			$(this).parents('.dropdown-panel').find('.dropdown-panel__name').text(product)
+		})
+
+		$(document).click(function(event)
+		{
+			if ($(event.target).closest(".dropdown-panel__name").length || $(event.target).closest(".dropdown-panel__li").length ) return;
+			event.stopPropagation();
+
+			$('.dropdown-panel').removeClass('dropdown-panel--active')
+		})
+	}
+
+	// Раскрытие списка ссылок - каталог
+    $(document).on('click', '.overflow-box__more', function () {
+
+        let parent = $(this).parents('.overflow-box')
+
+		if (parent.hasClass('overflow-box--active')) {
+			parent.removeClass('overflow-box--active')
+			$(this).text('Показать еще')
+		}
+		else {
+			parent.addClass('overflow-box--active')
+			$(this).text('Скрыть')
+		}
+    });
+
 })
 

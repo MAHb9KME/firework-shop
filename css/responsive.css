@@ -812,6 +812,189 @@
 	.sec-reviews__item {
 	    text-align: left;
 	}
+
+	.queries__inner {
+		border-left: none;
+		border-right: none;
+		padding: 24px 0;
+	}
+
+	.queries__line {
+	    display: block;
+	}
+
+	.queries__name {
+	    margin: 0px 0px 12px 0px;
+	}
+
+	.queries__event-item + .queries__event-item {
+	    margin-left: 24px;
+	}
+
+	.queries__button {
+	    padding: 12px 0 12px 12px;
+	    margin: -12px 0 -12px;
+	}
+
+	.cat-panel__inner {
+	    border: none;
+	    padding: 0;
+	    display: block;
+	    text-align: center;
+	}
+
+	.cat-panel__sort {
+	    margin-bottom: 24px;
+	}
+
+	.cat-panel__dropdown {
+		display: inline-flex;
+	    justify-content: center;
+	}
+
+	.vision-panel {
+		justify-content: center;
+	}
+
+	.vision-panel__view--gall {
+		display: none;
+	}
+
+	.vision-panel__view  {
+		margin: 0;
+	}
+
+	.vision-panel__view + .vision-panel__view  {
+		margin-left: 16px;
+	}
+	.dropdown-panel {
+		overflow: hidden;
+	}
+
+	.dropdown-panel--active {
+		overflow: initial;
+	}
+
+	.dropdown-panel__name {
+		display: block;
+	}
+
+	.dropdown-panel__name::after {
+	    content: '';
+	    display: inline-block;
+	    vertical-align: middle;
+	    width: 12px;
+	    height: 12px;
+	    position: absolute;
+	    top: 1px;
+	    left: auto;
+	    right: 0;
+	    z-index: 2;
+	    background-image: url(../images/icons/dropdown-wide.svg);
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 12px;
+	}
+
+	.dropdown-panel--active .dropdown-panel__name:after {
+	    transform: rotate(-180deg) translateY(1px);
+	}
+
+	.dropdown-panel__ul {
+	    width: 150px;
+	    min-width: 150px;
+	    position: absolute;
+	    right: 0;
+	    left: auto;
+	    z-index: 99;
+	    top: 180%;
+	    padding: 16px 0;
+	    background: #fff;
+	    box-shadow: 0px 8px 16px rgb(0 0 0 / 12%);
+	    border-radius: 8px;
+	    margin-top: 16px;
+	    text-align: right;
+	    transition: .2s all;
+	    display: block;
+	    opacity: 0;
+	}
+
+	.dropdown-panel--active .dropdown-panel__ul {
+		top: 100%;
+		opacity: 1;
+	}
+
+	.dropdown-panel__li {
+		display: block;
+	    line-height: 24px;
+	    color: #333333;
+	    margin: 0;
+	    padding: 4px 10px;
+	    transition: .2s all;
+	    cursor: pointer;
+    }
+
+    .catalog__filter {
+	    margin-bottom: 24px;
+    }
+
+    .catalog__filter-form {
+    	display: none;
+    }
+
+    .catalog__btn-filter {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+	    font-weight: 500;
+	    font-size: 14px;
+	    line-height: 14px;
+	    letter-spacing: -0.02em;
+	    color: #731B55;
+	    border: 1px solid #EFEFEF;
+	    border-radius: 4px;
+	    text-align: center;
+	    width: 100%;
+	    padding: 12px 15px;
+	    cursor: pointer;
+    }
+    .catalog__btn-filter::before {
+    	content: '';
+    	display: inline-block;
+    	vertical-align: middle;
+    	width: 18px;
+    	height: 18px;
+    	background-image: url(../images/icons/filter-icon.svg);
+    	background-repeat: no-repeat;
+    	background-position: 50% 50%;
+    	background-size: contain;
+    	margin-right: 8px;
+    	transform: translateY(-2px);
+    }
+
+    .vision-panel__view[data-vision="view-gall"] {
+    	display: none;
+    }
+
+    .catalog__box {
+    	text-align: center;
+    }
+
+    .box-link {
+	    justify-content: center;
+	}
+
+	.catalog__info {
+		text-align: center;
+	}
+
+	.catalog__title-min {
+		margin: 0px 0px 24px 0px;
+	}
+
+	.overflow-box__body {
+		max-height: 255px;
+	}
 }
 
 @media screen and (max-width:960px){
@@ -1616,12 +1799,6 @@
 	    transform: rotate(-180deg) translateY(1px);
 	}
 	.selc-dropdown__ul {
-	    position: absolute;
-	    top: 150%;
-	    left: auto;
-	    right: 0;
-	    z-index: 2;
-
 	    width: 150px;
 	    min-width: 150px;
 	    position: absolute;
@@ -1653,6 +1830,9 @@
 	    padding: 4px 10px;
 	    transition: .2s all;
 	    cursor: pointer;
+	}
+	.footer .aware__form-input {
+	    margin-bottom: 16px;
 	}
 
 	
@@ -1904,6 +2084,25 @@
 		margin: 0px 0px 16px;
 	}
 
+	.catalog__vision {
+	    grid-template-columns: repeat(1, 1fr);
+	}
+
+	.catalog__vision .product {
+
+	}
+
+	.catalog__vision .product__drop {
+		position: static;
+	}
+
+	.catalog__vision .drop-product__desc {
+		display: none;
+	}
+
+	.btn-empty {
+		padding: 12px 20px;;
+	}
 
 }
 
