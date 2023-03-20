@@ -543,6 +543,7 @@
 	.pros__item {
 		width: calc(50% - 16px);
 		margin: 8px;
+	    transform: none !important;
 	}
 	.pros__icon {
 		margin: 0px 0px 56px 0px;
@@ -1674,6 +1675,8 @@
 	    margin: 0px 0px 16px 0px;
 	    text-align: center;
 	}
+	.makers__title {
+	}
 	.section-empty__btns {
 	    justify-content: center;
 	}
@@ -1865,9 +1868,14 @@
 
 	.slider {
 		display: flex;
-		max-height: initial;
 		margin-bottom: 48px;
 		overflow: initial;
+	}
+	.slider__image picture {
+	    display: block;
+		height: 100%;
+		max-height: 360px;
+	    overflow: hidden;
 	}
 	.slider .slick-list,
 	.slider__item {
@@ -1937,7 +1945,7 @@
 	.product-week {
 		border-left: none;
 		border-right: none;
-		padding: 22px 0;
+		/*padding: 22px 0;*/
 		margin: 0;
 	}
 	.week__slider {
@@ -1966,7 +1974,7 @@
 		margin: 0px 0px 50px 0px !important;
 	}
 	.makers__item {
-		padding: 24px 0;
+		/*padding: 24px 0;*/
 		border-left: none;
 		border-right: none;
 	}
@@ -2052,7 +2060,7 @@
 	.product {
 		border-left: none;
 		border-right: none;
-		padding: 22px 0;
+		/*padding: 22px 0;*/
 	}
 	.watched__body {
 	    margin: 0 0px 16px;
@@ -2072,7 +2080,10 @@
 		display: none;
 	}
 	.news-box__image {
-		padding-top: 55.78%;
+		padding-top: 245px;
+	}
+	.tab-body__content .slick-arrow {
+		height: 245px;
 	}
 	.news-box__text {
 		padding: 24px 0;
@@ -2102,6 +2113,34 @@
 
 	.btn-empty {
 		padding: 12px 20px;;
+	}
+
+	.product__front {
+		text-align: center;
+	}
+
+	.prices {
+	    justify-content: center;
+	}
+
+	.makers__front {
+	    text-align: center;
+	}
+
+	.makers__image {
+	    align-self: center;
+	}
+
+	.makers__btn {
+		justify-content: center;
+	}
+
+	.pros__item {
+	    text-align: center;
+	}
+
+	.pros__img {
+	    margin: 0 auto;
 	}
 
 }
@@ -2150,8 +2189,8 @@
 	.certificates__body .slick-next {
 		right: -16px;
 	}
-	.news-box__image {
-		padding-top: 80.44%;
+	.slider__image picture {
+		max-height: 240px;
 	}
 }
 

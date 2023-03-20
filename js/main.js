@@ -1056,6 +1056,7 @@ $(function () {
 			$('.product__inn').removeClass('product__inn--active')
 			parent.addClass('product__inn--active')
 		}
+
 	})
 
 	// Разворот карточки front and back side

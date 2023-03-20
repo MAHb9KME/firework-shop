@@ -971,24 +971,24 @@ hr {
 }
 
 .footer__soc-item:nth-child(1):hover:after {
-	-webkit-animation: sonarEffect-1 1s ease-out 25ms;
-	-moz-animation: sonarEffect-1 1s ease-out 25ms;
-	animation: sonarEffect-1 1s ease-out 25ms;
+	-webkit-animation: sonarEffect-1 0.7s ease-out 25ms;
+	-moz-animation: sonarEffect-1 0.7s ease-out 25ms;
+	animation: sonarEffect-1 0.7s ease-out 25ms;
 }
 .footer__soc-item:nth-child(2):hover:after {
-	-webkit-animation: sonarEffect-2 1s ease-out 25ms;
-	-moz-animation: sonarEffect-2 1s ease-out 25ms;
-	animation: sonarEffect-2 1s ease-out 25ms;
+	-webkit-animation: sonarEffect-2 0.7s ease-out 25ms;
+	-moz-animation: sonarEffect-2 0.7s ease-out 25ms;
+	animation: sonarEffect-2 0.7s ease-out 25ms;
 }
 .footer__soc-item:nth-child(3):hover:after {
-	-webkit-animation: sonarEffect-3 1s ease-out 25ms;
-	-moz-animation: sonarEffect-3 1s ease-out 25ms;
-	animation: sonarEffect-3 1s ease-out 25ms;
+	-webkit-animation: sonarEffect-3 0.7s ease-out 25ms;
+	-moz-animation: sonarEffect-3 0.7s ease-out 25ms;
+	animation: sonarEffect-3 0.7s ease-out 25ms;
 }
 .footer__soc-item:nth-child(4):hover:after {
-	-webkit-animation: sonarEffect-4 1s ease-out 25ms;
-	-moz-animation: sonarEffect-4 1s ease-out 25ms;
-	animation: sonarEffect-4 1s ease-out 25ms;
+	-webkit-animation: sonarEffect-4 0.7s ease-out 25ms;
+	-moz-animation: sonarEffect-4 0.7s ease-out 25ms;
+	animation: sonarEffect-4 0.7s ease-out 25ms;
 }
 /* Common Hover Social END */
 
@@ -4156,11 +4156,13 @@ body.page-brand-catalog .makers {
 	line-height: 130%;
 	letter-spacing: -0.02em;
 	color: #9F9F9F;
-	transition: .2s color;
+	transition: .1s all;
 }
 
 .back-makers__link:hover {
 	color: #661F4E;
+	transform: translateX(5px);
+	padding-left: 5px;
 }
 
 .back-makers__return {
@@ -4539,6 +4541,8 @@ body.page-brand-catalog .makers {
 	display: block;
 	position: relative;
 	padding-top: 60.504%;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 .news-box__img {
