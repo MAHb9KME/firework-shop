@@ -1139,6 +1139,27 @@ hr {
 	}
 }
 
+/* Logo basket link show */
+@keyframes basket-line-show {
+	0%, 100% {
+		transform: translateX(0px);
+	}
+
+	70% {
+		transform: translateX(-128px);
+	}
+}
+
+@keyframes basket-line-show-2 {
+	0%, 100% {
+		transform: translateX(120px);
+	}
+
+	70% {
+		transform: translateX(0px);
+	}
+}
+
 .btn-anim:hover {
 	animation: animation 3s ease infinite;
 	-webkit-animation: animation 3s ease infinite;
@@ -6771,6 +6792,12 @@ body.page-brand-catalog .makers {
 }
 .b-product__mobile {
 	display: none;
+}
+.b-product__contain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .b-product__m-video {
 }
