@@ -8,6 +8,12 @@
 	.p-product__sidebar {
 	    width: 32.116%;
 	}
+	.b-product__amt {
+	    margin: 0 10px 0 20px;
+	}
+	.b-product__tlt {
+	    max-width: 304px;
+	}
 }
 
 @media screen and (max-width:1420px){
@@ -159,6 +165,34 @@
 	    padding: 17px 17px 17px 23px;
 	}
 
+	.basket__wr-title {
+	    margin: 0px 0px 32px 0px;
+	}
+
+	.basket__body {
+		display: block;
+	}
+
+	.basket__main {
+		width: 100%;
+		margin-bottom: 32px;
+	}
+
+	.basket__aside {
+		width: 100%;
+	}
+
+	.aside-basket__inner {
+		padding: 0;
+		border: none	;
+	}
+	.b-product__info {
+	    column-gap: 14px;
+	}
+	.b-product__jump {
+	    column-gap: 14px;
+	}
+
 }
 
 @media screen and (max-width:1150px){
@@ -206,7 +240,7 @@
 		margin-right: 16px;
 	}
 	.header-main {
-		padding: 16px 0;
+		padding: 14px 0 19px;
 	}
 	.header-menu {
 		padding-bottom: 16px;
@@ -1375,7 +1409,7 @@
 	}
 	.boxpanel--header {
 		order: -1;
-		margin-bottom: 17px;
+		margin-bottom: 12px;
 	}
 	.boxpanel__icon {
 		margin-bottom: 10px;
@@ -1834,10 +1868,158 @@
 	    transition: .2s all;
 	    cursor: pointer;
 	}
-	.footer .aware__form-input {
+	.aware__cover {
 	    margin-bottom: 16px;
 	}
 
+	.basket__clear-basket {
+		display: none;
+	}
+
+	.page-basket .breadcrumbs {
+		display: block;
+		padding-bottom: 16px;
+	}
+
+	.basket__title {
+	    width: 100%;
+	    text-align: center;
+	}
+
+	.b-product__video {
+		display: none;
+	}
+
+	.b-product {
+		display: grid;
+	    grid-template-rows: 1fr 1fr;
+    	grid-template-columns: 1fr 120px;
+		padding: 15px 0;
+	}
+
+	.b-product__info {
+		width: 100%;
+		margin-bottom: 16px;
+
+	    grid-column: 1 / 3;
+    	grid-row: 1 / 2;
+	}
+
+	.drug-focus[data-direction="left"] .b-product__info {
+		transform: translateX(-128px);
+	}
+
+	.b-product__control {
+	    justify-content: stretch;
+	    margin: 0px;
+
+	    grid-column: 1 / 3;
+    	grid-row: 2 / 2;
+	}
+
+	.drug-focus[data-direction="left"] .b-product__control {
+		transform: translateX(-128px);
+	}
+
+	.b-product__mobile {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+        align-self: stretch;
+        padding: 8px 0;;
+        grid-column: 2 / 3;
+    	grid-row: 1 / 3;
+    	margin-left: 24px;
+    	transform: translateX(120px);
+    	transition: .05s all;
+	}
+
+	.drug-focus[data-direction="left"] .b-product__mobile {
+    	transform: translateX(0px);
+	}
+
+	.b-product__price {
+		display: none;
+	}
+
+	.b-product__cross {
+		display: none;
+	}
+
+	.b-product__amt {
+		width: 100%;
+		margin: 0;
+	}
+
+	.b-product__image {
+	    width: 56px;
+	    min-width: 56px;
+	}
+
+	.b-product__m-video {
+		display: block;
+	    width: 32px;
+	    min-width: 32px;
+	    height: 32px;
+	    background-color: #fff;
+	    border-radius: 50%;
+	    background-image: url(../images/icons/play-purple.svg);
+	    background-repeat: no-repeat;
+	    background-position: 55% 51.5%;
+	    background-size: 6px;
+	    border-radius: 50%;
+	    border: 1px solid #EFEFEF;
+	}
+
+	.b-product__clear {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: -0.02em;
+		color: #9F9F9F;
+		padding: 16px 16px;
+		background: #FFFFFF;
+		border: 1px solid #EFEFEF;
+		border-radius: 4px;
+        margin-top: auto;
+	}
+
+	.b-product__clear::after {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 14px;
+		height: 14px;
+		background-image: url(../images/icons/cross.svg);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		margin-left: 4px;
+	}
+
+	.b-product__amt .amt-box__btn {
+	    height: 46px;
+	}
+
+	.aside-basket__title {
+	    font-size: 20px;
+	    margin: 0px 0px 16px 0px;
+	}
+
+	.aside-basket__line:not(:last-child) {
+	    margin: 0px 0px 16px 0px;
+	}
+
+	.aside-basket__note {
+	    margin: 0px 0px 16px 0px;
+	}
+
+	.aside-basket__btn {
+	    margin: 0px 0px 16px 0px;
+	}
 	
 }
 
@@ -1882,7 +2064,7 @@
 		overflow: initial;
 	}
 	.slider__image {
-		margin-bottom: 24px;
+		margin-bottom: 26px;
 	}
 	.slider__img {
 		height: 360px;
@@ -1975,8 +2157,7 @@
 	}
 	.makers__item {
 		/*padding: 24px 0;*/
-		border-left: none;
-		border-right: none;
+		border: none;
 	}
 	.certificates--prev,
 	.certificates--next {
@@ -1993,7 +2174,7 @@
 	}
 	.reviews__body {
 		overflow: initial;
-	    margin: 0px 0px 16px;
+	    margin: 0px 0px 24px;
 	}
 	.reviews-arrow--left,
 	.reviews-arrow--right {
@@ -2016,8 +2197,8 @@
 	}
 	.news-box__item {
 		border: none;
-		border-top: 1px solid #EFEFEF;
-		border-bottom: 1px solid #EFEFEF;
+		/*border-top: 1px solid #EFEFEF;
+		border-bottom: 1px solid #EFEFEF;*/
 		padding: 0;
 		margin: 0;
 		display: flex !important;
@@ -2027,7 +2208,7 @@
 		padding: 24px 0;
 	}
 	.face .slick-slider {
-		margin: 0 0 48px;
+		margin: 0 0 40px;
 	}
 	html {
 		font-size: 6px;
@@ -2042,20 +2223,18 @@
 	}
 	.reviews__head {
 		text-align: center;
-	}
-	.reviews__head {
-		margin: 0px 0px 24px 0px;
+		margin: 0px 0px 32px 0px;
 	}
 	.reviews__item {
-		padding: 24px 0;
-		border-left: none;
-		border-right: none;
+		/*padding: 24px 0;*/
+		padding: 0;
+		border: none;
 	}
 	.nav-panel__item {
 		padding: 13px 24px;
 	}
 	.tab-panel__btn {
-		margin-bottom: 16px;
+		/*margin-bottom: 16px;*/
 	}
 	.product {
 		border-left: none;
@@ -2115,7 +2294,12 @@
 		padding: 12px 20px;;
 	}
 
+	.product__inn {
+		border: none;
+	}
+
 	.product__front {
+		padding: 0;
 		text-align: center;
 	}
 
@@ -2142,6 +2326,36 @@
 	.pros__img {
 	    margin: 0 auto;
 	}
+
+	.cat-list__body .slick-arrow {
+		height: 220px;
+	}
+
+	.product__image {
+	    min-height: 156px;
+	}
+
+	.product__img {
+	    width: 100%;
+	    max-height: 156px;
+	}
+
+	.edge__item {
+		border: none;
+	}
+
+	.makers__front {
+	    padding: 0;
+	}
+
+	.reviews__subtitle {
+		margin: 0px 0px 24px 0px;
+	}
+	.eventsline {
+	    width: 100%;
+	}
+
+
 
 }
 

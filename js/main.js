@@ -304,7 +304,7 @@ $(function () {
 	// Поиск автозаполнение очистка
 	$(document).on('click', '.search__plug-text, .search__main', function () {
 		$('.search__plug').addClass('hide')
-		$('.search__main').focus()
+		$('.search__main').drug-focus()
 	})
 
 	$(document).click(function (event) {
@@ -326,7 +326,7 @@ $(function () {
 		$('.search__plug').addClass('hide')
 		text = $(this).text()
 		$('.search__main').val(text)
-		$('.search__main').focus()
+		$('.search__main').drug-focus()
 	})
 
 
@@ -1255,7 +1255,7 @@ $(function () {
 	})
 
 	// Слайдер производителей в верхнем меню
-	/*$('.focus-menu__labels').slick({
+	/*$('.drug-focus-menu__labels').slick({
 		slidesToShow: 8,
 		slidesToScroll: 2,
 		responsive: [
@@ -1357,6 +1357,45 @@ $(function () {
 			$(this).text('Скрыть')
 		}
     });
+
+
+
+    // Get all elements with the .drug-focus class
+	const focusElems = document.querySelectorAll('.drug-focus');
+
+	// Define variables to keep track of touch position and direction
+	let touchStartX = null;
+	let touchEndX = null;
+
+	// Add touchstart, touchmove, and touchend event listeners to each .drug-focus element
+	focusElems.forEach(focusElem => {
+	  focusElem.addEventListener('touchstart', e => {
+	    // Store the starting touch position
+	    touchStartX = e.touches[0].clientX;
+	  });
+	  
+	  focusElem.addEventListener('touchmove', e => {
+	    // Store the current touch position
+	    touchEndX = e.touches[0].clientX;
+	    
+	    // Calculate the distance traveled
+	    const distX = touchEndX - touchStartX;
+	    
+	    // Add the appropriate class depending on the direction of the movement
+	    if (distX > 0) {
+	      focusElem.setAttribute('data-direction', 'right');
+	    } else {
+	      focusElem.setAttribute('data-direction', 'left');
+	    }
+	  });
+	  
+	  focusElem.addEventListener('touchend', e => {
+	    
+	    // Reset touch position variables
+	    touchStartX = null;
+	    touchEndX = null;
+	  });
+	});
 
 })
 
