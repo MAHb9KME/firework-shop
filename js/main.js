@@ -1382,10 +1382,12 @@ $(function () {
 	    const distX = touchEndX - touchStartX;
 	    
 	    // Add the appropriate class depending on the direction of the movement
-	    if (distX > 0) {
-	      focusElem.setAttribute('data-direction', 'right');
-	    } else {
-	      focusElem.setAttribute('data-direction', 'left');
+	    if (Math.abs(distX) > 40) {
+	      if (distX > 0) {
+	        focusElem.setAttribute('data-direction', 'right');
+	      } else {
+	        focusElem.setAttribute('data-direction', 'left');
+	      }
 	    }
 	  });
 	  

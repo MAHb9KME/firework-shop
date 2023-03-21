@@ -2500,9 +2500,12 @@ body.main-menu-drop .scroll__list li a {
 	line-height: 140%;
 	letter-spacing: -0.02em;
 	color: #9F9F9F;
-	transition: .2s color;
+	transition: .1s all;
 }
-
+.footer__link:hover {
+    transform: translateX(5px);
+    padding-left: 5px;
+}
 .footer__link:hover {
 	color: #3A3A3A;
 }
