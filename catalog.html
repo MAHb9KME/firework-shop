@@ -969,17 +969,17 @@
 									</div>
 
 									<div class="cat-panel__vision vision-panel">
-										<button class="vision-panel__view vision-panel__view--active" data-vision="view-classic">
+										<button class="vision-panel__view" data-vision="vision--classic">
 											<svg width="20" height="20" viewBox="0 0 20 20">
 												<path d="M2.5 1.875H1.875V8.95833H8.95833V1.875H2.5ZM3.125 7.70833V3.125H7.70833V7.70833H3.125ZM2.5 11.0417H1.875V18.125H8.95833V11.0417H2.5ZM3.125 16.875V12.2917H7.70833V16.875H3.125ZM11.0417 1.875H18.125V8.95833H11.0417V1.875ZM12.2917 3.125V7.70833H16.875V3.125H12.2917ZM11.6667 11.0417H11.0417V18.125H18.125V11.0417H11.6667ZM12.2917 16.875V12.2917H16.875V16.875H12.2917Z" fill="#9F9F9F"/>
 											</svg>
 										</button>
-										<button class="vision-panel__view" data-vision="view-gall">
+										<button class="vision-panel__view" data-vision="vision--gall">
 											<svg width="20" height="20" viewBox="0 0 20 20">
 												<path d="M2.25391 1.70667H1.62891V8.69083H7.31474V1.70833H2.25391V1.70667ZM2.87891 7.44083V2.95833H6.06474V7.44166H2.87891V7.44083ZM9.64724 1.7075H9.02224V8.69H18.4056V1.70833H9.64724V1.7075ZM10.2722 7.44083V2.95833H17.1556V7.44166H10.2722V7.44083ZM1.62891 11.2642H7.31474V18.2483H1.62891V11.2642ZM2.87891 12.5142V16.9983H6.06474V12.5142H2.87891ZM9.64724 11.2642H9.02224V18.2483H18.4056V11.2642H9.64724ZM10.2722 16.9983V12.5142H17.1556V16.9983H10.2722Z" fill="#9F9F9F"/>
 											</svg>
 										</button>
-										<button class="vision-panel__view" data-vision="view-price">
+										<button class="vision-panel__view vision-panel__view--active" data-vision="vision--price">
 											<svg width="20" height="20" viewBox="0 0 20 20">
 												<path d="M2.5 1.875H1.875V8.95833H18.125V1.875H2.5ZM3.125 7.70833V3.125H16.875V7.70833H3.125ZM2.5 11.0417H1.875V18.125H18.125V11.0417H2.5ZM3.125 16.875V12.2917H16.875V16.875H3.125Z" fill="#9F9F9F"/>
 											</svg>
@@ -991,7 +991,7 @@
 
 							<div class="catalog__content">
 								
-								<div class="cat-list__body catalog__vision">
+								<div class="cat-list__body catalog__vision vision--price">
 
 									<div class="product cat-list--product">
 										<div class="product__inn">
@@ -1279,591 +1279,6 @@
 													</div>
 												</div>
 												<button class="back-product__return">вернуться к товару</button>
-											</div>
-
-											<div class="product__drop drop-product">
-												<form class="drop-product__btns" action="#">
-													<div class="amt-box product__amt-box">
-														<button class="amt-box__btn amt-box__minus" data-nav="minus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-
-														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-														<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-														<div class="amt-box__numb">
-															<div class="amt-box__focus">1</div>
-															<div class="amt-box__from">из</div>
-															<div class="amt-box__to">16</div>
-															<div class="amt-box__on">на</div>
-															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-															</div>
-														</div>
-
-														<button class="amt-box__btn amt-box__plus" data-nav="plus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-													</div>
-
-													<button class="drop-product__button btn-empty">Добавить в корзину</button>
-												</form>
-												<div class="drop-product__desc">
-													<p>Производитель <strong>Maxsem</strong></p>
-													<p>Калибр, дюймы <strong>0.8</strong></p>
-													<p>Продолжительность <strong>15</strong></p>
-													<p>Высота <strong>20</strong></p>
-													<p>Количество залпов <strong>11</strong></p>
-													<p>Тип товара <strong>Батарея салютов</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="product cat-list--product">
-										<div class="product__inn">
-											<div class="product__front">
-												<div class="eventsline scroll" data-step="20">
-													<div class="scroll__container">
-														<div class="eventsline__inner scroll__list">
-															<a class="eventsline__item" href="#">
-																На новый год
-															</a>
-															<a class="eventsline__item" href="#">
-																На 9 мая
-															</a>
-															<a class="eventsline__item" href="#">
-																На 23 февраля
-															</a>
-														</div>
-													</div>
-												<div class="scroll__right"></div></div>
-
-												<a class="product__image" href="#">
-													<picture>
-														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
-													</picture>
-												</a>
-
-												<div class="xpanel">
-													<a class="xvideo" href="#" data-fancybox="">
-														<span class="xvideo__icon"></span>
-														<span class="xvideo__text">видео</span>
-													</a>
-													<div class="xtouch">
-														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-														<button class="xtouch__item xtouch__item--favorite"></button>
-													</div>
-												</div>
-
-												<h5 class="product__title">
-													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-														залпов, Balet,
-														GW218-89</a>
-												</h5>
-
-												<div class="product__prices">
-													<div class="prices">
-														<div class="prices__item prices__item--new">
-															542 руб
-														</div>
-														<div class="prices__item prices__item--old">
-															674 руб
-														</div>
-													</div>
-													<button class="product__prices-show">
-														показать оптовые цены
-													</button>
-												</div>
-											</div>
-
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
-											</div>
-
-											<div class="product__drop drop-product">
-												<form class="drop-product__btns" action="#">
-													<div class="amt-box product__amt-box">
-														<button class="amt-box__btn amt-box__minus" data-nav="minus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-
-														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-														<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-														<div class="amt-box__numb">
-															<div class="amt-box__focus">1</div>
-															<div class="amt-box__from">из</div>
-															<div class="amt-box__to">16</div>
-															<div class="amt-box__on">на</div>
-															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-															</div>
-														</div>
-
-														<button class="amt-box__btn amt-box__plus" data-nav="plus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-													</div>
-
-													<button class="drop-product__button btn-empty">Добавить в корзину</button>
-												</form>
-												<div class="drop-product__desc">
-													<p>Производитель <strong>Maxsem</strong></p>
-													<p>Калибр, дюймы <strong>0.8</strong></p>
-													<p>Продолжительность <strong>15</strong></p>
-													<p>Высота <strong>20</strong></p>
-													<p>Количество залпов <strong>11</strong></p>
-													<p>Тип товара <strong>Батарея салютов</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="product cat-list--product">
-										<div class="product__inn">
-											<div class="product__front">
-												<div class="eventsline scroll" data-step="20">
-													<div class="scroll__container">
-														<div class="eventsline__inner scroll__list">
-															<a class="eventsline__item" href="#">
-																На новый год
-															</a>
-															<a class="eventsline__item" href="#">
-																На 9 мая
-															</a>
-															<a class="eventsline__item" href="#">
-																На 23 февраля
-															</a>
-														</div>
-													</div>
-												<div class="scroll__right"></div></div>
-
-												<a class="product__image" href="#">
-													<picture>
-														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
-													</picture>
-												</a>
-
-												<div class="xpanel">
-													<a class="xvideo" href="#" data-fancybox="">
-														<span class="xvideo__icon"></span>
-														<span class="xvideo__text">видео</span>
-													</a>
-													<div class="xtouch">
-														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-														<button class="xtouch__item xtouch__item--favorite"></button>
-													</div>
-												</div>
-
-												<h5 class="product__title">
-													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-														залпов, Balet,
-														GW218-89</a>
-												</h5>
-
-												<div class="product__prices">
-													<div class="prices">
-														<div class="prices__item prices__item--new">
-															542 руб
-														</div>
-														<div class="prices__item prices__item--old">
-															674 руб
-														</div>
-													</div>
-													<button class="product__prices-show">
-														показать оптовые цены
-													</button>
-												</div>
-											</div>
-
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
-											</div>
-
-											<div class="product__drop drop-product">
-												<form class="drop-product__btns" action="#">
-													<div class="amt-box product__amt-box">
-														<button class="amt-box__btn amt-box__minus" data-nav="minus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-
-														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-														<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-														<div class="amt-box__numb">
-															<div class="amt-box__focus">1</div>
-															<div class="amt-box__from">из</div>
-															<div class="amt-box__to">16</div>
-															<div class="amt-box__on">на</div>
-															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-															</div>
-														</div>
-
-														<button class="amt-box__btn amt-box__plus" data-nav="plus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-													</div>
-
-													<button class="drop-product__button btn-empty">Добавить в корзину</button>
-												</form>
-												<div class="drop-product__desc">
-													<p>Производитель <strong>Maxsem</strong></p>
-													<p>Калибр, дюймы <strong>0.8</strong></p>
-													<p>Продолжительность <strong>15</strong></p>
-													<p>Высота <strong>20</strong></p>
-													<p>Количество залпов <strong>11</strong></p>
-													<p>Тип товара <strong>Батарея салютов</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="product cat-list--product">
-										<div class="product__inn">
-											<div class="product__front">
-												<div class="eventsline scroll" data-step="20">
-													<div class="scroll__container">
-														<div class="eventsline__inner scroll__list">
-															<a class="eventsline__item" href="#">
-																На новый год
-															</a>
-															<a class="eventsline__item" href="#">
-																На 9 мая
-															</a>
-															<a class="eventsline__item" href="#">
-																На 23 февраля
-															</a>
-														</div>
-													</div>
-												<div class="scroll__right"></div></div>
-
-												<a class="product__image" href="#">
-													<picture>
-														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
-													</picture>
-												</a>
-
-												<div class="xpanel">
-													<a class="xvideo" href="#" data-fancybox="">
-														<span class="xvideo__icon"></span>
-														<span class="xvideo__text">видео</span>
-													</a>
-													<div class="xtouch">
-														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-														<button class="xtouch__item xtouch__item--favorite"></button>
-													</div>
-												</div>
-
-												<h5 class="product__title">
-													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-														залпов, Balet,
-														GW218-89</a>
-												</h5>
-
-												<div class="product__prices">
-													<div class="prices">
-														<div class="prices__item prices__item--new">
-															542 руб
-														</div>
-														<div class="prices__item prices__item--old">
-															674 руб
-														</div>
-													</div>
-													<button class="product__prices-show">
-														показать оптовые цены
-													</button>
-												</div>
-											</div>
-
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
-											</div>
-
-											<div class="product__drop drop-product">
-												<form class="drop-product__btns" action="#">
-													<div class="amt-box product__amt-box">
-														<button class="amt-box__btn amt-box__minus" data-nav="minus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-
-														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-														<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-														<div class="amt-box__numb">
-															<div class="amt-box__focus">1</div>
-															<div class="amt-box__from">из</div>
-															<div class="amt-box__to">16</div>
-															<div class="amt-box__on">на</div>
-															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-															</div>
-														</div>
-
-														<button class="amt-box__btn amt-box__plus" data-nav="plus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-													</div>
-
-													<button class="drop-product__button btn-empty">Добавить в корзину</button>
-												</form>
-												<div class="drop-product__desc">
-													<p>Производитель <strong>Maxsem</strong></p>
-													<p>Калибр, дюймы <strong>0.8</strong></p>
-													<p>Продолжительность <strong>15</strong></p>
-													<p>Высота <strong>20</strong></p>
-													<p>Количество залпов <strong>11</strong></p>
-													<p>Тип товара <strong>Батарея салютов</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="product cat-list--product">
-										<div class="product__inn">
-											<div class="product__front">
-												<div class="eventsline scroll" data-step="20">
-													<div class="scroll__container">
-														<div class="eventsline__inner scroll__list">
-															<a class="eventsline__item" href="#">
-																На новый год
-															</a>
-															<a class="eventsline__item" href="#">
-																На 9 мая
-															</a>
-															<a class="eventsline__item" href="#">
-																На 23 февраля
-															</a>
-														</div>
-													</div>
-												<div class="scroll__right"></div></div>
-
-												<a class="product__image" href="#">
-													<picture>
-														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
-													</picture>
-												</a>
-
-												<div class="xpanel">
-													<a class="xvideo" href="#" data-fancybox="">
-														<span class="xvideo__icon"></span>
-														<span class="xvideo__text">видео</span>
-													</a>
-													<div class="xtouch">
-														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-														<button class="xtouch__item xtouch__item--favorite"></button>
-													</div>
-												</div>
-
-												<h5 class="product__title">
-													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-														залпов, Balet,
-														GW218-89</a>
-												</h5>
-
-												<div class="product__prices">
-													<div class="prices">
-														<div class="prices__item prices__item--new">
-															542 руб
-														</div>
-														<div class="prices__item prices__item--old">
-															674 руб
-														</div>
-													</div>
-													<button class="product__prices-show">
-														показать оптовые цены
-													</button>
-												</div>
-											</div>
-
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
-											</div>
-
-											<div class="product__drop drop-product">
-												<form class="drop-product__btns" action="#">
-													<div class="amt-box product__amt-box">
-														<button class="amt-box__btn amt-box__minus" data-nav="minus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-
-														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
-														<input class="amt-box__total" type="text" name="amt-total" value="1084">
-
-														<div class="amt-box__numb">
-															<div class="amt-box__focus">1</div>
-															<div class="amt-box__from">из</div>
-															<div class="amt-box__to">16</div>
-															<div class="amt-box__on">на</div>
-															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
-															</div>
-														</div>
-
-														<button class="amt-box__btn amt-box__plus" data-nav="plus">
-															<svg width="12" height="12" viewBox="0 0 12 12">
-																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
-															</svg>
-														</button>
-													</div>
-
-													<button class="drop-product__button btn-empty">Добавить в корзину</button>
-												</form>
-												<div class="drop-product__desc">
-													<p>Производитель <strong>Maxsem</strong></p>
-													<p>Калибр, дюймы <strong>0.8</strong></p>
-													<p>Продолжительность <strong>15</strong></p>
-													<p>Высота <strong>20</strong></p>
-													<p>Количество залпов <strong>11</strong></p>
-													<p>Тип товара <strong>Батарея салютов</strong></p>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="product cat-list--product">
-										<div class="product__inn">
-											<div class="product__front">
-												<div class="eventsline scroll" data-step="20">
-													<div class="scroll__container">
-														<div class="eventsline__inner scroll__list">
-															<a class="eventsline__item" href="#">
-																На новый год
-															</a>
-															<a class="eventsline__item" href="#">
-																На 9 мая
-															</a>
-															<a class="eventsline__item" href="#">
-																На 23 февраля
-															</a>
-														</div>
-													</div>
-												<div class="scroll__right"></div></div>
-
-												<a class="product__image" href="#">
-													<picture>
-														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
-														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
-													</picture>
-												</a>
-
-												<div class="xpanel">
-													<a class="xvideo" href="#" data-fancybox="">
-														<span class="xvideo__icon"></span>
-														<span class="xvideo__text">видео</span>
-													</a>
-													<div class="xtouch">
-														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
-														<button class="xtouch__item xtouch__item--favorite"></button>
-													</div>
-												</div>
-
-												<h5 class="product__title">
-													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
-														залпов, Balet,
-														GW218-89</a>
-												</h5>
-
-												<div class="product__prices">
-													<div class="prices">
-														<div class="prices__item prices__item--new">
-															542 руб
-														</div>
-														<div class="prices__item prices__item--old">
-															674 руб
-														</div>
-													</div>
-													<button class="product__prices-show">
-														показать оптовые цены
-													</button>
-												</div>
-											</div>
-
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
 											</div>
 
 											<div class="product__drop drop-product">
@@ -2626,21 +2041,234 @@
 												</div>
 											</div>
 
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
 											</div>
 
 											<div class="product__drop drop-product">
@@ -2743,21 +2371,1883 @@
 												</div>
 											</div>
 
-											<div class="product__back">
-												<ul>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-													<li>
-														<p>text</p>
-													</li>
-												</ul>
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product cat-list--product">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												<div class="scroll__right"></div></div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox="">
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product cat-list--product">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												<div class="scroll__right"></div></div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox="">
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product cat-list--product">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												<div class="scroll__right"></div></div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox="">
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product cat-list--product">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												<div class="scroll__right"></div></div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox="">
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
+											</div>
+
+											<div class="product__drop drop-product">
+												<form class="drop-product__btns" action="#">
+													<div class="amt-box product__amt-box">
+														<button class="amt-box__btn amt-box__minus" data-nav="minus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M2.5 5.5H9.5V6.5H2.5V5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+
+														<input class="amt-box__input" type="text" name="amt-numb" value="1" tabindex="0">
+														<input class="amt-box__total" type="text" name="amt-total" value="1084">
+
+														<div class="amt-box__numb">
+															<div class="amt-box__focus">1</div>
+															<div class="amt-box__from">из</div>
+															<div class="amt-box__to">16</div>
+															<div class="amt-box__on">на</div>
+															<div class="amt-box__price" data-start="1084"><span>1084</span> руб
+															</div>
+														</div>
+
+														<button class="amt-box__btn amt-box__plus" data-nav="plus">
+															<svg width="12" height="12" viewBox="0 0 12 12">
+																<path d="M5.5 5.5V2.5H6.5V5.5H9.5V6.5H6.5V9.5H5.5V6.5H2.5V5.5H5.5Z" fill="#0C0B0B"></path>
+															</svg>
+														</button>
+													</div>
+
+													<button class="drop-product__button btn-empty">Добавить в корзину</button>
+												</form>
+												<div class="drop-product__desc">
+													<p>Производитель <strong>Maxsem</strong></p>
+													<p>Калибр, дюймы <strong>0.8</strong></p>
+													<p>Продолжительность <strong>15</strong></p>
+													<p>Высота <strong>20</strong></p>
+													<p>Количество залпов <strong>11</strong></p>
+													<p>Тип товара <strong>Батарея салютов</strong></p>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="product cat-list--product">
+										<div class="product__inn">
+											<div class="product__front">
+												<div class="eventsline scroll" data-step="20">
+													<div class="scroll__container">
+														<div class="eventsline__inner scroll__list">
+															<a class="eventsline__item" href="#">
+																На новый год
+															</a>
+															<a class="eventsline__item" href="#">
+																На 9 мая
+															</a>
+															<a class="eventsline__item" href="#">
+																На 23 февраля
+															</a>
+														</div>
+													</div>
+												<div class="scroll__right"></div></div>
+
+												<a class="product__image" href="#">
+													<picture>
+														<source type="image/webp" srcset="images/pics/webp/product_01.webp">
+														<img class="product__img" src="images/pics/product_01.jpg" width="232" height="180" loading="lazy" alt="product">
+													</picture>
+												</a>
+
+												<div class="xpanel">
+													<a class="xvideo" href="#" data-fancybox="">
+														<span class="xvideo__icon"></span>
+														<span class="xvideo__text">видео</span>
+													</a>
+													<div class="xtouch">
+														<button class="xtouch__item xtouch__item--compare xtouch__item--active"></button>
+														<button class="xtouch__item xtouch__item--favorite"></button>
+													</div>
+												</div>
+
+												<h5 class="product__title">
+													<a class="product__title-link" href="#">Батарея салютов Maxsem, 0,8"-11
+														залпов, Balet,
+														GW218-89</a>
+												</h5>
+
+												<div class="product__prices">
+													<div class="prices">
+														<div class="prices__item prices__item--new">
+															542 руб
+														</div>
+														<div class="prices__item prices__item--old">
+															674 руб
+														</div>
+													</div>
+													<button class="product__prices-show">
+														показать оптовые цены
+													</button>
+												</div>
+											</div>
+
+											<div class="product__back back-product">
+												<div class="back-product__box">
+													<div class="back-product__info">
+														* Наведите на цену, чтобы увидеть подсказку или посмотрите <a href="#">систему
+															разовых и накопительных скидок </a>
+													</div>
+
+													<div class="back-product__list">
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+														<div class="back-product__line back-line">
+															<div class="back-line__head">
+																<div class="back-line__price-start">
+																	От 15 000 руб
+																</div>
+																<div class="back-line__price-final">
+																	477 руб
+																</div>
+															</div>
+															<div class="back-line__body list-dropdown">
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Опт 15 000
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		При заказе от 15 000 до 29 999 по ценам «ОПТ 15 000»
+																	</p>
+																</div>
+
+																<div class="list-dropdown__item">
+																	<strong class="list-dropdown__tlt">
+																		Накопительная система
+																	</strong>
+																	<p class="list-dropdown__subtlt">
+																		Цены даются на любую закупку при достижении порога от 75
+																		000 по сумме
+																		предыдущих заказов за весь период работы.
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="back-product__return">вернуться к товару</button>
 											</div>
 
 											<div class="product__drop drop-product">

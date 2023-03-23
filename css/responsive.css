@@ -20,6 +20,18 @@
 	.search__plug {
 		display: none;
 	}
+	.vision--price .product__title {
+	    width: 282px;
+	}
+	.vision--price .product__prices {
+	    margin-left: 0;
+	}
+	.vision--price .product__front {
+	    width: auto;
+	}
+	.vision--price .product__drop {
+	    width: 40.125%;
+	}
 }
 
 @media screen and (max-width:1400px){
@@ -193,6 +205,27 @@
 	    column-gap: 14px;
 	}
 
+}
+
+@media screen and (max-width:1200px){
+	.vision--price .product__title {
+	    width: 650px;
+	}
+	.vision--price .product__prices {
+	    margin-left: auto;
+	    margin-right: 0;
+	}
+	.vision--price .product__prices-show {
+	    white-space: nowrap;
+	}
+	.vision--price .product__front {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 15px;
+	}
+	.vision--price .product__drop {
+	    width: 100%;
+	}
 }
 
 @media screen and (max-width:1150px){
@@ -1029,6 +1062,9 @@
 
 	.overflow-box__body {
 		max-height: 255px;
+	}
+	.vision--price .drop-product__button {
+		padding: 12px 15px;
 	}
 }
 
@@ -2036,6 +2072,85 @@
 
 	.page-basket .main {
 	    padding: 32px 0 22px;
+	}
+
+	.vision--price .product__front {
+		justify-content: center;
+	    flex-wrap: wrap;
+	    text-align: center;
+	}
+
+	.vision--price .product__title {
+	    width: 100%;
+	    margin: 16px 0;
+	}
+	.vision--price .product__prices {
+	    width: 100%;
+	    text-align: center;
+	}
+	.vision--price .prices {
+		justify-content: center;
+	    margin: 0px 0px 8px 0px;
+	}
+	.vision--price .product__image {
+	    margin: 0;
+	}
+	.vision--price .xpanel {
+	    margin: 0 16px 0 0;
+	}
+	.vision--price .back-product__list {
+		display: block;
+	    margin: 0px;
+	    max-height: 9999px;
+	}
+	.vision--price .back-product__line {
+	    width: 100%;
+	    margin: 0 0 8px;
+	}
+	.vision--price .back-product__line:last-child {
+	    margin: 0;
+	}
+	.vision--price .product__inn--active .product__back {
+	    height: initial;
+	}
+	.vision--price .back-line__head {
+	    padding: 11px 16px;
+	    display: flex;
+	}
+	.vision--price .back-line__price-final {
+	    font-size: 14px;
+	    line-height: 14px;
+	}
+	.vision--price .back-line__price-start {
+	    font-size: 12px;
+	    line-height: 12px;
+	    margin-bottom: 0;
+	}
+	.vision--price .back-product__info {
+	    margin: 0px 0px 16px 0px;
+	}
+	.product__title-link {
+	    color: #0C0B0B !important;
+	}
+	.list-dropdown {
+		display: none !important;
+	}
+	.vision--price .drop-product__button {
+	    width: 48px;
+	    min-width: 48px;
+	    height: 40px;
+	    text-indent: 1000px;
+	    white-space: nowrap;
+	    overflow: hidden;
+	    padding: 0;
+	    background-image: url(../images/icons/basket-black.svg);
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	    background-size: 16px;
+	}
+	.vision--price .amt-box {
+	    margin: 0 8px 0 0;
+	    width: 100%;
 	}
 	
 }

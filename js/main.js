@@ -1360,7 +1360,7 @@ $(function () {
 
 
 
-    // Get all elements with the .drug-focus class
+    // Свайп влево на мобильных устройствах
 	const focusElems = document.querySelectorAll('.drug-focus');
 
 	// Define variables to keep track of touch position and direction
@@ -1398,6 +1398,19 @@ $(function () {
 	    touchEndX = null;
 	  });
 	});
+
+	// Каталог, переключение вида списка товаров
+    $(document).on('click', '.vision-panel__view', function () {
+
+        let data_visition = $(this).data('vision')
+
+        $('.vision-panel__view').removeClass('vision-panel__view--active')
+        $(this).addClass('vision-panel__view--active')
+
+        $(this).parents('.catalog__body').find('.catalog__vision').removeClass('vision--price', 'vision--gall', 'vision--classic')
+
+        $(this).parents('.catalog__body').find('.catalog__vision').addClass(data_visition)
+    });
 
 })
 

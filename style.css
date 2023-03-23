@@ -187,7 +187,7 @@ h6 a,
 	background-color: #fff;
 	border-radius: 4px;
 	cursor: pointer;
-	padding: 17px 32px;
+	padding: 16px 32px;
 	text-align: center;
 	display: inline-block;
 	vertical-align: middle;
@@ -6891,5 +6891,209 @@ body.page-brand-catalog .makers {
 .aside-basket__politic a:hover {
 	border-bottom: 1px solid transparent;
 }
-
 /* Page Basket END */
+
+/* Каталог Вид товара - цена START */
+.vision--price {
+	display: block;
+}
+.vision--price .product__drop {
+    position: static;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 34.4%;
+}
+.vision--price .product__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+    max-height: initial;
+	object-fit: contain;
+    transform: scale(1) !important;
+}
+
+.vision--price .eventsline {
+	display: none;
+}
+.vision--price .back-product {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: static;
+    backface-visibility: visible;
+    transform: rotateY(0deg);
+    order: 3;
+    padding: 0;
+    height: 0;
+    transition: .2s all;
+    opacity: 0;
+    z-index: 5;
+}
+.vision--price .xtouch {
+	display: none;
+}
+.vision--price .back-product__return {
+	display: none;
+}
+.vision--price .drop-product__desc {
+	display: none;
+}
+.vision--price .xpanel {
+	order: 1;
+    margin: 0 24px 0 0;
+}
+.vision--price .xvideo__text {
+	display: none;
+}
+.vision--price .xvideo__icon {
+	margin: 0;
+}
+.vision--price .product__front {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    backface-visibility: initial;
+    padding: 0;
+    order: 1;
+    width: 65.6%;
+    padding-right: 15px;
+}
+.vision--price .product__image {
+    width: 80px;
+    min-width: 80px;
+    min-height: initial;
+    margin: 0 24px 0 0;
+    order: 2;
+} 
+.vision--price .product__image picture {
+	display: block;
+	position: relative;
+    width: 100%;
+	padding-top: 60%;
+}
+.vision--price .product__title {
+	order: 3;
+	height: auto;
+    max-height: initial;
+    overflow: hidden;
+    width: 500px;
+    margin: 0 24px 0 0;
+}
+.vision--price .product__prices {
+	order: 4;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vision--price .drop-product__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.vision--price .amt-box {
+	margin: 0;
+	width: 49.225%;
+}
+.vision--price .drop-product__button {
+	margin: 0;
+	width: 49.225%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.vision--price .product__inn {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+    border: none;
+    padding: 24px 0;
+    background-color: #fff;
+}
+.vision--price .product:first-child .product__inn {
+    border-top: 1px solid #EFEFEF;
+}
+.vision--price .product .product__inn {
+    border-bottom: 1px solid #EFEFEF;
+}
+.vision--price .back-product__box {
+	background-color: #fff;
+}
+.vision--price .back-product__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -4px;
+    overflow: initial;
+}
+.vision--price .prices {
+    margin: 0px 0px 8px 0px;
+}
+.vision--price .product__prices-show {
+    text-align: left;
+}
+.vision--price .product__title-link {
+    font-size: 16px;
+}
+.vision--price .prices__item--new {
+    font-size: 18px;
+    line-height: 18px;
+}
+.vision--price .prices__item--old {
+    font-size: 18px;
+    line-height: 18px;
+}
+.vision--price .product__inn--active .product__front {
+    transform: initial;
+}
+.vision--price .product__inn--active .product__back {
+	padding: 24px 0 0 0;
+    height: 96px;
+    opacity: 1;
+}
+.vision--price .back-product__line {
+    width: calc(100% / 7 - 8px);
+    margin: 4px;
+}
+.vision--price .back-product__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    color: #9F9F9F;
+    margin: 0px 0px 8px 0px;
+}
+.vision--price .back-line__head {
+    padding: 6px 16px;
+    display: block;
+}
+.vision--price .back-line__price-start {
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 5px;
+}
+.vision--price .back-line__price-final {
+    font-size: 16px;
+    line-height: 16px;
+}
+.vision--price .product__inn--active {
+	perspective: initial;
+}
+.vision--price .list-dropdown {
+    width: 282px;
+    transition: .2s all ease .03s;
+}
+.vision--price .back-product__line:last-child .list-dropdown {
+    left: auto;
+    right: 0;
+}
+/* Каталог Вид товара - цена END */
