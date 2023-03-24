@@ -1407,9 +1407,19 @@ $(function () {
         $('.vision-panel__view').removeClass('vision-panel__view--active')
         $(this).addClass('vision-panel__view--active')
 
-        $(this).parents('.catalog__body').find('.catalog__vision').removeClass('vision--price', 'vision--gall', 'vision--classic')
+        $(this).parents('.catalog__body').find('.catalog__vision').removeClass('vision--price vision--gall vision--classic')
 
         $(this).parents('.catalog__body').find('.catalog__vision').addClass(data_visition)
+    });
+
+	// Раскрытие характеристик и опт цен в каталоге
+    $(document).on('click', '.details-drop__tlt', function () {
+    	parent = $(this).parents('.details-drop__sect')
+
+    	if(parent.hasClass('details-drop__sect--active'))
+			parent.removeClass('details-drop__sect--active')
+		else        
+			parent.addClass('details-drop__sect--active')
     });
 
 })
