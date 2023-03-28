@@ -460,7 +460,7 @@ $(function () {
 				}
 			},
 			{
-				breakpoint: 576,
+				breakpoint: 577,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
@@ -1200,6 +1200,34 @@ $(function () {
 		) 
 		{
 			$('body').removeClass('main-menu-drop')
+		}
+	});
+
+	// Раскрытие дополнительного выпадающего меню
+    $(document).on('click', '.extra-burger', function () {
+
+        let parent = $('body')
+
+		if (parent.hasClass('main-menu-drop-2')) {
+			parent.removeClass('main-menu-drop-2')
+		}
+		else {
+			parent.addClass('main-menu-drop-2')
+		}
+    });
+
+	// Клик все поля фильтра
+	$(document).click(function (e) {
+	    var div = $(".extra-burger");
+	    var div_2 = $(".header-dopmenu");
+
+		if
+		(
+			!div.is(e.target) && div.has(e.target).length === 0 && 
+			!div_2.is(e.target) && div_2.has(e.target).length === 0
+		) 
+		{
+			$('body').removeClass('main-menu-drop-2')
 		}
 	});
 
