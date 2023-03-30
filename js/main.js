@@ -478,7 +478,45 @@ $(function () {
 
 
 	// Слайдер на главном экране
-	$('.edge__list').slick({
+	new Swiper('.swiper', {
+		navigation: {
+			prevEl: '.edge-arrow--left',
+			nextEl: '.edge-arrow--right',
+		},
+		slidePerGroup: 1,
+		spaceBetween: 0,
+
+		breakpoints: {
+			320: {
+			  slidesPerView: 2
+			},
+			361: {
+			  slidesPerView: 3
+			},
+			481: {
+			  slidesPerView: 5.4
+			},
+			767: {
+			  slidesPerView: 7.4
+			},
+			1001: {
+			  slidesPerView: 8.4
+			},
+			1367: {
+			  slidesPerView: 10.4
+			}
+		}
+
+		// infinity
+		/*loop: true,*/
+	});
+
+
+
+
+
+
+	/*$('.edge__list').slick({
 		slidesToShow: 11,
 		slidesToScroll: 2,
 		infinite: false,
@@ -533,7 +571,7 @@ $(function () {
 
 	$(document).on('click', '.edge-arrow--right', function () {
 		$('.edge__list').slick('slickNext')
-	})
+	})*/
 
 
 	// Запрет ввода букв в фильтр
@@ -717,6 +755,11 @@ $(function () {
 	// Подмена placeholder в поиске хедер
 	if ($(document).width() <= 576) {
 		$('.search__main').attr("placeholder", "Поиск");
+	}
+
+	// Подмена placeholder в попапе города
+	if ($(document).width() <= 767) {
+		$('#form-city .search__mainx').attr("placeholder", "Город");
 	}
 
 	// Футер раскрытие меню
@@ -1386,6 +1429,31 @@ $(function () {
 		}
     });
 
+    // Раскрытие фильтра Показать по Кол-во
+    $(document).on('click', '.amount-control__atlt', function()
+	{
+		parent = $(this).parents('.amount-control')
+		if( parent.hasClass('amount-control--active') )
+			parent.removeClass('amount-control--active')
+		else
+			parent.addClass('amount-control--active')
+	})
+
+	$(document).on('click', '.amount-control__li', function()
+	{
+		$(this).parents('.amount-control').removeClass('amount-control--active')
+
+		product = $(this).text()
+		$(this).parents('.amount-control').find('.amount-control__atlt span').text(product)
+	})
+
+	$(document).click(function(event)
+	{
+		if ($(event.target).closest(".amount-control__atlt").length) return;
+		event.stopPropagation();
+
+		$('.amount-control').removeClass('amount-control--active')
+	})
 
 
     // Свайп влево на мобильных устройствах
@@ -1449,6 +1517,23 @@ $(function () {
 		else        
 			parent.addClass('details-drop__sect--active')
     });
+
+
+    // Настройки кастомного скролла SimpleBar
+	Array.prototype.forEach.call(
+	  document.querySelectorAll('.back-makers__body'),
+	  (el) => new SimpleBar(el)
+	), {
+		autoHide: false
+	};
+
+	Array.prototype.forEach.call(
+	  document.querySelectorAll('.back-product__list'),
+	  (el) => new SimpleBar(el)
+	), {
+		autoHide: false
+	};
+
 
 })
 
