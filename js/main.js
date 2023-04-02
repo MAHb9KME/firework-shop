@@ -17,8 +17,8 @@ function declOfNum(number, titles) {
 function tpaneScroll() {
 	var $scrollTop = parseInt(jQuery(window).scrollTop()),
 		$scrollPane = jQuery('body'),
-		h = jQuery('.header-contact').outerHeight(),
-		tot_h = jQuery('.header-fix').outerHeight(),
+		h = jQuery('.header-top').outerHeight(),
+		tot_h = jQuery('.header').outerHeight() - jQuery('.header-top').outerHeight(),
 		w = parseInt(jQuery(window).width())
 
 	if ($scrollTop > h) {
@@ -26,7 +26,8 @@ function tpaneScroll() {
 			$scrollPane.addClass('fix')
 
 			if (jQuery(window).width() > 700) {
-				jQuery('.main-screen').css("margin-top", tot_h)
+				$('body').addClass('fix-distance')
+				/*jQuery('.main').css("margin-top", tot_h)*/
 			}
 		}
 	}
@@ -36,15 +37,16 @@ function tpaneScroll() {
 				$scrollPane.removeClass('fix')
 
 				if (jQuery(window).width() > 700) {
-					jQuery('.main-screen').css("margin-top", "0")
+					$('body').removeClass('fix-distance')
+					/*jQuery('.main').css("margin-top", "0")*/
 				}
 			}
 		}
 	}
 
-	if (jQuery(window).width() < 700) {
+	/*if (jQuery(window).width() < 700) {
 		jQuery('.main-screen').css("margin-top", tot_h)
-	}
+	}*/
 }
 
 
@@ -388,6 +390,15 @@ $(function () {
 	})
 
 
+	// Слайдер на главном экране
+	/*new Swiper('.slider', {
+		navigation: {
+			prevEl: '.slider-arrow--left',
+			nextEl: '.slider-arrow--right',
+		},
+		slidePerGroup: 1,
+		effect: 'fade'
+	});*/
 
 	// Слайдер на главном экране
 	$('.slider').slick({
@@ -478,45 +489,48 @@ $(function () {
 
 
 	// Слайдер на главном экране
-	new Swiper('.swiper', {
+	/*new Swiper('.edge__swiper', {
 		navigation: {
 			prevEl: '.edge-arrow--left',
 			nextEl: '.edge-arrow--right',
 		},
-		slidePerGroup: 1,
-		spaceBetween: 0,
+		slidePerGroup: 2,
+		spaceBetween: 8,
 
 		breakpoints: {
 			320: {
-			  slidesPerView: 2
+			  slidesPerView: 2,
+			  spaceBetween: 8
 			},
-			361: {
-			  slidesPerView: 3
+			400: {
+			  slidesPerView: 3,
+			  spaceBetween: 8
 			},
-			481: {
-			  slidesPerView: 5.4
+			750: {
+			  slidesPerView: 5.4,
+			  spaceBetween: 8
 			},
-			767: {
-			  slidesPerView: 7.4
+			950: {
+			  slidesPerView: 7.4,
+			  spaceBetween: 8
 			},
-			1001: {
-			  slidesPerView: 8.4
+			1300: {
+			  slidesPerView: 8.4,
+			  spaceBetween: 16,
 			},
-			1367: {
-			  slidesPerView: 10.4
+			1570: {
+			  slidesPerView: 10.4,
+			  spaceBetween: 16,
 			}
 		}
-
-		// infinity
-		/*loop: true,*/
-	});
+	});*/
 
 
 
 
 
 
-	/*$('.edge__list').slick({
+	$('.edge__list').slick({
 		slidesToShow: 11,
 		slidesToScroll: 2,
 		infinite: false,
@@ -571,7 +585,16 @@ $(function () {
 
 	$(document).on('click', '.edge-arrow--right', function () {
 		$('.edge__list').slick('slickNext')
-	})*/
+	})
+
+	$('.edge__list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+		if (nextSlide === 0) {
+			$('.edge-arrow--left').addClass('edge-arrow-disable');
+		} else {
+			$('.edge-arrow--left').removeClass('edge-arrow-disable');
+		}
+
+	});
 
 
 	// Запрет ввода букв в фильтр
@@ -801,6 +824,40 @@ $(function () {
 				}
 			}]
 	});
+
+	/*var mySwiper = new Swiper('.pros__slider', {
+	    slidesPerView: 1,
+		  slidePerGroup: 1,
+		  spaceBetween: 8,
+		  a11y: false,
+		  navigation: {
+			prevEl: '.pros__arrow--prev',
+			nextEl: '.pros__arrow--next',
+		},
+	});
+
+	function checkWindowSize() {
+	  if (window.innerWidth > 767) {
+	    mySwiper.destroy(false);
+	  } else
+	  {
+	    mySwiper = new Swiper('.pros__slider', {
+	      slidesPerView: 1,
+		  slidePerGroup: 1,
+		  spaceBetween: 8,
+		  a11y: false,
+		  navigation: {
+			prevEl: '.pros__arrow--prev',
+			nextEl: '.pros__arrow--next',
+		},
+	    });
+	  }
+	}
+
+	window.onload = checkWindowSize;
+	window.addEventListener('resize', checkWindowSize);*/
+
+
 
 	// Раскрытие фильтра в адаптиве
 	if ($(document).width() <= 750) {
@@ -1533,6 +1590,47 @@ $(function () {
 	), {
 		autoHide: false
 	};
+
+
+	// Анимация при скролле 
+	/*const animItems = document.querySelectorAll('._anim-items');
+
+	if (animItems.length > 0) {
+		window.addEventListener('scroll', animOnScroll);
+		function animOnScroll() {
+			for (let index = 0; index < animItems.length; index++) {
+				const animItem = animItems[index];
+				const animItemHeight = animItem.offsetHeight;
+				const animItemOffset = offset(animItem).top;
+				const animStart = 4;
+
+				let animItemPoint = window.innerHeight - animItemHeight / animStart;
+				if (animItemHeight > window.innerHeight) {
+					animItemPoint = window.innerHeight - window.innerHeight / animStart;
+				}
+
+				if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+					animItem.classList.add('_active')
+				} else {
+					if(!animItem.classList.contains('_anim-no-hide')) {
+						animItem.classList.remove('_active')
+					}
+				}
+			}
+		}
+	}
+
+	// function gives amout from top or from bottom 
+	function offset(el) { 
+		const rect = el.getBoundingClientRect(), 
+		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
+		scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+		return { top: rect.top + scrollTop, left: rect.left + scrollLeft } 
+	} 
+	// initialization 
+	setTimeout( function(){ 
+	    animOnScroll(); 
+	}, 300 )*/
 
 
 })

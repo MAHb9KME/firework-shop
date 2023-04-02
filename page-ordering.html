@@ -37,7 +37,7 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="">
+<body class="page-ordering">
 	<div class="wrapper">
 		<header class="header">
 			<div class="header-top">
@@ -398,7 +398,189 @@
 		</header>
 
 	    <main class="main">
-	         
+
+	         <section class="ordering">
+	         	<!-- breadcrumbs -->
+	         	<nav class="breadcrumbs breadcrumbs--back">
+					<div class="container">
+						<div class="breadcrumbs__inner">
+							<ul class="breadcrumbs__ul">
+								<li class="breadcrumbs__li">
+									<a class="breadcrumbs__link" href="#">
+										Вернуться к покупкам
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+	         	<div class="container">
+	         		<div class="ordering__inner">
+	         			<h2 class="ordering__title title">Оформление заказа</h2>
+	         			<div class="ordering__body">
+	         				<div class="ordering__main">
+	         					<form class="ordering__form" action="#">
+	         						<div class="ordering__row">
+	         							<div class="ordering__wrtlt">
+	         								<h1 class="ordering__tlt">01. Выберите тип плательщика</h1>
+         								</div>
+	         							<div class="ordering__inner">
+	         								<div class="ordering__nav tab-panel">
+												<div class="tab-panel__btn">
+													<span>Физическое лицо</span>
+												</div>
+
+												<div class="tab-panel__wrapper">
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_1" checked>
+														<label class="tab-panel__item" for="pay_1">Физическое лицо</label>
+													</div>
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_2">
+														<label class="tab-panel__item" for="pay_2">Юридическое лицо</label>
+													</div>
+												</div>
+											</div>
+	         							</div>
+	         						</div>
+
+	         						<div class="ordering__row">
+	         							<div class="ordering__wrtlt">
+	         								<h2 class="ordering__tlt">02. Выберите город доставки</h2>
+	         								<p class="ordering__subtlt">Название города или населенного пункта (без индекса, улицы, дома, квартиры) *</p>
+         								</div>
+         								<div class="ordering__inner">
+         									<input class="ordering__delivering" type="text" name="delivering" placeholder="Введите название">
+         									<div class="ordering__subtxt">
+         										Начните вводить первые буквы, вам откроется список, выберите нужный вам город или населенный пункт.Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"
+         									</div>
+         								</div>
+     								</div>
+
+     								<div class="ordering__row">
+	         							<div class="ordering__wrtlt">
+	         								<h2 class="ordering__tlt">03. Выберите способ доставки</h2>
+         								</div>
+         								<div class="ordering__inner">
+         									<div class="ordering__way way-select">
+	         									<div class="way-select__inner">
+	         										<div class="way-select__item">
+	         											<input class="way-select__input" type="radio" name="Способ доставки" id="way_1">
+	         											<label for="way_1" class="way-select__label">
+	         												 <img class="way-select__icon" src="images/icons/way_1.svg" alt="Самовывоз">
+	         												 <span class="way-select__tlt">Самовывоз из магазина</span>
+
+	         												 <span class="way-select__price">Бесплатно</span>
+	         											</label>
+	         										</div>
+	         										<div class="way-select__item">
+	         											<input class="way-select__input" type="radio" name="Способ доставки" id="way_2">
+	         											<label for="way_2" class="way-select__label">
+	         												 <img class="way-select__icon" src="images/icons/way_2.svg" alt="Доставка">
+	         												 <span class="way-select__tlt">Доставка (по адресу курьером бесплатно в Нижнем Новгороде)</span>
+
+	         												 <span class="way-select__price">120 руб</span>
+	         											</label>
+	         										</div>
+	         									</div>
+         									</div>
+
+         									<div class="ordering__price-note note-price">
+         										<div class="note-price__title">Стоимость: Бесплатно</div>
+         										<div class="note-price__subtitle">Вы можете самостоятельно забрать заказ из нашего магазина после согласования с вашим менеджером. Самовывоз возможен в: Нижнем Новгороде, Красных зорь 25</div>
+         										<a class="note-price__show-map" href="#" data-fancybox>Показать на карте</a>
+         									</div>
+         								</div>
+     								</div>
+
+     								<div class="ordering__row">
+	         							<div class="ordering__wrtlt">
+	         								<h2 class="ordering__tlt">04. Выберите способ оплаты</h2>
+         								</div>
+	         							<div class="ordering__inner">
+	         								<div class="ordering__nav tab-panel">
+												<div class="tab-panel__btn">
+													<span>Наличными</span>
+												</div>
+
+												<div class="tab-panel__wrapper">
+
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_fl_1">
+														<label class="tab-panel__item" for="pay_fl_1">Наличными</label>
+													</div>
+
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_fl_2">
+														<label class="tab-panel__item" for="pay_fl_2">Наличными</label>
+													</div>
+
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_fl_3" checked>
+														<label class="tab-panel__item" for="pay_fl_3">Картой через платежный терминал</label>
+													</div>
+
+													<div class="ordering__tab-writem">
+														<input class="ordering__tab-radio" type="radio" name="Плательщик" id="pay_fl_4">
+														<label class="tab-panel__item" for="pay_fl_4">По QR коду</label>
+													</div>
+												</div>
+											</div>
+	         							</div>
+	         						</div>
+
+	         						<div class="ordering__row">
+	         							<div class="ordering__wrtlt">
+	         								<h2 class="ordering__tlt">05. Введите дополнительную информацию</h2>
+         								</div>
+	         							<div class="ordering__inner">
+	         								<div class="ordering__fields fields-ordering">
+	         									<input class="fields-ordering__input" type="text" name="Фамилия" placeholder="Фамилия">
+	         									<input class="fields-ordering__input" type="email" name="E-mail" placeholder="E-mail">
+	         									<input class="fields-ordering__input" type="text" name="Имя" placeholder="Имя">
+	         									<input class="fields-ordering__input" type="text" name="Улица, дом, квартира" placeholder="Улица, дом, квартира">
+	         									<input class="fields-ordering__input" type="text" name="Отчество" placeholder="Отчество">
+	         									<textarea class="fields-ordering__textarea" name="Комментарий к заказу" placeholder="Комментарий к заказу"></textarea>
+	         								</div>
+	         								<div class="ordering__politic">
+	         									Нажимая на кнопку "Оформить заказ", я подтверждаю, что мне больше 16 лет и даю согласие на обработку персональных данных. <a href="#">Политика конфиденциальности</a>
+	         								</div>
+         								</div>
+     								</div>
+
+	         					</form>
+	         				</div>
+	         				<aside class="ordering__aside aside-common">
+	         					<div class="aside-common__inner">
+	     				  			<h2 class="aside-common__title">Ваш заказ</h2>
+	     				  			<div class="aside-common__list">
+	     				  				<div class="aside-common__line">
+	     				  					<div class="aside-common__name">Количество товаров</div>
+	     				  					<div class="aside-common__val">5</div>
+	     				  				</div>
+	     				  				<div class="aside-common__line">
+	     				  					<div class="aside-common__name">Общий вес</div>
+	     				  					<div class="aside-common__val">1 064 гр</div>
+	     				  				</div>
+	     				  				<div class="aside-common__line">
+	     				  					<div class="aside-common__name">Доставка</div>
+	     				  					<div class="aside-common__val">Бесплатно</div>
+	     				  				</div>
+	     				  				<div class="aside-common__line">
+	     				  					<div class="aside-common__name">Сумма заказа</div>
+	     				  					<div class="aside-common__val">3 420.50 руб</div>
+	     				  				</div>
+	     				  			</div>
+	     				  			<a class="aside-common__btn btn" href="#">Оформить заказ</a>
+	     				  			<div class="aside-common__politic">Нажимая на кнопку, вы принимаете условия <a href="#" data-fancybox>обработки персональных данных</a></div>
+	 				  			</div>
+	         				</aside>
+	         			</div>
+	         		</div>
+	         	</div>
+	         </section>
+
 	    </main>
 
 	    <footer class="footer">
