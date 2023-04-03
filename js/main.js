@@ -857,6 +857,17 @@ $(function () {
 	window.onload = checkWindowSize;
 	window.addEventListener('resize', checkWindowSize);*/
 
+	// Добавление класса loaded когда страница полность загружена
+	function addLoadedClass() {
+		window.addEventListener("load", function () {
+			setTimeout(function () {
+				document.documentElement.classList.add('loaded');
+			}, 0);
+		});
+	}
+
+	addLoadedClass();
+
 
 
 	// Раскрытие фильтра в адаптиве
@@ -1593,44 +1604,62 @@ $(function () {
 
 
 	// Анимация при скролле 
-	/*const animItems = document.querySelectorAll('._anim-items');
+	const animItems = document.querySelectorAll('._anim-items'); 
 
-	if (animItems.length > 0) {
-		window.addEventListener('scroll', animOnScroll);
-		function animOnScroll() {
-			for (let index = 0; index < animItems.length; index++) {
-				const animItem = animItems[index];
-				const animItemHeight = animItem.offsetHeight;
+	if (animItems.length > 0) { 
+
+		// Событие, при скролле начинается эта функция
+		window.addEventListener('scroll', animOnScroll); 
+
+		function animOnScroll() { 
+			for (let index = 0; index < animItems.length; index++) { 
+
+				// Получаем каждый из элементов массива
+				const animItem = animItems[index]; 
+
+				// Получаем высоту каждого элемента
+				const animItemHeight = animItem.offsetHeight; 
+
+				// Как далеко объект от верха страницы
 				const animItemOffset = offset(animItem).top;
+
+				// 1/4 высоты объекта
 				const animStart = 4;
 
-				let animItemPoint = window.innerHeight - animItemHeight / animStart;
-				if (animItemHeight > window.innerHeight) {
-					animItemPoint = window.innerHeight - window.innerHeight / animStart;
-				}
+				// Высчитываем Высота окна браузера - высота объекта / на коэф.
+				let animItemPoint = window.innerHeight - animItemHeight / animStart; 
 
-				if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-					animItem.classList.add('_active')
-				} else {
-					if(!animItem.classList.contains('_anim-no-hide')) {
-						animItem.classList.remove('_active')
-					}
-				}
-			}
-		}
-	}
+				// Если высота объекта выше высоты окна браузера
+				if (animItemHeight > window.innerHeight) { 
+					animItemPoint = window.innerHeight - window.innerHeight / animStart; 
+				} 
 
-	// function gives amout from top or from bottom 
+				// Если мы прокрутили нужное кол-во px то добавляем класс
+				// Нужно для повтоной анимации
+				if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) { 
+					animItem.classList.add('_active') 
+				} else { 
+					// Повторная анимация
+					/*if(!animItem.classList.contains('_anim-no-hide')) { 
+						animItem.classList.remove('_active') 
+					} */
+				} 
+			} 
+		} 
+	} 
+
+	// Функция получения значения от верха страницы до целевого объекта
 	function offset(el) { 
 		const rect = el.getBoundingClientRect(), 
 		scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, 
 		scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft } 
 	} 
-	// initialization 
+
+	// Инициализация 
 	setTimeout( function(){ 
 	    animOnScroll(); 
-	}, 300 )*/
+	}, 300 )
 
 
 })
