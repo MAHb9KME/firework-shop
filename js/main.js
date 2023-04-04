@@ -1657,9 +1657,9 @@ $(function () {
 	} 
 
 	// Инициализация 
-	setTimeout( function(){ 
+	//setTimeout( function(){ 
 	    animOnScroll(); 
-	}, 300 )
+	//}, 300 )
 
 
 })

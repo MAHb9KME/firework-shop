@@ -137,6 +137,35 @@ h1 strong {
 	margin: 0px 0px 32px 0px;
 }
 
+.subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: -0.02em;
+	color: #9F9F9F;
+	margin: 0px 0px 40px 0px;
+
+	transform: translate(0px, 80%);
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.subtitle._active {
+	transform: translate(0px, 0%);
+  opacity: 1;
+}
+
+.subtitle a {
+	display: inline-block;
+	vertical-align: middle;
+	color: #9F9F9F;
+	border-bottom: 1px solid #9F9F9F;
+	transition: .2s all;
+}
+.subtitle a:hover {
+	border-bottom: 1px solid transparent;
+}
+
 h1,
 h2,
 h3,
@@ -338,7 +367,8 @@ input[type=checkbox]+label::before {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 50%;
+	/*top: 50%;*/
+	top: 6px;
 	left: 0;
 	width: 16px;
 	height: 16px;
@@ -346,14 +376,15 @@ input[type=checkbox]+label::before {
 	border-radius: 4px;
 	box-sizing: border-box;
 	border-radius: 4px;
-	transform: translateY(-60%);
+	/*transform: translateY(-60%);*/
 }
 
 input[type=checkbox]:checked+label::after {
 	content: "";
 	display: block;
 	position: absolute;
-	top: 50%;
+	/*top: 50%;*/
+	top: 6px;
 	left: 0;
 	width: 16px;
 	height: 16px;
@@ -364,7 +395,7 @@ input[type=checkbox]:checked+label::after {
 	border: 1px solid #731B55;
 	box-sizing: border-box;
 	border-radius: 4px;
-	transform: translateY(-60%);
+	/*	*/
 }
 
 
@@ -1322,6 +1353,49 @@ body .simplebar-track.simplebar-vertical {
 } 
 
 
+._anim-common ._anim-common-elem {
+	position: relative;
+	top: 70px;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+}
+._anim-common._active ._anim-common-elem {
+	top: 0px;
+	opacity: 1;
+}
+
+._anim-common-left {
+	transform: translateX(100%);
+	transition: all 0.6s ease 0s;
+	opacity: 0;
+}
+._anim-common-left._active  {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+._anim-common-right {
+	transform: translateX(-100%);
+	transition: all 0.6s ease 0s;
+	opacity: 0;
+}
+._anim-common-right._active  {
+	transform: translateX(0%);
+	opacity: 1;
+}
+
+
+._anim-common-each {
+	position: relative;
+	top: 70px;
+	transition: all 0.3s ease 0s;
+	opacity: 0;
+}
+
+._anim-common-each._active {
+	top: 0px;
+	opacity: 1;
+}
 
 /*.imagination__image._active  { 
     -webkit-animation: jello-vertical 0.7s both; 
@@ -1336,6 +1410,10 @@ body .simplebar-track.simplebar-vertical {
     opacity: 1; 
 }*/
 /* Анимация END */ 
+
+
+
+
 
 .btn-anim:hover {
 	animation: animation 3s ease infinite;
@@ -2899,6 +2977,17 @@ body.main-menu-drop .scroll__list li a {
 	justify-content: space-between;
 }
 
+.footer__bottom._anim-items .footer__bottom-inner {
+	transform: translate(0px, 120%);
+	transition: all 0.3s ease 0.2s;
+	opacity: 0;
+} 
+
+.footer__bottom._active .footer__bottom-inner {
+	transform: translate(0px, 0%);
+	opacity: 1;
+}
+
 .footer__copyright {}
 
 .footer__copyright p {
@@ -3192,6 +3281,10 @@ body.page-main .main {
 
 .product__inn:hover {
 	overflow: initial;
+}
+
+.product__inn--active:hover {
+	overflow: hidden;
 }
 
 .product__inn:hover .product__drop {
@@ -4059,38 +4152,38 @@ body.page-main .main {
 	min-width: 0;
 }
 
-.pros__slider._anim-items .pros__item {
+.pros__inner {
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 -12px;
+}
+
+.pros__inner._anim-items .pros__item {
 	transform: translate(0px, 20%);
 	transition: all 0.3s ease 0s;
 	opacity: 0;
 }
 
-.pros__slider._active .pros__item {
+.pros__inner._active .pros__item {
 	transform: translate(0px, 0%);
 	transition: all 0.3s ease;
 	opacity: 1;
 }
 
-.pros__slider .pros__item:nth-child(1) {
+.pros__inner .pros__item:nth-child(1) {
 	transition-delay: 0s;
 }
 
-.pros__slider .pros__item:nth-child(2) {
+.pros__inner .pros__item:nth-child(2) {
 	transition-delay: 0.1s;
 }
 
-.pros__slider .pros__item:nth-child(3) {
+.pros__inner .pros__item:nth-child(3) {
 	transition-delay: 0.2s;
 }
 
-.pros__slider .pros__item:nth-child(4) {
+.pros__inner .pros__item:nth-child(4) {
 	transition-delay: 0.3s;
-}
-
-.pros__inner {
-	display: flex;
-	justify-content: flex-start;
-	margin: 0 -12px;
 }
 
 .pros__item {
@@ -4614,11 +4707,33 @@ body.page-brand-catalog .makers {
 	margin: 0px 0px 24px 0px;
 }
 
+.makers__image-icon {
+	width: 64px;
+	height: 64px;
+	margin: 0px 0px 32px 0px;
+}
+
 .makers__img {
 	width: 141px;
 	height: 100px;
 }
 
+.makers__img-icon {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.makers__tlt {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 130%;
+	letter-spacing: -0.02em;
+	color: #0C0B0B;
+	margin: 0px 0px 16px 0px;
+}
 .makers__text {
 	font-weight: 400;
 	font-size: 13px;
