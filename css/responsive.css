@@ -1249,6 +1249,15 @@
 		margin: 12px;
 	}
 
+
+
+}
+
+@media screen and (min-width:993px){
+	.pros__item:hover {
+	    transform: translateY(-15px) !important;
+	    transition: .2s all ease 0s !important;
+	}
 }
 
 @media screen and (max-width:960px){

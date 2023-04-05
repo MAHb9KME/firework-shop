@@ -989,7 +989,7 @@ $(function () {
 	})
 
 	// Слайдер для блока Вы смотрели
-	$('.tab-body__content').slick({
+	/*$('.tab-body__content').slick({
 		responsive: [
 			{
 				breakpoint: 8192,
@@ -1005,7 +1005,7 @@ $(function () {
 					arrows: true
 				}
 			}]
-	});
+	});*/
 
 	// Выпадающий список в адаптиве
 	if ($(document).width() <= 767) {

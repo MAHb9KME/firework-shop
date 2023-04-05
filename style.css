@@ -4198,11 +4198,6 @@ body.page-main .main {
 	user-select: none;
 }
 
-.pros__item:hover {
-	transform: translateY(-15px) !important;
-  transition: .2s all ease 0s !important;
-}
-
 .pros__icon {
 	margin: 0px 0px 56px 0px;
 }
