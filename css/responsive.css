@@ -2990,6 +2990,14 @@
 		margin: 0;
 	}
 
+	/*.tab-body__content.slick-slider {
+		margin: 0 -5px;
+	}
+
+	.tab-body__content.slick-slider .news-box__item {
+	    margin: 0 5px;
+	}*/
+
 }
 
 /* Потенциально 380px -> 479px */

@@ -4965,6 +4965,12 @@ body.page-brand-catalog .makers {
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: contain;
+	transition: .2s all;
+	transform: scale(1);
+}
+
+.reviews__vk:hover {
+	transform: scale(1.2);
 }
 
 .reviews__image {
@@ -5233,8 +5239,8 @@ body.page-brand-catalog .makers {
 	display: block;
 	position: relative;
 	padding-top: 60.504%;
-    border-radius: 4px;
-    overflow: hidden;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .news-box__img {
@@ -5245,6 +5251,11 @@ body.page-brand-catalog .makers {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transition: .2s all;
+}
+
+.news-box__image:hover .news-box__img {
+	transform: scale(1.1);
 }
 
 .news-box__text {
