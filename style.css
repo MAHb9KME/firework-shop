@@ -216,6 +216,12 @@ h6 a,
 	background-color: #661F4E;
 }
 
+/*.pulse:hover, .pulse:focus {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 2em transparent;
+}*/
+
 .btn-empty {
 	font-size: 14px;
 	font-weight: 500;
@@ -5367,6 +5373,11 @@ body.page-brand-catalog .makers {
 	transition: .2s all;
 }
 
+.certificate__item:hover::after {
+	width: 50px;
+	height: 50px;
+}
+
 .certificate__image {
 	display: block;
 	position: relative;
@@ -5382,6 +5393,11 @@ body.page-brand-catalog .makers {
 	left: 0;
 	z-index: 1;
 	object-fit: cover;
+	transition: .2s all;
+}
+
+.certificate__item:hover .certificate__img {
+	transform: scale(0.98);
 }
 
 .certificates__nav {}
