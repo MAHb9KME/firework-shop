@@ -449,10 +449,10 @@
 	.filter-type {
 		margin: -6px -6px 18px -6px;
 	}
-	.filter-wide {
+	/*.filter-wide {
 		grid-gap: 24px;
 		margin-bottom: 24px;
-	}
+	}*/
 
 	/* Catalog-list START */
 	.makers__body {
