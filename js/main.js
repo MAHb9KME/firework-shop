@@ -807,7 +807,7 @@ $(function () {
 	})
 
 	// Слайдер для больших блоков преимуществ 
-	$('.pros__inner').slick({
+	/*$('.pros__inner').slick({
 		responsive: [
 			{
 				breakpoint: 8192,
@@ -823,7 +823,7 @@ $(function () {
 					adaptiveHeight: true
 				}
 			}]
-	});
+	});*/
 
 	/*var mySwiper = new Swiper('.pros__slider', {
 	    slidesPerView: 1,
@@ -1660,6 +1660,21 @@ $(function () {
 	//setTimeout( function(){ 
 	    animOnScroll(); 
 	//}, 300 )
+
+
+    // Бургер меню, открытие подменю
+    $(document).on('click', '.scroll__arrow, .aside-menu__arrow', function(){
+    	parent = $('body')
+
+		if( parent.hasClass('sec-menu') )
+			parent.removeClass('sec-menu')
+		else
+			parent.addClass('sec-menu')
+    })
+
+	$(document).on('click', '.wide-menu__return', function(){
+		$('body').removeClass('sec-menu')
+	})
 
 
 })

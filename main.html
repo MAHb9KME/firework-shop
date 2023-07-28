@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Магазин-фейерверки»</title>
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="imagesfavicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>Верстка «Магазин-фейерверки»</h1>
+		<div class="rootpage__info">
+			Фейерверки и пиротехника в интернет магазине Салют
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="index.html">Главная страница</a></li>
+
+			<li><a target="_blank" href="brand-catalog.html"><strong>Страница Каталог брендов</strong></a></li>
+			<li><a target="_blank" href="brand-catalog-2.html"><strong>Страница Каталога</strong></a></li>
+			<li><a target="_blank" href="catalog.html"><strong>Страница Раздела каталогов Стандарт/Галерея/Прайс</strong></a></li>
+			<li><a target="_blank" href="page-product.html"><strong>Страница Товара</strong></a></li>
+
+			<li><a target="_blank" href="index.html"><span>Страница Бренда Maxsem</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Каталог фейерверков на праздник</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Фейерверки оптом</span></a></li>
+
+			<li><a target="_blank" href="basket-empty.html"><strong>Страница Пустая корзина</strong></a></li>
+			<li><a target="_blank" href="page-basket.html"><strong>Страница Корзина</strong></a></li>
+			<li><a target="_blank" href="page-ordering.html"><strong>Страница Оформление заказа</strong></a></li>
+			<li><a target="_blank" href="page-order.html"><strong>Страница Оформленного заказа</strong></a></li>
+
+			<li><a target="_blank" href="index.html"><span>Страница Гарантии</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Частые вопросы</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Сертификаты</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Новостей/Обзоров</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Новостей</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Оплата и доставка</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Отзывов</span></a></li>
+			<li><a target="_blank" href="index.html"><span>Страница Лучшие товары, спецпредложения, новинки</span></a></li>
+		</ol>
+	</div>
+</body>
+
+
+
+
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #1d1d1d;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	h1 {
+		background: linear-gradient(135deg, #09b900 33%, #009000 66%, #36a200);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: #13ba00;
+	}
+
+	a {
+		text-decoration: none;
+		color: #ebe691;
+		transition: .2s all;
+		color: #fff;
+	}
+
+	a:hover {
+		text-decoration: none;
+		color: #13ba00;
+	}
+
+	a span {
+		color: #ebe691;
+		transition: .2s all;
+	}
+
+	a strong {
+		color: #13ba00 !important;
+		font-weight: 400;
+	}
+
+	a:hover span {
+		color: #13ba00;
+	}
+
+	li {
+		color: #fff;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 50px 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+
+	.rootpage__contacts a {
+		color: #ebe691;
+	}
+
+	.rootpage__tnx {
+		background: #c22d63;
+		margin: 0px 0px 1rem 0px;
+	}
+</style>
+
+</html>

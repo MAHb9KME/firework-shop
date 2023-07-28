@@ -22,6 +22,12 @@
 	    width: 280px;
 	    min-width: 280px;
 	} 
+	.gen-tile__inner {
+		justify-content: center;
+	}
+	.gen-tile__item {
+	    width: calc(100% / 4 - 24px);
+	}
 }
 
 @media screen and (max-width:1420px){
@@ -170,6 +176,19 @@
 	    font-size: 15px;
 	    white-space: initial;
 	}
+
+	.makers-brand__item {
+	    width: calc(100% / 4 - 24px);
+	}
+
+	.holidays__inner {
+		margin: -8px;
+	}
+
+	.holidays__item {
+		width: calc(100% / 3 - 16px);
+		margin: 8px;
+	}
 }
 
 @media screen and (max-width:1250px){
@@ -315,6 +334,9 @@
 	}
 	.vision--price .product__drop {
 	    width: 100%;
+	}
+	.gen-tile__item {
+	    width: calc(100% / 3 - 24px);
 	}
 }
 
@@ -652,6 +674,31 @@
 		max-height: 155px;
 	}
 
+	body.main-menu-drop .scroll__list li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	body.main-menu-drop .scroll__list .scroll__arrow,
+	body.main-menu-drop .aside-menu__secound .aside-menu__arrow {
+	    flex: 0 0 40px;
+	    height: 16px;
+	    cursor: pointer;
+	    display: block;
+	    background-image: url(../images/icons/menu-arrow.svg);
+	    background-repeat: no-repeat;
+	    background-position: 100% 50%;
+	    background-size: contain;
+	}
+
+	body.main-menu-drop .aside-menu__secound .aside-menu__li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 0;
+	}
+
 	/* Main screen */
 	.face__inner {
 		display: block;
@@ -874,21 +921,30 @@
 	    padding: 0 24px 24px;
 	    transition: .2s all;
 	}
+	body.main-menu-drop.sec-menu .wide-menu__aside {
+		left: -100%;
+	}
 	.wide-menu__fucus {
-	    position: absolute;
+        position: absolute;
 	    top: 0;
-	    left: 0;
+	    left: auto;
+	    right: -100%;
 	    width: 100%;
 	    padding: 0 24px 24px;
 	    background-color: #fff;
 	    transform: translateX(0%);
-	    z-index: 99;
-	    transform: .2s all;
+	    z-index: 999;
+	    transition: .2s all;
+	}
+	body.main-menu-drop.sec-menu .wide-menu__fucus {
+		right: 0;
 	}
 	body.main-menu-drop .scroll__list li a, 
 	.aside-menu__link {
 	    font-size: 16px;
 	    line-height: 16px;
+	    display: block;
+    	width: 100%;
 	}
 	.tabs-menu__title {
 	    font-size: 24px;
@@ -896,6 +952,13 @@
 	}
 	.wide-menu__tabs {
 	    margin-bottom: 24px;
+	    overflow: auto;
+        max-height: 72vh;
+	}
+
+	.focus-menu__scroll,
+	.focus-menu__labels {
+		display: none;
 	}
 
 
@@ -1249,6 +1312,28 @@
 		margin: 12px;
 	}
 
+	.cat-list__ahead {
+	    margin-bottom: 32px;
+	}
+
+	.makers__ahead {
+		margin-bottom: 32px;
+	}
+
+	.makers-brand {
+	    margin: -8px;
+	}
+
+	.makers-brand__item {
+	    width: calc(100% / 3 - 16px);
+	    margin: 8px;
+	}
+
+	.wide-menu__back {
+		display: block;
+	    margin-bottom: 24px;
+	}
+
 
 
 }
@@ -1417,9 +1502,44 @@
 	}*/
 }
 
-@media screen and (max-width:850px) {
-	
+@media screen and (max-width:800px) {
+	.gen-tile__item {
+	    width: calc(100% / 2 - 24px);
+	}
 }
+
+@media screen and (max-width:768px) {
+	.makers-brand__item {
+	    width: calc(100% / 2 - 16px);
+	}
+
+	.holidays__inner {
+		margin: 0px;
+	}
+
+	.holidays__item {
+		width: 100%;
+		margin: 0 0 16px;
+	}
+
+	.holidays__item:last-child {
+		margin: 0;
+	}
+}
+
+
+@media screen and (min-width:768px) {
+	.vision--price .list-dropdown {
+		position: absolute;
+		display: none;
+	}
+
+	.vision--price .back-line:hover .list-dropdown {
+		position: absolute;
+		display: block;
+	}
+}
+
 
 /* Потенциально 767px */
 @media screen and (max-width:750px){
@@ -1594,6 +1714,11 @@
 	}
 	.edge-arrow--right {
 	    right: -22px;
+	}
+
+	.tabs-menu__title {
+	    font-size: 20px;
+	    margin-bottom: 24px;
 	}
 
 }
@@ -1875,16 +2000,42 @@
 	.pros__slider {
 		overflow: hidden;
 	}
+	.pros__title {
+	    font-size: 16px;
+	    margin: 0;
+	}
+	.pros__subtitle {
+		font-size: 14px;
+	}
+	.pros__wrapper {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 0px 0px 16px 0px;
+	}
+	.pros__icon {
+		margin: 0;
+	}
 	.pros__item {
 	    width: 100% !important;
+		margin: 0 0 16px;
+		text-align: left;
+	}
+	.pros__item:last-child {
 		margin: 0;
+	}
+	.pros__img {
+	    width: 40px;
+	    min-width: 40px;
+	    height: 40px;
+	    object-fit: contain;
 	}
 	.pros__inner {
 		margin: 0;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 	}
 	.pros__arrow {
-		display: block;
+		display: none;
 	}
 	
 	/* slick-arrow START */
@@ -2454,6 +2605,10 @@
 	    margin-top: -32px;
 	}
 
+	body.fix .header-dopmenu {
+	    margin-top: -2px;
+	}
+
 	.product__drop {
 		border: none;
 	    position: static;
@@ -2587,6 +2742,46 @@
 	    top: 16px;
 	    right: 16px;
 	}
+
+	.pros__item:nth-child(odd) {
+		text-align: right;
+	}
+
+	.pros__item:nth-child(odd) .pros__wrapper {
+		justify-content: space-between;
+	}
+
+	.pros__item:nth-child(odd) .pros__title {
+		margin-left: 16px;
+	}
+
+	.pros__item:nth-child(even) {
+		text-align: left;
+	}
+
+	.pros__item:nth-child(even) .pros__wrapper {
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+
+	.pros__item:nth-child(even) .pros__title {
+		margin-right: 16px;
+	}
+
+	body.fix .header__logo {
+		display: none;
+	}
+
+	.makers__p-subtitle {
+	    text-align: center;
+	    margin: 0px 0px 32px 0px;
+	}
+}
+
+@media screen and (max-width:700px){
+	body.fix .main {
+		padding-top: 127px;
+	}
 }
 
 /* Потенциально 767px */
@@ -2702,13 +2897,6 @@
 	}
 	.navigate {
 		display: none;
-	}
-	.pros__icon {
-		margin: 0px 0px 40px 0px;
-	}
-	.pros__title {
-		font-size: 14px;
-		margin: 0px 0px 8px 0px;
 	}
 	.face .slick-slider {
 		margin: 0 0 16px;
@@ -2990,6 +3178,17 @@
 		margin: 0;
 	}
 
+	.gen-tile__inner {
+	    margin: 0px;
+	}
+	.gen-tile__item {
+	    width: 100%;
+	    margin: 0px 0px 16px 0px;
+	}
+	.gen-tile__item:last-child {
+	    margin: 0px;
+	}
+
 	/*.tab-body__content.slick-slider {
 		margin: 0 -5px;
 	}
@@ -3061,6 +3260,43 @@
 	}
 	.main-menu-drop-2 .header-dopmenu {
 	    margin-top: 0px;
+	}
+
+	.makers__brand {
+		margin: 0;
+	}
+
+	.makers-brand__item {
+	    width: 100%;
+	    margin: 0 0 16px;
+	}
+
+	.makers-brand__item:last-child {
+	    margin: 0;
+	}
+
+	.makers-brand__item {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.makers-brand__txt {
+		max-width: 100%;
+	    line-height: 130%;
+	    text-align: left;
+	    margin: 0;
+	    text-align: left;
+	}
+
+	.makers-brand__item picture {
+	    max-width: 64px;
+	    padding-top: 48px;
+	    margin: 0 40px 0 0;
+	}
+
+	body.fix .main {
+		padding-top: 135px;
 	}
 }
 
