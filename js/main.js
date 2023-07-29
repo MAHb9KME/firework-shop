@@ -1700,6 +1700,23 @@ $(function () {
 		$('#text-change-slider-btn').text(text)
 	}
 
+	// Faq раскрытие
+    $('.sales-faq__item').click(function(){
+
+        var parent = $(this)
+        var menu = $(this).find('.sales-faq__answer')
+
+        if( $(menu).is(':visible')){
+            $(menu).slideUp(400)
+            $(parent).removeClass('sales-faq__item--active')
+        }
+        else{
+            $(menu).slideDown(400)
+            $(parent).addClass('sales-faq__item--active')
+        }
+    })
+
+
 
 })
 

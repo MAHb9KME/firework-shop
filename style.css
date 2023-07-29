@@ -3159,6 +3159,14 @@ body.page-main .main {
 	-webkit-animation: image-zoom 15s ease-out infinite 1s;
 }
 
+.slider__img-static {
+	animation: initial !important;
+}
+
+.page-opt .slider__img {
+  width: 100%;
+}
+
 .slider__text {
 	position: absolute;
 	left: 40px;
@@ -4253,6 +4261,12 @@ body.page-main .main {
 .pros {
 	padding: 4rem 0;
 }
+
+.pros-opt {
+	padding-top: 0;
+}
+
+.pros__main-title {}
 
 .pros__tlt {
 	font-size: 24px;
@@ -5843,7 +5857,7 @@ body.page-brand-catalog .makers {
 	top: 40px;
 	left: 0;
 	z-index: 5;
-	opacity: 0.6;
+	opacity: 0.6s;
 }
 .breadcrumbs--slider .breadcrumbs__link,
 .breadcrumbs--slider .breadcrumbs__li {
@@ -8963,3 +8977,167 @@ body.page-brand-catalog .makers {
 }
 /* Новый список подкаталога END */
 
+/* All country START */
+.country {
+	padding: 4rem 0;
+}
+.country__inner {
+}
+.country__title {
+}
+.country__title span {
+	display: block;
+	color: #0C0B0B;
+}
+.country__body {}
+.country__image {
+	width: 100%;
+	padding-top: 760px;
+	position: relative;
+}
+.country__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+/* All country END */
+
+/* Opt Stock START */
+.opt-stock {
+	padding: 4rem 0;
+}
+.opt-stock__inner {
+}
+.opt-stock__title {
+}
+.opt-stock__body {
+}
+.opt-stock__image {
+	width: 100%;
+  padding-top: 615px;
+  position: relative;
+}
+.opt-stock__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+/* Opt Stock END */
+
+/* Perks START */
+.perks {
+	padding: 4rem 0;
+}
+.perks__inner {
+}
+.perks__title {
+}
+.perks__body {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	margin: -12px;
+}
+.perks__item {
+	width: calc(100% / 5 - 24px);
+	padding: 24px;
+	margin: 12px;
+	border-radius: 4px;
+	border: 1px solid #ECECEC;
+}
+.perks__image {
+	width: 48px;
+	min-width: 48px;
+	height: 48px;
+	margin: 0px 0px 40px 0px;
+}
+.perks__img {
+	width: 100%;
+}
+.perks__tlt {
+	color: #0C0B0B;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	letter-spacing: -0.32px;
+}
+/* Perks END */
+
+/* Sales-faq START */
+.sales-faq {
+	padding: 4rem 0;
+}
+.sales-faq__inner {
+}
+.sales-faq__title {
+}
+.sales-faq__body {
+}
+.sales-faq__item {
+	padding: 24px;
+	border-radius: 4px;
+	border: 1px solid #ECECEC;
+	cursor: pointer;
+}
+.sales-faq__item:not(:last-child) {
+	margin: 0px 0px 16px 0px;	
+}
+.sales-faq__question {
+	color: #0C0B0B;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%;
+	letter-spacing: -0.32px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.sales-faq__question::after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	min-width: 20px;
+	height: 20px;
+	margin-left: 25px;
+
+	background-image: url(images/icons/faq-plus.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+.sales-faq__item--active .sales-faq__question::after {
+	background-image: url(images/icons/faq-minus.svg);
+}
+.sales-faq__question strong {
+	color: #731B55;
+}
+.sales-faq__answer {
+	color: #8B8B8B;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	letter-spacing: -0.28px;
+	margin: 12px 0px 0px 0px;
+
+	display: none;
+}
+.sales-faq__item--active .sales-faq__answer {
+	display: block;
+}
+.sales-faq__answer p {
+	margin: 0;
+}
+/* Sales-faq END */

@@ -189,6 +189,10 @@
 		width: calc(100% / 3 - 16px);
 		margin: 8px;
 	}
+
+	.perks__item {
+	    width: calc(100% / 4 - 24px);
+	}
 }
 
 @media screen and (max-width:1250px){
@@ -1466,6 +1470,15 @@
 		display: none;
 	}
 
+	.perks__body {
+	    margin: -8px;
+	}
+
+	.perks__item {
+	    width: calc(100% / 3 - 16px);
+    	margin: 8px;
+	}
+
 
 
 }
@@ -1656,6 +1669,10 @@
 
 	.holidays__item:last-child {
 		margin: 0;
+	}
+
+	.perks__item {
+	    width: calc(100% / 2 - 16px);
 	}
 }
 
@@ -3367,6 +3384,22 @@
 
 	body.fix .main {
 		padding-top: 135px;
+	}
+
+	.perks__body {
+		margin: 0;
+	}
+
+	.perks__item {
+	    width: 100%;
+	    margin: 0px 0px 16px 0px;
+	    display: flex;
+	    justify-content: flex-start;
+	    align-items: center;
+	}
+
+	.perks__image {
+	    margin: 0px 56px 0px 0px;
 	}
 }
 
