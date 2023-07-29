@@ -3216,13 +3216,15 @@ body.page-main .main {
 	height: 40px;
 }
 
-.slider__arrows._anim-items {
+.slider__arrows._anim-items,
+.slider__buttons._anim-items {
 	transform: translate(0px, 120%);
 	transition: all 0.3s ease 0.6s;
 	opacity: 0;
 }
 
-.slider__arrows._active {
+.slider__arrows._active,
+.slider__buttons._active {
 	transform: translate(0px, 0%);
 	opacity: 1;
 }
@@ -3246,6 +3248,32 @@ body.page-main .main {
 }
 
 .slider-arrow--right {}
+
+.slider__buttons {
+	display: flex;
+	justify-content: flex-start;
+	gap: 16px;
+}
+.slider-buttons {
+}
+.slider-buttons__btn {
+	color: #0C0B0B;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: -0.28px;
+	border-radius: 4px;
+	background: #FFF;
+	text-align: center;
+	padding: 16px 32px;
+	transition: .2s all;
+}
+.slider-buttons__btn:hover {
+	color: #fff;
+  background-color: #731B55;
+}
+
 
 .week {
 	width: 280px;
@@ -4446,14 +4474,14 @@ body.page-main .main {
 }
 
 .filter__line--amount .filter__scroll {
-	max-height: 464px;
+	max-height: 475px;
 }
 
 .filter__line--amount .simplebar-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: -4px -8px;
+  margin: 0px -8px;
 }
 
 .filter__line--amount .simplebar-content::before,
@@ -4463,7 +4491,7 @@ body.page-main .main {
 
 .filter__line--amount .filter__scroll-item {
 	width: calc(100% / 3 - 16px);
-	margin: 4px 8px;
+	margin: 0px 8px;
 	overflow: hidden;
 }
 
@@ -4493,19 +4521,19 @@ body.page-main .main {
 }
 
 .filter__line--seleb .filter__scroll {
-	max-height: 304px;
+	max-height: 324px;
 }
 
 .filter__line--calibor .simplebar-content {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	margin: -4px -8px;
+	margin: 0px -8px;
 }
 
 .filter__line--calibor .filter__scroll-item {
 	width: calc(100% / 2 - 16px);
-  margin: 4px 8px;
+  margin: 0px 8px;
   overflow: hidden;
 }
 
@@ -5809,6 +5837,20 @@ body.page-brand-catalog .makers {
 /* Страница производители START */
 .breadcrumbs {
 	padding: 0 0 20px;
+}
+.breadcrumbs--slider {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	z-index: 5;
+	opacity: 0.6;
+}
+.breadcrumbs--slider .breadcrumbs__link,
+.breadcrumbs--slider .breadcrumbs__li {
+	color: #fff;
+}
+.breadcrumbs--slider .breadcrumbs__link::after {
+	background-image: url(images/icons/ture-gray.svg);
 }
 .breadcrumbs--back {
 	padding: 0 0 20px;
@@ -8830,9 +8872,15 @@ body.page-brand-catalog .makers {
 
 /* Holidays START */
 .holidays {}
+.holidays__title {
+	margin: 0px 0px 24px 0px;
+}
+.holidays__subtitle {
+	margin: 0px 0px 40px 0px;
+}
 .holidays__inner {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin: -12px;
 }

@@ -1676,6 +1676,30 @@ $(function () {
 		$('body').removeClass('sec-menu')
 	})
 
+	// Мастер подбора фейерверков, фильтр на мобильных
+	if ($(document).width() <= 992) {
+		$(document).on('click', '.filter__line-tlt', function () {
+			parent = $(this).parents('.filter__wrdrop')
+			menu = parent.find('.filter__drop')
+
+			if ($(menu).is(':visible')) {
+				$(menu).slideUp(200)
+				$(parent).removeClass('filter__form--active')
+			}
+			else {
+				$('.filter__drop').slideUp(200)
+				$(menu).slideDown(200)
+				$(parent).addClass('filter__form--active')
+			}
+		})
+	}
+
+	// Замена текста при адаптиве
+	if ($(document).width() <= 992) {
+		text = $('#text-change-slider-btn').data('mobile')
+		$('#text-change-slider-btn').text(text)
+	}
+
 
 })
 
