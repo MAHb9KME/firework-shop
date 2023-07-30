@@ -4786,14 +4786,6 @@ input[type=checkbox]:checked+.filter__scroll-label {
 	transform: translateY(-60%) rotate(-180deg);
 }
 
-.page-best-goods .droplist-cat {
-	width: 100%;
-}
-
-.page-best-goods .droplist__focus {
-	width: 100%;
-}
-
 .droplist .droplist-name {
 	display: inline-block;
 	vertical-align: top;

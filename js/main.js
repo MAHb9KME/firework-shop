@@ -1701,7 +1701,7 @@ $(function () {
 	}
 
 	// Faq раскрытие
-    $('.sales-faq__item').click(function(){
+	$(document).on('click', '.sales-faq__item', function(){
 
         var parent = $(this)
         var menu = $(this).find('.sales-faq__answer')
@@ -1715,6 +1715,21 @@ $(function () {
             $(parent).addClass('sales-faq__item--active')
         }
     })
+
+    // Раскрытие Фильтра на мобильных
+    $(document).on('click', '.filter-button__btn', function(){
+		parent = $(this).parents('.filter-button')
+		menu = parent.next().find('.cat-list__form')
+
+		if( $(menu).is(':visible')){
+			$(this).text('Открыть фильтр')
+            $(menu).slideUp(400)
+        }
+        else{
+			$(this).text('Скрыть фильтр')
+            $(menu).slideDown(400)
+        }
+	})
 
 
 
