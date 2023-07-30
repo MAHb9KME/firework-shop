@@ -1801,6 +1801,10 @@
 	    padding: 16px;
 	}
 
+	.filter-button {
+		display: block;
+	}
+
 	.filter-button__btn {
 		display: flex;
 		justify-content: center;

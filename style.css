@@ -4712,6 +4712,10 @@ input[type=checkbox]:checked+.filter__scroll-label {
 /* Filter END */
 
 /* Catalog-list START */
+.filter-button {
+	display: none;
+}
+
 .cat-list {
 	padding: 4rem 0;
 }
