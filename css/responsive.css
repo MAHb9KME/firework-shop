@@ -1094,6 +1094,10 @@
 	    gap: 22px;
 	}
 
+	.p-product__sidebar {
+	    position: static;
+	}
+
 	.description__watch {
 	    margin: 0px 0px 48px 0px;
 	}
@@ -1809,8 +1813,13 @@
 	}
 
 	.wholesale__image {
-		display: none;
+		/*display: none;*/
 	}
+
+	/*.page-brand-catalog .wholesale__image,
+	.page-brand-catalog-2 .wholesale__image {
+		display: block;
+	}*/
 
 	.sales-faq__controll,
 	.common-tab-panel__control {
@@ -1827,6 +1836,19 @@
 
 	.sales-faq__item {
 	    padding: 16px;
+	}
+
+	.page-garantee .sales-faq__question,
+	.page-faq .sales-faq__question {
+	    font-size: 16px;
+	}
+
+	.page-faq .sales-faq {
+		padding-top: 0;
+	}
+
+	.page-faq .tab-panel__btn {
+	    margin-bottom: 16px;
 	}
 
 	.filter-button {
@@ -1862,6 +1884,15 @@
 		background-repeat: no-repeat;
 		background-position: 50% 50%;
 		background-size: contain;
+	}
+
+	.page-brand-catalog-2 .offers__subtitle {
+		text-align: center;
+	}
+
+	.reset-label {
+	    flex-direction: row;
+        padding: 0 15px 0 25px;
 	}
 }
 
@@ -2000,20 +2031,24 @@
 		display: none;
 	}
 
-	.page-best-goods .cat-list__form {
+	.page-best-goods .cat-list__form,
+	.page-catalog .cat-list__form {
 	    margin: 0px 0px 26px;
 	}
 
-	.page-best-goods .droplist-cat {
+	.page-best-goods .droplist-cat,
+	.page-catalog .droplist-cat {
 		width: 100%;
 		margin: 0 0 12px;
 	}
 
-	.page-best-goods .droplist__focus {
+	.page-best-goods .droplist__focus,
+	.page-catalog .droplist__focus {
 		width: 100%;
 	}
 
-	.page-best-goods .reset-label {
+	.page-best-goods .reset-label,
+	.page-catalog .reset-label {
 	    width: 100%;
 	    display: flex;
 	    justify-content: center;
@@ -2026,9 +2061,15 @@
 		transform: translateY(-7%) !important;
 	}
 
-	.page-best-goods .cat-list {
+	.page-best-goods .cat-list,
+	.page-catalog .cat-list {
 		display: block;
 	}
+
+	.page-catalog .catalog__sort-form {
+		display: none;
+	}
+
 	.header-main__inner {
 		flex-direction: column;
 		align-items: initial;
@@ -2390,6 +2431,14 @@
 	.wholesale__body {
 		display: block;
 	}
+	.page-garantee .wholesale__image,
+	.page-faq .wholesale__image,
+	.page-news .wholesale__image {
+		display: none;
+	}
+	.page-garantee .tab-panel {
+	    margin: 0px 0px 32px 0px;
+	}
 	.wholesale__image {
 		width: 100%;
 		padding-top: 76.92%;
@@ -2438,7 +2487,8 @@
 		display: none;
 	}
 
-	body.page-ordering .breadcrumbs {
+	body.page-ordering .breadcrumbs,
+	body.page-order .breadcrumbs {
 		display: block; 
 		padding: 0 0 16px;
 	}
@@ -2466,6 +2516,13 @@
 	}
 	.breadcrumbs--back {
 	    padding: 0 0 32px;
+	}
+	.basket-empty .breadcrumbs--back {
+	    padding: 0 0 32px;
+	    display: block;
+	}
+	.basket-empty .section-empty__btns .btn {
+		width: 50%;
 	}
 	.section-empty__inner {
 		text-align: center;
@@ -3094,6 +3151,75 @@
 	.news-content__image {
 	    margin: 0px 0px 48px 0px;
 	}
+
+	.page-product .pag-nav__ul {
+	    justify-content: center;
+	}
+
+	.page-others-brand .holidays__item picture {
+	    margin: 0px 56px 0px 0px;
+	}
+
+	.page-others-brand .holidays__txt {
+	    font-size: 16px;
+	}
+
+	.page-others-brand .holidays__subtitle {
+		text-align: center;
+	    margin: 0px 0px 32px 0px;
+	}
+
+	.page-others-brand .holidays {
+	    padding: 4rem 0;
+	}
+
+	.opt-stock__image {
+	    padding-top: 240px;
+	}
+
+	.country__body {
+	    margin-right: -24px;
+	}
+
+	.country__image {
+	    padding-top: 392px;
+	}
+
+	.country__img {
+	    object-fit: cover;
+	    object-position: 0% 50%;
+	}
+
+	.order__section {
+	    padding: 0;
+	    border: none;
+	}
+
+	.order__rate {
+	    padding: 0;
+	    border: none;
+	}
+
+	.order__btn {
+		width: 100%;
+	}
+
+	.order__section {
+		text-align: center;
+	}
+
+	.ways-order {
+	    justify-content: center;
+	}
+
+	.page-order .order__btns {
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	.order__tlt {
+		font-size: 20px;
+	}
 }
 
 @media screen and (max-width:700px){
@@ -3174,6 +3300,10 @@
 		width: 50%;
 		color: #fff;
 		background-color: #731B55;
+	}
+	.page-opt .slider-buttons__btn {
+		width: 100%;
+		margin-top: 24px;
 	}
 	.slider__arrows {
 		height: 360px;

@@ -1731,6 +1731,21 @@ $(function () {
         }
 	})
 
+	// Раскрытие Фильтра на мобильных
+    $(document).on('click', '.filter-button__btn--catalog', function(){
+		parent = $(this).parents('.catalog__filter')
+		menu = parent.find('.cat-list__form')
+
+		if( $(menu).is(':visible')){
+			$(this).text('Открыть фильтр')
+            $(menu).slideUp(400)
+        }
+        else{
+			$(this).text('Скрыть фильтр')
+            $(menu).slideDown(400)
+        }
+	})
+
 
 
 })

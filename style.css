@@ -4342,7 +4342,7 @@ body.page-main .main {
 	margin: 0 12px;
 	background: #F7F7F7;
 	border-radius: 4px;
-	padding: 40px;
+	padding: 24px;
 	transform: translateY(0);
 	transition: .2s all ease;
 	user-select: none;
@@ -4357,7 +4357,7 @@ body.page-main .main {
 }
 
 .pros__icon {
-	margin: 0px 0px 56px 0px;
+	margin: 0px 0px 40px 0px;
 }
 
 .pros__img {
@@ -4471,7 +4471,8 @@ body.page-main .main {
   align-items: center;
   letter-spacing: -0.02em;
   color: #9F9F9F;
-  padding: 14px 23px;
+  /*padding: 14px 23px;*/
+  padding: 14px 16px;
   border: 1px solid #EFEFEF;
   border-radius: 4px;
   cursor: pointer;
@@ -4940,6 +4941,10 @@ body.page-brand-catalog .makers {
 .makers__subtitle {
 }
 
+.page-brand-catalog-2 .makers__subtitle {
+	text-align: center;
+}
+
 .makers__p-subtitle {
 	color: #8B8B8B;
 	font-size: 14px;
@@ -5291,7 +5296,7 @@ body.page-brand-catalog .makers {
 	line-height: 140%;
 	letter-spacing: -0.02em;
 	color: #9F9F9F;
-	max-height: 80px;
+	max-height: 140px;
 	overflow: hidden;
 	margin: 0px 0px 16px 0px;
 }
@@ -5432,6 +5437,10 @@ body.page-brand-catalog .makers {
 
 .tab-panel {
 	position: relative;
+}
+
+.page-garantee .tab-panel {
+	margin: 0px 0px 40px 0px;
 }
 
 .tab-panel__btn {
@@ -6398,6 +6407,14 @@ body.page-brand-catalog .makers {
 	line-height: 14px;
 	letter-spacing: -0.02em;
 	color: #9F9F9F;
+}
+input[type=checkbox]+.popup-body__rem-label::before {
+  top: 50%;
+  transform: translateY(-60%);
+}
+input[type=checkbox]:checked+.popup-body__rem-label::after {
+	top: 50%;
+  transform: translateY(-60%);
 }
 .popup-body__pass-reset {
 	font-weight: 400;
@@ -9180,6 +9197,10 @@ body.page-brand-catalog .makers {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.page-garantee .sales-faq__question,
+.page-faq .sales-faq__question {
+    font-size: 18px;
 }
 .sales-faq__question::after {
 	content: '';
