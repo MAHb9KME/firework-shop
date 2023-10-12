@@ -1748,5 +1748,102 @@ $(function () {
 
 
 
+
+
+
+	// Слайдер команда
+	$('.ourteam-list__inner').slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					touchMove: true,
+					swipeToSlide: true,
+					touchThreshold: true,
+					swipe: true,
+					draggble: true
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					touchMove: true,
+					swipeToSlide: true,
+					touchThreshold: true,
+					swipe: true,
+					draggble: true,
+					arrows: true
+				}
+			}]
+	});
+
+
+	// Слайдер фото
+	$('.photos__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: "unslick",
+			}]
+	});
+
+	$(document).on('click', '.photos--prev', function () {
+		$('.photos__slider').slick('slickPrev')
+	})
+
+	$(document).on('click', '.photos--next', function () {
+		$('.photos__slider').slick('slickNext')
+	})
+
+	$('.photos__body').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: false,
+		touchMove: false,
+		swipeToSlide: false,
+		touchThreshold: false,
+		swipe: false,
+		arrows: false,
+		responsive: [{
+				breakpoint: 3840,
+				settings: "unslick",
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					touchMove: true,
+					swipeToSlide: true,
+					touchThreshold: true,
+					swipe: true,
+					draggble: true,
+					arrows: true
+				}
+			}]
+	});
+
+
+
 })
 
